@@ -6,15 +6,29 @@
   font-family: "JMH Typewriter";
   src: url("/font/JMH-Typewriter.woff2");
 }
+.container {
+  max-width: 1200px !important;
+}
+
 h1 {
   text-transform: uppercase;
   font-family: "Cormorant Light";
+  font-weight: 300;
   font-size: 9rem;
-  border-bottom: 2px solid #b1a460;
   display: inline-block;
   line-height: 1;
   margin-top: 4rem;
   margin-bottom: 4rem;
+}
+h1::first-line {
+  -webkit-text-decoration: underline 2px #b1a460;
+          text-decoration: underline 2px #b1a460;
+  text-underline-offset: 26px;
+}
+
+h2,
+.v-expansion-panel-header__icon .v-icon {
+  color: #b1a460 !important;
 }
 
 h1.slide-x-transition-enter-active,
@@ -26,10 +40,24 @@ h1.slide-x-transition-leave-active {
   max-width: 600px;
   margin: 0 auto;
   font-family: "JMH Typewriter", monospace;
-  background: white;
   color: black;
   transform: rotate(-2deg);
   padding: 4rem;
+  background-color: white;
   background: url("/img/paper.jpg");
   background-size: cover;
+}
+
+.more-info-link {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.sign-up-link {
+  margin-top: 5rem;
+}
+
+.no-message .v-messages {
+  display: none;
 }

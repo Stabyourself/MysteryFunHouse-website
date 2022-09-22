@@ -12,7 +12,27 @@ class HomeController extends Controller
         return Inertia::render('home')
             ->withViewData([
                 "title" => "Home",
-                "description" => "Mystery Fun Fest is a cooperative event in which two teams compete to accrue the most tickets throughout its 17-day duration.",
+                "description" => "Mystery Tournament is an event in which players will participate in a series of matches, racing against a single opponent per round in short to medium length goals.",
+                "image" => asset("/img/home.jpg"),
+            ]);
+    }
+
+    public function info()
+    {
+        return Inertia::render('info')
+            ->withViewData([
+                "title" => "Intel",
+                "description" => "Read all about it!",
+                "image" => asset("/img/home.jpg"),
+            ]);
+    }
+
+    public function archive()
+    {
+        return Inertia::render('archive')
+            ->withViewData([
+                "title" => "Archive",
+                "description" => "View previously released Classified Information",
                 "image" => asset("/img/home.jpg"),
             ]);
     }

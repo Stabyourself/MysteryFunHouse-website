@@ -50,5 +50,5 @@ createInertiaApp({
       render: (h) => h(App, props),
     }).$mount("#app");
   },
-  title: (title) => `${title} - Mystery Fun Fest`,
+  title: (title) => `${title} - Mystery Fun House`,
 });

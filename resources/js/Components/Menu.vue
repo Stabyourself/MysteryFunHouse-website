@@ -108,12 +108,12 @@ export default {
         {
           title: "Intel",
           icon: "mdi-information",
-          route: "home",
+          route: "info",
         },
         {
           title: "Archive",
           icon: "mdi-archive",
-          route: "home",
+          route: "archive",
         },
       ],
     };

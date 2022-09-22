@@ -3,10 +3,8 @@
     <Head title="Home" />
 
     <v-container>
-      <v-slide-x-transition appear :duration="{ enter: 1000, leave: 800 }">
-        <h1>
-          Mystery Fun House
-        </h1>
+      <v-slide-x-transition appear>
+        <h1>Mystery Fun<br />House</h1>
       </v-slide-x-transition>
 
       <div class="letter">
@@ -33,7 +31,7 @@
         <p>PS: This message will self-destruct in 60 seconds.</p>
       </div>
 
-      <div class="mx-auto my-5" style="max-width: 500px">
+      <div class="mx-auto sign-up-link" style="max-width: 500px">
         <v-btn color="primary" :to="route('signUpForm')" x-large block>
           <div v-if="signedUp">
             Edit signup data
@@ -44,20 +42,9 @@
         </v-btn>
       </div>
 
-      <p>
-        Mystery Tournament is an event in which players will participate in a
-        series of matches, racing against a single opponent per round in short
-        to medium length goals. These goals will be for games that are not
-        revealed until moments before the race actually begins, with just enough
-        time to download the game.
-      </p>
-
-      <p>
-        Players are likely to encounter games they've never played before, seen
-        before, or, most frequently, have never even heard of. This event is
-        designed to determine not just who has the most gaming experience but
-        the best overall racing abilities!
-      </p>
+      <router-link :href="route('info')" class="more-info-link">
+        Get more intel
+      </router-link>
     </v-container>
   </div>
 </template>

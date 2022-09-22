@@ -17,6 +17,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeController::class, 'home'])->name("home");
+Route::get('/info', [HomeController::class, 'info'])->name("info");
+Route::get('/archive', [HomeController::class, 'archive'])->name("archive");
 
 // auth bs
 Route::get('tologin', [DiscordController::class, 'tologin'])
