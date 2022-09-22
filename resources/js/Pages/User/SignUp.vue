@@ -123,15 +123,15 @@ export default {
       }),
 
       impairments: [
-        { value: "nomouse", text: "No mouse" },
-        { value: "nocontroller", text: "No controller" },
-        { value: "colorblind", text: "Colorblind" },
-        { value: "hearingimpaired", text: "Hearing impaired" },
-        { value: "motionsickness", text: "Sensitive to motion sickness" },
-        { value: "epilipsy", text: "Sensitive to flashing lights" },
+        { value: "nomouse", text: "I have no mouse" },
+        { value: "nocontroller", text: "I have no controller" },
+        { value: "colorblind", text: "I am colorblind" },
+        { value: "hearingimpaired", text: "I am hearing impaired" },
+        { value: "motionsickness", text: "I am sensitive to motion sickness" },
+        { value: "epilipsy", text: "I am sensitive to flashing lights" },
         {
           value: "tpcpc",
-          text: "Difficulty running graphically intensive games",
+          text: "I have difficulty running graphically intensive games",
         },
       ],
 

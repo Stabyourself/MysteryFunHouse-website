@@ -4,7 +4,7 @@
 
     <v-container>
       <v-slide-x-transition appear>
-        <h1>Mystery Fun<br />House</h1>
+        <h1>Mystery<br />Fun House</h1>
       </v-slide-x-transition>
 
       <div class="letter">
