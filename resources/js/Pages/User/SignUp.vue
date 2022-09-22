@@ -7,62 +7,60 @@
         <h1>Sign<br />Up</h1>
       </v-slide-x-transition>
 
-      <v-form ref="form" @click.prevent="submit">
+      <div v-if="!$page.props.auth.user">
+        <p>Login first, agent.</p>
+
+        <v-btn color="#5865F2" :href="route('login')">
+          <v-icon>
+            mdi-discord
+          </v-icon>
+          Discord Login
+        </v-btn>
+      </div>
+
+      <v-form ref="form" @click.prevent="submit" v-else>
         <v-row>
           <v-col cols="12" md="8">
-            <div v-if="!$page.props.auth.user">
-              <p>Login first, agent.</p>
-
-              <v-btn color="#5865F2" :href="route('login')">
-                <v-icon>
-                  mdi-discord
-                </v-icon>
-                Discord Login
-              </v-btn>
+            <div v-if="signedUp">
+              <p>
+                Welcome back agent. Did your data change? Let HQ know here.
+              </p>
             </div>
 
-            <div v-else>
-              <div v-if="signedUp">
-                <p>
-                  Welcome back agent. Did your data change? Let HQ know here.
-                </p>
-              </div>
+            <h2>Data</h2>
 
-              <h2>Data</h2>
+            <v-text-field
+              v-model="form.challonge_username"
+              :rules="challongeUsernameRules"
+              label="Challonge Username"
+            ></v-text-field>
 
-              <v-text-field
-                v-model="form.challonge_username"
-                :rules="challongeUsernameRules"
-                label="Challonge Username"
-              ></v-text-field>
+            <v-text-field
+              v-model="form.pronouns"
+              :rules="pronounRules"
+              label="Pronouns"
+            ></v-text-field>
 
-              <v-text-field
-                v-model="form.pronouns"
-                :rules="pronounRules"
-                label="Pronouns"
-              ></v-text-field>
+            <v-autocomplete
+              v-model="form.timezone"
+              :items="timezones"
+              :rules="timezoneRules"
+              label="Timezone"
+            ></v-autocomplete>
 
-              <v-autocomplete
-                v-model="form.timezone"
-                :items="timezones"
-                :rules="timezoneRules"
-                label="Timezone"
-              ></v-autocomplete>
+            <v-text-field
+              v-model="form.availability"
+              :rules="availibilityRules"
+              label="Availability"
+              hint="What times are you most likely available to play?"
+            ></v-text-field>
 
-              <v-text-field
-                v-model="form.availability"
-                :rules="availibilityRules"
-                label="Availability"
-                hint="What times are you most likely available to play?"
-              ></v-text-field>
-
-              <v-text-field
-                v-model="form.special_skill"
-                :rules="specialSkillRules"
-                label="Your special skill"
-                hint="A fun special skill for the player introduction!"
-              ></v-text-field>
-            </div>
+            <v-text-field
+              v-model="form.special_skill"
+              :rules="specialSkillRules"
+              label="Your special skill"
+              hint="A fun special skill for the player introduction!"
+            ></v-text-field>
           </v-col>
 
           <v-col cols="12" md="4">
