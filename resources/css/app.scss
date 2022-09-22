@@ -21,10 +21,10 @@ h1 {
   font-family: "Cormorant Light";
   font-weight: 300;
   font-size: 9rem;
-  display: inline-block;
   line-height: 1;
   margin-top: 4rem;
   margin-bottom: 4rem;
+  text-align: center;
 
   &::first-line {
     text-decoration: underline 2px $primary;
