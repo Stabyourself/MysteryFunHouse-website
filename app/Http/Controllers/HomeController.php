@@ -32,7 +32,17 @@ class HomeController extends Controller
         return Inertia::render('archive')
             ->withViewData([
                 "title" => "Archive",
-                "description" => "View previously released Classified Information",
+                "description" => "View previously released Classified Information.",
+                "image" => asset("/img/home.jpg"),
+            ]);
+    }
+
+    public function players()
+    {
+        return Inertia::render('players')
+            ->withViewData([
+                "title" => "Players",
+                "description" => "View the database of known agents.",
                 "image" => asset("/img/home.jpg"),
             ]);
     }

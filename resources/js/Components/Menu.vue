@@ -106,6 +106,11 @@ export default {
           route: "home",
         },
         {
+          title: "Players",
+          icon: "mdi-account-multiple",
+          route: "players",
+        },
+        {
           title: "Intel",
           icon: "mdi-information",
           route: "info",
