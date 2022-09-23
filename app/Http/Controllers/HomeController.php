@@ -46,4 +46,14 @@ class HomeController extends Controller
                 "image" => asset("/img/home.jpg"),
             ]);
     }
+
+    public function links()
+    {
+        return Inertia::render('links')
+            ->withViewData([
+                "title" => "Spy Gadgets",
+                "description" => "Get all the cool stuff like hookshot watches and lasers",
+                "image" => asset("/img/home.jpg"),
+            ]);
+    }
 }

@@ -16,10 +16,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// MAIN NAV
 Route::get('/', [HomeController::class, 'home'])->name("home");
 Route::get('/info', [HomeController::class, 'info'])->name("info");
 Route::get('/archive', [HomeController::class, 'archive'])->name("archive");
 Route::get('/players', [HomeController::class, 'players'])->name("players");
+Route::get('/links', [HomeController::class, 'links'])->name("links");
 
 // auth bs
 Route::get('tologin', [DiscordController::class, 'tologin'])
@@ -29,6 +31,6 @@ Route::get('login', [DiscordController::class, 'loginCallback'])
 Route::post('logout', [DiscordController::class, 'logout'])
   ->name('logout');
 
-
+// signups
 Route::get('/signup', [UserController::class, 'signupForm'])->name("signUpForm");
 Route::post('/signup', [UserController::class, 'signup'])->name("signUp");

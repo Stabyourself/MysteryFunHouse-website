@@ -2,11 +2,11 @@
   <div>
     <Head title="Intel" />
 
-    <v-container>
-      <v-slide-x-transition appear>
-        <h1>For your<br />eyes only</h1>
-      </v-slide-x-transition>
+    <v-slide-x-transition appear>
+      <h1>For your<br />eyes only</h1>
+    </v-slide-x-transition>
 
+    <v-container>
       <p>
         Your mystery, if you choose to accept it, is to participate in a series
         of matches, racing against a single opponent per round in short to
@@ -109,9 +109,7 @@
             <p>
               You'll have at least three days per round to play each match.
               Synchronize your spy watches to the
-              <a
-                href="https://Tell_Maurice_he_forgot_to_replace_this_link"
-                target="_blank"
+              <a href="https://speedrunslive.challonge.com/mt17" target="_blank"
                 >Challonge bracket</a
               >
               to plan your race schedule, and schedule your matches with your

@@ -5,7 +5,7 @@ import vuetify from "./vuetify"; // path to vuetify export
 
 import { createInertiaApp, Link } from "@inertiajs/inertia-vue";
 import { InertiaProgress } from "@inertiajs/progress";
-InertiaProgress.init({ color: "#00BEBE", showSpinner: true });
+InertiaProgress.init({ color: "#b1a460", showSpinner: true });
 
 Vue.component("inertia-link", Link);
 Vue.component("router-link", {

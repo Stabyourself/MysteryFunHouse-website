@@ -2,11 +2,11 @@
   <div>
     <Head title="Home" />
 
-    <v-container>
-      <v-slide-x-transition appear>
-        <h1>Mystery<br />Fun House</h1>
-      </v-slide-x-transition>
+    <v-slide-x-transition appear>
+      <h1>Mystery<br />Fun House</h1>
+    </v-slide-x-transition>
 
+    <v-container>
       <div class="letter">
         <div class="letter-head">
           From: M-FH<br />

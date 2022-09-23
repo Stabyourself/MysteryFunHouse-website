@@ -2,11 +2,11 @@
   <div>
     <Head title="Sign Up" />
 
-    <v-container>
-      <v-slide-x-transition appear>
-        <h1>Sign<br />Up</h1>
-      </v-slide-x-transition>
+    <v-slide-x-transition appear>
+      <h1>Sign<br />Up</h1>
+    </v-slide-x-transition>
 
+    <v-container>
       <div v-if="!$page.props.auth.user">
         <p>Login first, agent.</p>
 
