@@ -10,8 +10,13 @@
 }
 @font-face {
   font-family: "Poppins";
-  src: url("/font/Poppins-Extra-Bold.woff2.woff2");
+  src: url("/font/Poppins-Extra-Bold.woff2");
   font-weight: 800;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("/font/Poppins-Extra-Light.woff2");
+  font-weight: 200;
 }
 .container {
   max-width: 1200px !important;
@@ -97,4 +102,31 @@ h1.slide-x-transition-leave-active {
 
 .no-message .v-messages {
   display: none;
+}
+
+.navigation {
+  color: white;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: "Poppins", Arial, sans-serif;
+  font-weight: 200;
+}
+.navigation .navigation-link {
+  padding: 0.2em 1em;
+  -webkit-text-decoration: underline 1px;
+          text-decoration: underline 1px;
+  text-underline-offset: 10px;
+  -webkit-text-decoration-color: rgba(0, 0, 0, 0);
+          text-decoration-color: rgba(0, 0, 0, 0);
+  transition: -webkit-text-decoration-color 0.3s;
+  transition: text-decoration-color 0.3s;
+  transition: text-decoration-color 0.3s, -webkit-text-decoration-color 0.3s;
+}
+.navigation .navigation-link.active {
+  color: #b1a460;
+}
+.navigation .navigation-link:hover {
+  -webkit-text-decoration-color: #b1a460;
+          text-decoration-color: #b1a460;
+  cursor: pointer;
 }

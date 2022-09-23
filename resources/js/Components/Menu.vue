@@ -1,6 +1,5 @@
 <template>
-  <v-navigation-drawer permanent app expand-on-hover v-model="drawer">
-    <v-sheet color="primary">
+  <!-- <v-sheet color="primary">
       <v-list>
         <v-list-item class="px-2" v-if="$page.props.auth.user">
           <v-list-item-avatar>
@@ -36,33 +35,20 @@
           </v-list-item-title>
         </v-list-item>
       </v-list>
-    </v-sheet>
+    </v-sheet> -->
 
-    <v-list>
-      <router-link
-        v-for="item in items"
-        :key="item.title"
-        :href="route(item.route)"
-        as="div"
-      >
-        <v-list-item link>
-          <v-list-item-icon>
-            <v-icon>{{ item.icon }}</v-icon>
-          </v-list-item-icon>
-
-          <v-list-item-content>
-            <v-list-item-title>{{ item.title }}</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-      </router-link>
-    </v-list>
-
-    <template v-slot:append>
-      <v-sheet color="rgba(0, 0, 0, 0.5)" class="pa-1 text-center grey--text">
-        <span class="by">Made by Maurice</span>
-      </v-sheet>
-    </template>
-  </v-navigation-drawer>
+  <div class="d-flex navigation justify-center flex-wrap">
+    <router-link
+      v-for="item in items"
+      :key="item.title"
+      :href="route(item.route)"
+      as="div"
+      class="navigation-link"
+      :class="{ active: route().current(item.route) }"
+    >
+      {{ item.title }}
+    </router-link>
+  </div>
 </template>
 
 <style scoped lang="scss">
@@ -89,7 +75,16 @@
 </style>
 
 <script>
+import { Inertia } from "@inertiajs/inertia";
+
 export default {
+  mounted() {
+    Inertia.on("navigate", (event) => {
+      // I don't know why I need to do this...
+      this.$forceUpdate();
+    });
+  },
+
   methods: {
     logout() {
       this.$inertia.post(this.route("logout"));

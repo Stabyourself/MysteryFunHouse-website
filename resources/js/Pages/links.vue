@@ -27,6 +27,9 @@
         Game submission form
       </a>
       <br />
+      <a href="https://rentry.co/MTSubGuidelines" target="_blank">
+        Submission guidelines </a
+      ><br />
       <a href="#" target="_blank">
         Emulator pack
       </a>
