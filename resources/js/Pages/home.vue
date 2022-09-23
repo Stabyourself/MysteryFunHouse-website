@@ -8,6 +8,11 @@
       </v-slide-x-transition>
 
       <div class="letter">
+        <div class="letter-head">
+          From: M-FH<br />
+          To: Double Oh Seventeen
+        </div>
+
         <p>Hello Agent,</p>
 
         <p>
@@ -28,23 +33,32 @@
 
         <p>Good luck, Agent!</p>
 
-        <p>PS: This message will self-destruct in 60 seconds.</p>
+        <img class="letter-stamp" src="/img/ghost_Stamp.png" alt="M-FH" />
+
+        <p class="letter-muted">
+          PS: This message will self-destruct in 60 seconds.
+        </p>
       </div>
 
-      <div class="mx-auto sign-up-link" style="max-width: 500px">
-        <v-btn color="primary" :to="route('signUpForm')" x-large block>
-          <div v-if="signedUp">
-            Edit signup data
-          </div>
-          <div v-else>
-            Sign up now!
-          </div>
-        </v-btn>
-      </div>
+      <div class="dangerous-text">MT0017 – your most dangerous mission yet</div>
 
-      <router-link :href="route('info')" class="more-info-link">
-        Get more intel
-      </router-link>
+      <v-row>
+        <v-col cols="12" md="6">
+          <v-btn color="primary" :to="route('signUpForm')" x-large block>
+            <div v-if="signedUp">
+              Edit signup data
+            </div>
+            <div v-else>
+              Sign up now!
+            </div>
+          </v-btn>
+        </v-col>
+        <v-col cols="12" md="6">
+          <v-btn color="grey" :to="route('info')" x-large block>
+            Mission briefing
+          </v-btn>
+        </v-col>
+      </v-row>
     </v-container>
   </div>
 </template>

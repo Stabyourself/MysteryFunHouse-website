@@ -1,10 +1,17 @@
 @font-face {
   font-family: "Cormorant Light";
   src: url("/font/Cormorant-Light.woff2");
+  font-weight: 300;
 }
 @font-face {
   font-family: "JMH Typewriter";
   src: url("/font/JMH-Typewriter.woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("/font/Poppins-Extra-Bold.woff2.woff2");
+  font-weight: 800;
 }
 .container {
   max-width: 1200px !important;
@@ -12,7 +19,7 @@
 
 h1 {
   text-transform: uppercase;
-  font-family: "Cormorant Light";
+  font-family: "Cormorant Light", Serif;
   font-weight: 300;
   font-size: 9rem;
   line-height: 1;
@@ -47,6 +54,19 @@ h1.slide-x-transition-leave-active {
   background: url("/img/paper.jpg");
   background-size: cover;
 }
+.letter .letter-head {
+  text-align: right;
+  margin-bottom: 1em;
+}
+.letter .letter-stamp {
+  max-width: 30%;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 1em;
+}
+.letter .letter-muted {
+  color: rgba(0, 0, 0, 0.5);
+}
 
 .more-info-link {
   display: block;
@@ -54,8 +74,17 @@ h1.slide-x-transition-leave-active {
   text-align: center;
 }
 
-.sign-up-link {
-  margin-top: 5rem;
+.dangerous-text {
+  font-family: Arial, sans-serif;
+  font-weight: 800;
+  font-size: 2.5rem;
+  text-align: center;
+  display: block;
+  text-transform: uppercase;
+  color: #b1a460;
+  margin-top: 4rem;
+  font-family: "Poppins", Arial, sans-serif;
+  opacity: 0.6;
 }
 
 .no-message .v-messages {

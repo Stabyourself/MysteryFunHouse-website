@@ -7,3 +7,5 @@ Paper texture https://unsplash.com/@anniespratt
 Cormorant https://github.com/CatharsisFonts/Cormorant
 
 JMH Typewriter https://www.1001fonts.com/users/joorgemoron/
+
+Poppins https://www.1001fonts.com/poppins-font.html

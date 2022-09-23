@@ -17,7 +17,7 @@
         Agents are likely to encounter games they've never seen or played
         before, or have never even heard of. The goals will be for games that
         are not revealed until moments before the race actually begins. But an
-        agent of your calibur is ready for surprises in exotic locales, are you
+        agent of your caliber is ready for surprises in exotic locales, are you
         not?
       </p>
 
@@ -36,6 +36,10 @@
         even if you have your own emulators, just to minimize any surprises in
         the field.
       </p>
+
+      <v-btn class="mb-4" color="primary" :href="route('home')">
+        Download Spy Gadgets
+      </v-btn>
 
       <p>
         Sometimes, however, you'll need to work with equipment procured in the
@@ -86,6 +90,7 @@
         missions start.
       </p>
 
+      <h2>In the field</h2>
       <v-expansion-panels accordion>
         <v-expansion-panel>
           <v-expansion-panel-header>
@@ -103,12 +108,17 @@
             </p>
             <p>
               You'll have at least three days per round to play each match.
-              Synchronize your spy watches to the Challonge bracket to plan your
-              race schedule, and schedule your matches with your opponent as
-              soon as possible. If the opposing agent has gone AWOL, contact a
-              moderator at your earliest opportunity to arrange for assistance,
-              which may include an asynchronous race held in the strictest of
-              secrecy.
+              Synchronize your spy watches to the
+              <a
+                href="https://Tell_Maurice_he_forgot_to_replace_this_link"
+                target="_blank"
+                >Challonge bracket</a
+              >
+              to plan your race schedule, and schedule your matches with your
+              opponent as soon as possible. If the opposing agent has gone AWOL,
+              contact a moderator at your earliest opportunity to arrange for
+              assistance, which may include an asynchronous race held in the
+              strictest of secrecy.
             </p>
             <p>
               You are welcome to keep arranging matches against enemy agents
@@ -168,7 +178,7 @@
               In the event of a bug, crash, error, or any other unexpected
               change outside of mission parameters, please notify your Moderator
               Field Agent at the earliest opportunity, then attempt to continue
-              to mission if possible. The Moderator will provide assistance if
+              the mission if possible. The Moderator will provide assistance if
               possible, which may include adjusting time to compensate for the
               glitch, redrawing the race, or possibly no change at all.
             </p>
@@ -237,12 +247,12 @@
           </v-expansion-panel-header>
           <v-expansion-panel-content>
             <p>
-              The final eight agents remain on the active duty roster will be
+              The final eight agents remaining on the active duty roster will be
               invited to participate in the Top 8 broadcast. This will be a full
               weekend event, rebroadcast on the GamesDoneQuick twitch channel to
               a sizable audience. Agents will be expected to be available for
               the full duration; if you anticipate ranking in the Top 8 but will
-              unable to participate, please communicate with one of our
+              be unable to participate, please communicate with one of our
               Moderator Field Agents to arrange a solution.
             </p>
             <p>
