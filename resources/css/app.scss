@@ -122,14 +122,14 @@ h1.slide-x-transition-leave-active {
   .navigation-link {
     padding: 0.2em 1em;
 
-    &.active {
-      color: $primary;
-    }
-
     text-decoration: underline 1px;
     text-underline-offset: 10px;
     text-decoration-color: rgba(0, 0, 0, 0);
-    transition: text-decoration-color 0.3s;
+    transition: text-decoration-color 0.3s, color 0.2s;
+
+    &.active {
+      color: $primary;
+    }
 
     &:hover {
       text-decoration-color: $primary;

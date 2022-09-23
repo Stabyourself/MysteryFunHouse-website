@@ -118,9 +118,9 @@ h1.slide-x-transition-leave-active {
   text-underline-offset: 10px;
   -webkit-text-decoration-color: rgba(0, 0, 0, 0);
           text-decoration-color: rgba(0, 0, 0, 0);
-  transition: -webkit-text-decoration-color 0.3s;
-  transition: text-decoration-color 0.3s;
-  transition: text-decoration-color 0.3s, -webkit-text-decoration-color 0.3s;
+  transition: color 0.2s, -webkit-text-decoration-color 0.3s;
+  transition: text-decoration-color 0.3s, color 0.2s;
+  transition: text-decoration-color 0.3s, color 0.2s, -webkit-text-decoration-color 0.3s;
 }
 .navigation .navigation-link.active {
   color: #b1a460;
