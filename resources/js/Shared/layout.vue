@@ -4,6 +4,8 @@
 
     <v-main>
       <slot></slot>
+
+      <div class="page-spacer"></div>
     </v-main>
 
     <v-snackbar

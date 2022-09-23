@@ -59,7 +59,7 @@
               v-model="form.special_skill"
               :rules="specialSkillRules"
               label="Your special skill"
-              hint="A fun special skill for the player introduction!"
+              hint="A fun special skill for your agent badge"
             ></v-text-field>
           </v-col>
 
@@ -79,7 +79,7 @@
         ></v-checkbox>
 
         <v-btn class="mt-2" color="primary" @click="submit">
-          {{ signedUp ? "Update intel" : "Join Now" }}
+          {{ signedUp ? "Update intel" : "Sign up" }}
         </v-btn>
       </v-form>
     </v-container>

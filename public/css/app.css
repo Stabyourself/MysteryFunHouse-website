@@ -17,6 +17,10 @@
   max-width: 1200px !important;
 }
 
+.page-spacer {
+  height: 200px;
+}
+
 h1 {
   text-transform: uppercase;
   font-family: "Cormorant Light", Serif;
