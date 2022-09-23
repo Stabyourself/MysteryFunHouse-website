@@ -33,7 +33,11 @@
 
         <p>Good luck, Agent!</p>
 
-        <img class="letter-stamp" src="/img/ghost_Stamp.png" alt="M-FH" />
+        <img
+          class="letter-stamp"
+          src="/img/ghost_stamp.png"
+          alt="The seal of M-FH"
+        />
 
         <p class="letter-muted">
           PS: This message will self-destruct in 60 seconds.
