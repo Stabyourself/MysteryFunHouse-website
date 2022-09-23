@@ -63,6 +63,10 @@ h1.slide-x-transition-leave-active {
   margin: 0 auto;
   display: block;
   margin-bottom: 1em;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .letter .letter-muted {
   color: rgba(0, 0, 0, 0.5);
