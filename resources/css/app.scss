@@ -1,6 +1,9 @@
 @import "~vuetify/src/styles/settings/_variables";
 
 $primary: #b1a460;
+$aos-distance: 15px;
+
+@import "~aos/src/sass/aos";
 
 @font-face {
   font-family: "Cormorant Light";
@@ -58,17 +61,11 @@ h2 {
   color: $primary !important;
 }
 
-h1.slide-x-transition-enter-active,
-h1.slide-x-transition-leave-active {
-  transition-duration: 1s !important;
-}
-
 .letter {
   max-width: 600px;
   margin: 0 auto;
   font-family: "JMH Typewriter", monospace;
   color: black;
-  transform: rotate(-2deg);
   padding: 4rem;
   background-color: white;
   background: url("/img/paper.jpg");
@@ -89,6 +86,17 @@ h1.slide-x-transition-leave-active {
 
   .letter-muted {
     color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+[data-aos="letter-animation"] {
+  transform: rotate(-10deg) translateX(100px);
+  transform-origin: center center;
+  opacity: 0;
+  transition-property: transform, opacity;
+  &.aos-animate {
+    transform: rotate(-2deg) translateX(0);
+    opacity: 1;
   }
 }
 

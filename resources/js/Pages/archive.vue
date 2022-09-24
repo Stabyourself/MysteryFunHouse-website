@@ -2,9 +2,7 @@
   <div>
     <Head title="Intel" />
 
-    <v-slide-x-transition appear>
-      <h1>Previous<br />Tournaments</h1>
-    </v-slide-x-transition>
+    <h1 data-aos="fade-right">Previous<br />Tournaments</h1>
 
     <v-container>
       <div
@@ -12,6 +10,7 @@
         :key="tournament.name"
         class="tournament"
         :class="{ alt: i % 2 }"
+        :data-aos="i % 2 ? 'fade-left' : 'fade-right'"
       >
         <div class="d-flex tournament-header justify-space-between">
           <div class="tournament-title">

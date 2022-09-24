@@ -2,9 +2,7 @@
   <div>
     <Head title="Spy Gadgets" />
 
-    <v-slide-x-transition appear>
-      <h1>A pistol<br />with a silencer</h1>
-    </v-slide-x-transition>
+    <h1 data-aos="fade-right">A pistol<br />with a silencer</h1>
 
     <v-container>
       <p>

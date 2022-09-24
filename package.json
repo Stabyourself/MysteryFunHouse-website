@@ -32,6 +32,7 @@
     "@pqina/flip": "^1.7.7",
     "@pqina/tick": "^1.8.0",
     "@vue/composition-api": "^1.4.9",
+    "aos": "^2.3.4",
     "chart.js": "^3.7.1",
     "chartjs-adapter-moment": "^1.0.0",
     "chartjs-plugin-zoom": "^1.2.1",

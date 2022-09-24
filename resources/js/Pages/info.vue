@@ -2,9 +2,7 @@
   <div>
     <Head title="Intel" />
 
-    <v-slide-x-transition appear>
-      <h1>For your<br />eyes only</h1>
-    </v-slide-x-transition>
+    <h1 data-aos="fade-right">For your<br />eyes only</h1>
 
     <v-container>
       <p>

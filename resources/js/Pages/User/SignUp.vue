@@ -2,9 +2,7 @@
   <div>
     <Head title="Sign Up" />
 
-    <v-slide-x-transition appear>
-      <h1>Sign<br />Up</h1>
-    </v-slide-x-transition>
+    <h1 data-aos="fade-right">Sign<br />Up</h1>
 
     <v-container>
       <div v-if="!$page.props.auth.user">

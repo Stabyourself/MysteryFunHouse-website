@@ -3,6 +3,14 @@ window._ = require("lodash");
 import Vue from "vue";
 import vuetify from "./vuetify"; // path to vuetify export
 
+import AOS from "aos";
+
+AOS.init({
+  offset: 1,
+  duration: 800,
+  once: true,
+});
+
 import { createInertiaApp, Link } from "@inertiajs/inertia-vue";
 import { InertiaProgress } from "@inertiajs/progress";
 InertiaProgress.init({ color: "#b1a460", showSpinner: true });

@@ -2,9 +2,7 @@
   <div>
     <Head title="Secret Agents" />
 
-    <v-slide-x-transition appear>
-      <h1>Secret<br />Agents</h1>
-    </v-slide-x-transition>
+    <h1 data-aos="fade-right">Secret<br />Agents</h1>
 
     <v-container>
       <p>Content</p>

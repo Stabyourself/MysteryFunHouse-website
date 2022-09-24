@@ -2,12 +2,10 @@
   <div>
     <Head title="Home" />
 
-    <v-slide-x-transition appear>
-      <h1>Mystery<br />Fun House</h1>
-    </v-slide-x-transition>
+    <h1 data-aos="fade-right">Mystery<br />Fun House</h1>
 
     <v-container>
-      <div class="letter">
+      <div class="letter" data-aos="letter-animation" data-aos-delay="600">
         <div class="letter-head">
           From: M-FH<br />
           To: Double Oh Seventeen
@@ -44,11 +42,21 @@
         </p>
       </div>
 
-      <div class="dangerous-text">MT0017 – your most dangerous mission yet</div>
+      <div class="dangerous-text" data-aos="fade-down">
+        MT0017 – your most dangerous mission yet
+      </div>
 
       <v-row>
         <v-col cols="12" md="6">
-          <v-btn color="primary" :to="route('signUpForm')" x-large block>
+          <v-btn
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-offset="-50"
+            color="primary"
+            :to="route('signUpForm')"
+            x-large
+            block
+          >
             <div v-if="signedUp">
               Edit signup data
             </div>
@@ -58,7 +66,15 @@
           </v-btn>
         </v-col>
         <v-col cols="12" md="6">
-          <v-btn color="grey" :to="route('info')" x-large block>
+          <v-btn
+            data-aos="fade-up"
+            data-aos-delay="400"
+            data-aos-offset="-50"
+            color="grey"
+            :to="route('info')"
+            x-large
+            block
+          >
             Mission briefing
           </v-btn>
         </v-col>
