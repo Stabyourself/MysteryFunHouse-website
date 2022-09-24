@@ -42,7 +42,10 @@ h1::first-line {
   text-underline-offset: 26px;
 }
 
-h2,
+h2 {
+  color: #b1a460;
+}
+
 .v-expansion-panel-header__icon .v-icon {
   color: #b1a460 !important;
 }
@@ -88,7 +91,7 @@ h1.slide-x-transition-leave-active {
 }
 
 .dangerous-text {
-  font-family: Arial, sans-serif;
+  font-family: "Poppins", Arial, sans-serif;
   font-weight: 800;
   font-size: 2.5rem;
   text-align: center;
@@ -96,7 +99,6 @@ h1.slide-x-transition-leave-active {
   text-transform: uppercase;
   color: #b1a460;
   margin-top: 4rem;
-  font-family: "Poppins", Arial, sans-serif;
   opacity: 0.6;
 }
 
@@ -129,4 +131,71 @@ h1.slide-x-transition-leave-active {
   -webkit-text-decoration-color: #b1a460;
           text-decoration-color: #b1a460;
   cursor: pointer;
+}
+
+.tournament {
+  width: calc(100% - 50px);
+  padding: 1rem 2rem;
+  color: white;
+  background: #b1a460;
+  margin-bottom: 1rem;
+}
+.tournament.alt {
+  margin-left: auto;
+  color: #b1a460;
+  background: white;
+}
+.tournament.alt .tournament-header {
+  color: #b1a460;
+}
+.tournament.alt .tournament-button {
+  color: #b1a460;
+}
+.tournament.alt .tournament-button:hover {
+  background: rgba(177, 164, 96, 0.2);
+}
+.tournament.alt i {
+  color: #b1a460;
+}
+.tournament .tournament-header {
+  color: white;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: "Poppins", Arial, sans-serif;
+  font-weight: 200;
+}
+.tournament .tournament-header .tournament-title {
+  margin-right: 1rem;
+}
+.tournament .tournament-header .tournament-date {
+  opacity: 0.7;
+}
+.tournament .tournament-winners {
+  font-family: "Poppins", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+.tournament .tournament-winners .tournament-winners-placement {
+  font-weight: 300;
+}
+.tournament .tournament-winners ul {
+  padding: 0;
+}
+.tournament .tournament-winners li {
+  list-style: none;
+}
+.tournament .tournament-button {
+  width: 100px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+.tournament .tournament-button .tournament-button-icon i {
+  font-size: 5rem;
+}
+.tournament .tournament-button:hover {
+  background: rgba(255, 255, 255, 0.2);
 }

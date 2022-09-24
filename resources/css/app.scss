@@ -50,7 +50,10 @@ h1 {
   }
 }
 
-h2,
+h2 {
+  color: $primary;
+}
+
 .v-expansion-panel-header__icon .v-icon {
   color: $primary !important;
 }
@@ -96,7 +99,7 @@ h1.slide-x-transition-leave-active {
 }
 
 .dangerous-text {
-  font-family: Arial, sans-serif;
+  font-family: "Poppins", Arial, sans-serif;
   font-weight: 800;
   font-size: 2.5rem;
   text-align: center;
@@ -104,7 +107,6 @@ h1.slide-x-transition-leave-active {
   text-transform: uppercase;
   color: $primary;
   margin-top: 4rem;
-  font-family: "Poppins", Arial, sans-serif;
   opacity: 0.6;
 }
 
@@ -134,6 +136,88 @@ h1.slide-x-transition-leave-active {
     &:hover {
       text-decoration-color: $primary;
       cursor: pointer;
+    }
+  }
+}
+
+.tournament {
+  width: calc(100% - 50px);
+
+  &.alt {
+    margin-left: auto;
+    color: $primary;
+    background: white;
+
+    .tournament-header {
+      color: $primary;
+    }
+
+    .tournament-button {
+      &:hover {
+        background: rgba($primary, 0.2);
+      }
+      color: $primary;
+    }
+
+    i {
+      color: $primary;
+    }
+  }
+
+  padding: 1rem 2rem;
+  color: white;
+  background: $primary;
+  margin-bottom: 1rem;
+
+  .tournament-header {
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: "Poppins", Arial, sans-serif;
+    font-weight: 200;
+
+    .tournament-title {
+      margin-right: 1rem;
+    }
+
+    .tournament-date {
+      opacity: 0.7;
+    }
+  }
+
+  .tournament-winners {
+    font-family: "Poppins", Arial, sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+
+    .tournament-winners-placement {
+      font-weight: 300;
+    }
+
+    ul {
+      padding: 0;
+    }
+
+    li {
+      list-style: none;
+    }
+  }
+
+  .tournament-button {
+    width: 100px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background 0.2s;
+
+    .tournament-button-icon i {
+      font-size: 5rem;
+    }
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.2);
     }
   }
 }

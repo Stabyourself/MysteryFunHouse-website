@@ -7,6 +7,10 @@ import { createInertiaApp, Link } from "@inertiajs/inertia-vue";
 import { InertiaProgress } from "@inertiajs/progress";
 InertiaProgress.init({ color: "#b1a460", showSpinner: true });
 
+Vue.filter("date", function(date) {
+  return date.toLocaleDateString();
+});
+
 Vue.component("inertia-link", Link);
 Vue.component("router-link", {
   functional: true,
