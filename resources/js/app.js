@@ -3,6 +3,9 @@ window._ = require("lodash");
 import Vue from "vue";
 import vuetify from "./vuetify"; // path to vuetify export
 
+import VueTilt from "vue-tilt.js";
+Vue.use(VueTilt);
+
 import AOS from "aos";
 
 AOS.init({

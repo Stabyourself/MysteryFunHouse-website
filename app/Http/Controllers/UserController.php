@@ -88,7 +88,26 @@ class UserController extends Controller
         return redirect()->route("home");
     }
 
-    public function show(User $user)
+    public function index()
     {
+        $users = User::with("events")->get(["id", "username", "avatar"]);
+
+
+        $users = $users->filter(function ($user) {
+            return $user->events->count() > 0; // this won't work in the future
+        });
+
+        $users = $users->toArray();
+
+        foreach ($users as &$user) {
+            $user["flavor"] = $user["events"][0]["pivot"]["flavor"];
+            unset($user["events"]);
+        }
+
+        return Inertia::render('players', compact("users"))
+            ->withViewData([
+                "title" => "Agents",
+                "description" => "View the database of known agents.",
+            ]);
     }
 }

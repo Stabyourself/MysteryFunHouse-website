@@ -33,15 +33,6 @@ class HomeController extends Controller
             ]);
     }
 
-    public function players()
-    {
-        return Inertia::render('players')
-            ->withViewData([
-                "title" => "Players",
-                "description" => "View the database of known agents.",
-            ]);
-    }
-
     public function links()
     {
         return Inertia::render('links')

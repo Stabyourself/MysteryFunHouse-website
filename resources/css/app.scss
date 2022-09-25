@@ -240,3 +240,9 @@ h2 {
     }
   }
 }
+
+.player-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

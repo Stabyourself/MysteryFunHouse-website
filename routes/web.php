@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'home'])->name("home");
 Route::get('/info', [HomeController::class, 'info'])->name("info");
 Route::get('/archive', [HomeController::class, 'archive'])->name("archive");
-Route::get('/players', [HomeController::class, 'players'])->name("players");
+Route::get('/players', [UserController::class, 'index'])->name("players");
 Route::get('/links', [HomeController::class, 'links'])->name("links");
 
 // auth bs

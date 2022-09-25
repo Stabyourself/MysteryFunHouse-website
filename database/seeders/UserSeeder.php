@@ -42,6 +42,13 @@ class UserSeeder extends Seeder
                 $client->request('GET', $avatarUrl, [
                     'sink' => $path,
                 ]);
+
+                $user->avatar = $user->id;
+                $user->save();
+
+                $user->events()->attach(1, [
+                    "flavor" => "I'm a flavor text",
+                ]);
             });
     }
 }

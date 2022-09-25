@@ -35,8 +35,8 @@ class DatabaseSeeder extends Seeder
             ]);
         }
 
-        // if (App::environment() == "local") {
-        //     $this->call(UserSeeder::class);
-        // }
+        if (App::environment() == "local") {
+            $this->call(UserSeeder::class);
+        }
     }
 }

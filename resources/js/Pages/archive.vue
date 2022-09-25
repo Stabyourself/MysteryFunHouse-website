@@ -262,7 +262,7 @@ export default {
         },
         {
           name: "Mystery Tournament 16",
-          date_start: new Date(2021, 10, 12),
+          date_start: new Date(2021, 12, 10),
           date_end: new Date(2022, 3, 13),
           winners: ["Adam5396", "Someone325", "OkamiofGames"],
           vod: "https://www.youtube.com/watch?v=h2HZ_4C4OCo",

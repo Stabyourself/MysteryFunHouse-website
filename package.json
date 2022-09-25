@@ -37,7 +37,9 @@
     "chartjs-adapter-moment": "^1.0.0",
     "chartjs-plugin-zoom": "^1.2.1",
     "moment": "^2.29.1",
+    "pdf417-generator": "^1.0.4",
     "vue": "^2.6.14",
+    "vue-tilt.js": "^1.1.1",
     "vuedraggable": "^2.24.3",
     "vuetify": "^2.5.9",
     "vuetifyjs-mix-extension": "^0.0.20"

@@ -36,7 +36,12 @@ class UserFactory extends Factory
             'locale' => $this->faker->locale,
             'mfa_enabled' => $this->faker->boolean,
             'refresh_token' => $this->faker->uuid,
+
             'slug' => Str::slug($username . "-" . $discriminator),
+            'challonge_username' => "somenick",
+            'pronouns' => "he/him",
+            'timezone' => "America/New_York",
+            'availability' => "anytime",
         ];
     }
 }

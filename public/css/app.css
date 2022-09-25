@@ -981,3 +981,9 @@ h2 {
 .tournament .tournament-button:hover {
   background: rgba(255, 255, 255, 0.2);
 }
+
+.player-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
