@@ -8,7 +8,7 @@
         <meta property="og:site_name" content="Mystery Fun House" />
         <meta property="og:title" content="{{ $title ?? 'Mystery Fun House' }}" />
         <meta property="og:description" content="{{ $description ?? 'Mystery Fun House is a blind racing community, playing games against each other that we\'ve never played before! Join us to see how well you do when it comes to sightreading challenging and weird games!' }}" />
-        <meta property="og:image" content="{{ $image ?? asset('/img/home.jpg') }}" />
+        <meta property="og:image" content="{{ $image ?? asset('/img/ghost.gif') }}" />
 
         <link rel="icon" type="image/png" href="/img/favicon.png">
 
