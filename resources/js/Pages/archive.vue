@@ -35,7 +35,7 @@
               {{ tournament.date_start | date }}
             </div>
 
-            <div class="tournament-buttons d-flex">
+            <div class="tournament-buttons d-flex flex-wrap">
               <a
                 v-if="tournament.vod"
                 :href="tournament.vod"
