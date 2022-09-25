@@ -81,7 +81,7 @@ class DiscordController extends Controller
       }
 
 
-      $path = Storage::path('public/avatars/' . $userData->id);
+      $path = Storage::path('public/avatars/' . $userData->avatar);
       try {
         $client->request('GET', $avatarUrl, [
           'sink' => $path,
