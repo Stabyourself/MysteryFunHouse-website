@@ -809,6 +809,11 @@ h1::first-line {
   text-underline-offset: 26px;
 }
 
+@media (max-width: 768px) {
+  h1 {
+    font-size: 6rem;
+  }
+}
 h2 {
   color: #b1a460;
 }
@@ -920,7 +925,8 @@ h2 {
   color: #b1a460;
   background: white;
 }
-.tournament.alt .tournament-header {
+.tournament.alt .tournament-header,
+.tournament.alt .tournament-date {
   color: #b1a460;
 }
 .tournament.alt .tournament-button {
@@ -932,18 +938,16 @@ h2 {
 .tournament.alt i {
   color: #b1a460;
 }
-.tournament .tournament-header {
+.tournament .tournament-header,
+.tournament .tournament-date {
   color: white;
   font-size: 2rem;
   text-transform: uppercase;
   font-family: "Poppins", Arial, sans-serif;
   font-weight: 200;
 }
-.tournament .tournament-header .tournament-title {
-  margin-right: 1rem;
-}
-.tournament .tournament-header .tournament-date {
-  opacity: 0.7;
+.tournament .tournament-date {
+  text-align: right;
 }
 .tournament .tournament-winners {
   font-family: "Poppins", Arial, sans-serif;

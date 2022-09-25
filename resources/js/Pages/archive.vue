@@ -12,66 +12,74 @@
         :class="{ alt: i % 2 }"
         :data-aos="i % 2 ? 'fade-left' : 'fade-right'"
       >
-        <div class="d-flex tournament-header justify-space-between">
-          <div class="tournament-title">
-            {{ tournament.name }}
+        <div class="d-flex justify-space-between flex-wrap">
+          <div class="tournament-left">
+            <div class="tournament-header">
+              {{ tournament.name }}
+            </div>
+
+            <div class="tournament-winners">
+              <ul>
+                <li v-for="(winner, i) in tournament.winners" :key="winner">
+                  <span class="tournament-winners-placement">
+                    {{ ordinalNumber(i + 1) }}
+                  </span>
+                  {{ winner }}
+                </li>
+              </ul>
+            </div>
           </div>
 
-          <div class="tournament-date">
-            {{ tournament.date_start | date }}
+          <div class="tournament-right">
+            <div class="tournament-date">
+              {{ tournament.date_start | date }}
+            </div>
+
+            <div class="tournament-buttons d-flex">
+              <a
+                v-if="tournament.vod"
+                :href="tournament.vod"
+                target="_blank"
+                class="tournament-button"
+              >
+                <div class="tournament-button-icon">
+                  <v-icon>mdi-youtube</v-icon>
+                </div>
+
+                <div class="tournament-button-text">
+                  VOD
+                </div>
+              </a>
+
+              <a
+                :href="tournament.bracket"
+                target="_blank"
+                class="tournament-button"
+              >
+                <div class="tournament-button-icon">
+                  <v-icon>mdi-tournament</v-icon>
+                </div>
+
+                <div class="tournament-button-text">
+                  Bracket
+                </div>
+              </a>
+
+              <a
+                :href="tournament.games"
+                target="_blank"
+                class="tournament-button"
+              >
+                <div class="tournament-button-icon">
+                  <v-icon>mdi-controller-classic</v-icon>
+                </div>
+
+                <div class="tournament-button-text">
+                  Games
+                </div>
+              </a>
+            </div>
           </div>
-        </div>
-
-        <div class="d-flex">
-          <div class="tournament-winners flex-grow-1">
-            <ul>
-              <li v-for="(winner, i) in tournament.winners" :key="winner">
-                <span class="tournament-winners-placement">
-                  {{ ordinalNumber(i + 1) }}
-                </span>
-                {{ winner }}
-              </li>
-            </ul>
-          </div>
-
-          <a
-            v-if="tournament.vod"
-            :href="tournament.vod"
-            target="_blank"
-            class="tournament-button"
-          >
-            <div class="tournament-button-icon">
-              <v-icon>mdi-youtube</v-icon>
-            </div>
-
-            <div class="tournament-button-text">
-              VOD
-            </div>
-          </a>
-
-          <a
-            :href="tournament.bracket"
-            target="_blank"
-            class="tournament-button"
-          >
-            <div class="tournament-button-icon">
-              <v-icon>mdi-tournament</v-icon>
-            </div>
-
-            <div class="tournament-button-text">
-              Bracket
-            </div>
-          </a>
-
-          <a :href="tournament.games" target="_blank" class="tournament-button">
-            <div class="tournament-button-icon">
-              <v-icon>mdi-controller-classic</v-icon>
-            </div>
-
-            <div class="tournament-button-text">
-              Games
-            </div>
-          </a>
         </div>
       </div>
     </v-container>
