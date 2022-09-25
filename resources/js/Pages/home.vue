@@ -18,7 +18,7 @@
         </p>
 
         <p>
-          Our latest intel shows that the nefarious Haff E. Troopa is up to no
+          Our latest intel shows that the nefarious Heff E. Trooper is up to no
           good again. He has shuffled all the games in this event around,
           requiring you to play games you have never seen before.
         </p>

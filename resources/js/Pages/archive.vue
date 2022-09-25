@@ -2,7 +2,7 @@
   <div>
     <Head title="Archive" />
 
-    <h1 data-aos="fade-right">Previous<br />Tournaments</h1>
+    <h1 data-aos="fade-right">Hall<br />of Fame</h1>
 
     <v-container>
       <div

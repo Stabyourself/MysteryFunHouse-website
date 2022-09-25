@@ -96,7 +96,7 @@
           </v-expansion-panel-header>
           <v-expansion-panel-content>
             <p>
-              After registration closes, you'll learn which of Haff E. Troopa's
+              After registration closes, you'll learn which of Heff E. Trooper's
               agents you'll be up against. We recommend contacting those agents
               as soon as possible to arrange a time to battle. One that is
               convenient for both agents, naturally. Please plan for each match
@@ -261,7 +261,7 @@
               must win three times to win the tournament.
             </p>
             <p>
-              The final, victorious agent will have thwarted Heff E. Troopa and
+              The final, victorious agent will have thwarted Heff E. Trooper and
               earned the praise of their grateful countryfolk.
             </p>
           </v-expansion-panel-content>
