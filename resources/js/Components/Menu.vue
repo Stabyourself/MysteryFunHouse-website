@@ -111,7 +111,7 @@ export default {
           route: "info",
         },
         {
-          title: "Spy Gadgets",
+          title: "Gadgets",
           icon: "mdi-pistol",
           route: "links",
         },

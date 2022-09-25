@@ -236,13 +236,23 @@ export default {
         },
         {
           name: "Mystery Tournament 15",
-          date_start: new Date(2019, 8, 30),
-          date_end: new Date(2018, 10, 27),
+          date_start: new Date(2020, 10, 1),
+          date_end: new Date(2020, 12, 13),
           winners: ["AND4H", "Maurice", "Zecks"],
           vod: "https://www.youtube.com/watch?v=mwXR1JysvAM",
           games:
             "https://docs.google.com/spreadsheets/d/1SvpGOSbMZXtpl_IfdB0uQqv-iFkmNMitRTSsotrAM2o/",
           bracket: "http://speedrunslive.challonge.com/mystery15",
+        },
+        {
+          name: "Mystery Tournament 16",
+          date_start: new Date(2021, 10, 12),
+          date_end: new Date(2022, 3, 13),
+          winners: ["AND4H", "Maurice", "Zecks"],
+          vod: "https://www.youtube.com/watch?v=h2HZ_4C4OCo",
+          games:
+            "https://docs.google.com/spreadsheets/d/1VPJKgtHDaZDRb0USuGSQckXLQtgluizi8P-EFADl8Ok/edit#gid=0",
+          bracket: "https://speedrunslive.challonge.com/mystery16",
         },
       ],
     };
