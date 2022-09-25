@@ -811,7 +811,10 @@ h1::first-line {
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 6rem;
+    font-size: 4rem;
+  }
+  h1::first-line {
+    text-underline-offset: 11px;
   }
 }
 h2 {
