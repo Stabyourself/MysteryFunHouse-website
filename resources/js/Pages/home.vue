@@ -87,7 +87,7 @@
 export default {
   computed: {
     signedUp() {
-      return this.$page.props.auth.user && this.$page.props.auth.user.signedUp;
+      return this.$page.props.auth.user && this.$page.props.auth.user.events[0];
     },
   },
 };

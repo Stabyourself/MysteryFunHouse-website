@@ -47,6 +47,7 @@ class HandleInertiaRequests extends Middleware
                 'id' => $user->id,
                 'username' => $user->username,
                 'avatar' => $user->avatar,
+                'events' => $user->events,
             ];
         }
 

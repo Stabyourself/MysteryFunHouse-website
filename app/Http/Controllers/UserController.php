@@ -15,7 +15,7 @@ class UserController extends Controller
     {
         $user = [];
         if (Auth::check()) {
-            $user = Auth::user()->load("impairments:id", "events")->only("challonge_username", "pronouns", "timezone", "availability", "impairments", "events");
+            $user = Auth::user()->load("impairments:id")->only("challonge_username", "pronouns", "timezone", "availability", "impairments");
         }
 
         $impairments = Impairment::all("id", "name");

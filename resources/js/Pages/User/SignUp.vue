@@ -101,7 +101,7 @@ export default {
     this.form.availability = this.user.availability;
 
     if (this.signedUp) {
-      this.form.flavor = this.user.events[0].pivot.flavor;
+      this.form.flavor = this.$page.props.auth.user.events[0].pivot.flavor;
     }
 
     for (let impairment of this.user.impairments) {
@@ -120,7 +120,7 @@ export default {
 
   computed: {
     signedUp() {
-      return this.user.events[0];
+      return this.$page.props.auth.user && this.$page.props.auth.user.events[0];
     },
 
     timezones() {
