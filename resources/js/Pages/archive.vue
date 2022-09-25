@@ -1,12 +1,12 @@
 <template>
   <div>
-    <Head title="Intel" />
+    <Head title="Archive" />
 
     <h1 data-aos="fade-right">Previous<br />Tournaments</h1>
 
     <v-container>
       <div
-        v-for="(tournament, i) in tournaments"
+        v-for="(tournament, i) in filteredTournaments"
         :key="tournament.name"
         class="tournament"
         :class="{ alt: i % 2 }"
@@ -90,6 +90,14 @@ export default {
       } else {
         return "slide-x-transition";
       }
+    },
+  },
+
+  computed: {
+    filteredTournaments() {
+      return this.tournaments.sort((a, b) => {
+        return new Date(b.date_start) - new Date(a.date_start);
+      });
     },
   },
 
@@ -248,7 +256,7 @@ export default {
           name: "Mystery Tournament 16",
           date_start: new Date(2021, 10, 12),
           date_end: new Date(2022, 3, 13),
-          winners: ["AND4H", "Maurice", "Zecks"],
+          winners: ["Adam5396", "Someone325", "OkamiofGames"],
           vod: "https://www.youtube.com/watch?v=h2HZ_4C4OCo",
           games:
             "https://docs.google.com/spreadsheets/d/1VPJKgtHDaZDRb0USuGSQckXLQtgluizi8P-EFADl8Ok/edit#gid=0",
