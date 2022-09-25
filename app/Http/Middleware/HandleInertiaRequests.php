@@ -39,7 +39,6 @@ class HandleInertiaRequests extends Middleware
     public function share(Request $request)
     {
         $auth = [];
-        $can = [];
 
         if (Auth::check()) {
             $user = Auth::user();
@@ -48,23 +47,15 @@ class HandleInertiaRequests extends Middleware
                 'id' => $user->id,
                 'username' => $user->username,
                 'avatar' => $user->avatar,
-                'signedUp' => $user->signed_up,
-                'team_id' => $user->team_id,
-                'color' => $user->team ? $user->team->color : null,
             ];
-
-            $can["assign points"] = $user->can("assign points");
         }
 
         $flash = $request->session()->get('flash');
 
 
         return array_merge(parent::share($request), [
-            'signupsOpen' => config("funfest.signups_open"),
-            'started' => config("funfest.started"),
             'auth' => $auth,
-            'flash' => $flash,
-            'can' => $can
+            'flash' => $flash
         ]);
     }
 }

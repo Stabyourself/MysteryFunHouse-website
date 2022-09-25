@@ -106,7 +106,12 @@ class DiscordController extends Controller
         'locale' => $userData->locale,
         'mfa_enabled' => $userData->mfa_enabled,
         'refresh_token' => $accessTokenData->refresh_token,
+
         'slug' => Str::slug($userData->username . "-" . $userData->discriminator),
+        'challonge_username' => '',
+        'pronouns' => '',
+        'timezone' => '',
+        'availability' => '',
       ]
     );
 

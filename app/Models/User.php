@@ -26,7 +26,11 @@ class User extends Authenticatable
         'locale',
         'mfa_enabled',
         'refresh_token',
-        "slug"
+        "slug",
+        "challonge_username",
+        "pronouns",
+        "timezone",
+        "availability",
     ];
 
     public function getRouteKeyName()
@@ -58,4 +62,14 @@ class User extends Authenticatable
      * @var array
      */
     protected $casts = [];
+
+    public function events()
+    {
+        return $this->belongsToMany(Event::class, "signups")->withTimestamps()->withPivot("flavor");
+    }
+
+    public function impairments()
+    {
+        return $this->belongsToMany(Impairment::class)->withTimestamps();
+    }
 }

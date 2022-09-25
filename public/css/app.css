@@ -904,6 +904,9 @@ h2 {
           text-decoration-color: #b1a460;
   cursor: pointer;
 }
+.navigation .navigation-login {
+  padding: 0.15em 0.8em;
+}
 
 .tournament {
   width: calc(100% - 50px);

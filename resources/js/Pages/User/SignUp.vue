@@ -8,7 +8,7 @@
       <div v-if="!$page.props.auth.user">
         <p>Login first, agent.</p>
 
-        <v-btn color="#5865F2" :href="route('login')">
+        <v-btn color="primary" :href="route('login')">
           <v-icon>
             mdi-discord
           </v-icon>
@@ -44,6 +44,7 @@
               :items="timezones"
               :rules="timezoneRules"
               label="Timezone"
+              prepend-inner-icon="mdi-magnify"
             ></v-autocomplete>
 
             <v-text-field
@@ -54,8 +55,8 @@
             ></v-text-field>
 
             <v-text-field
-              v-model="form.special_skill"
-              :rules="specialSkillRules"
+              v-model="form.flavor"
+              :rules="flavorRules"
               label="Your special skill"
               hint="A fun special skill for your agent badge"
             ></v-text-field>
@@ -72,11 +73,11 @@
           v-for="impairment in impairments"
           :key="impairment.value"
           v-model="form.impairments"
-          :label="impairment.text"
-          :value="impairment.value"
+          :label="impairment.name"
+          :value="impairment.id"
         ></v-checkbox>
 
-        <v-btn class="mt-2" color="primary" @click="submit">
+        <v-btn class="mt-2" color="primary" @click="submit" :loading="loading">
           {{ signedUp ? "Update intel" : "Sign up" }}
         </v-btn>
       </v-form>
@@ -86,14 +87,32 @@
 
 <script>
 export default {
+  props: {
+    impairments: Array,
+    user: Object,
+  },
+
   mounted() {
     this.form.timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-    console.log(this.form);
+
+    this.form.challonge_username = this.user.challonge_username;
+    this.form.pronouns = this.user.pronouns;
+    this.form.timezone = this.user.timezone;
+    this.form.availability = this.user.availability;
+
+    if (this.signedUp) {
+      this.form.flavor = this.user.events[0].pivot.flavor;
+    }
+
+    for (let impairment of this.user.impairments) {
+      this.form.impairments.push(impairment.id);
+    }
   },
 
   methods: {
     submit() {
       if (this.$refs.form.validate()) {
+        this.loading = true;
         this.form.post(route("signUp"));
       }
     },
@@ -101,7 +120,7 @@ export default {
 
   computed: {
     signedUp() {
-      return this.$page.props.auth.user && this.$page.props.auth.user.signedUp;
+      return this.user.events[0];
     },
 
     timezones() {
@@ -116,28 +135,17 @@ export default {
         pronouns: "",
         timezone: "",
         availability: "",
-        special_skill: "",
+        flavor: "",
         impairments: [],
       }),
 
-      impairments: [
-        { value: "nomouse", text: "I have no mouse" },
-        { value: "nocontroller", text: "I have no controller" },
-        { value: "colorblind", text: "I am colorblind" },
-        { value: "hearingimpaired", text: "I am hearing impaired" },
-        { value: "motionsickness", text: "I am sensitive to motion sickness" },
-        { value: "epilipsy", text: "I am sensitive to flashing lights" },
-        {
-          value: "tpcpc",
-          text: "I have difficulty running graphically intensive games",
-        },
-      ],
+      loading: false,
 
       challongeUsernameRules: [(v) => !!v || "Challonge username is required"],
       pronounRules: [],
       timezoneRules: [],
       availibilityRules: [],
-      specialSkillRules: [],
+      flavorRules: [],
     };
   },
 };

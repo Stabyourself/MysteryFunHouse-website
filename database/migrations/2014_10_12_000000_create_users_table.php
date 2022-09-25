@@ -26,9 +26,11 @@ class CreateUsersTable extends Migration
             $table->string('refresh_token')->nullable();
             $table->rememberToken();
 
-
             $table->string('slug');
-
+            $table->text("challonge_username");
+            $table->text("pronouns");
+            $table->text("timezone");
+            $table->text("availability");
 
             $table->timestamps();
         });

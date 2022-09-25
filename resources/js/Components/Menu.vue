@@ -38,6 +38,22 @@
     </v-sheet> -->
 
   <div class="d-flex navigation justify-center flex-wrap">
+    <div class="navigation-login" v-if="$page.props.auth.user">
+      <v-btn color="primary" @click="logout">
+        <v-icon>mdi-logout</v-icon>
+        Logout
+      </v-btn>
+    </div>
+
+    <div class="navigation-login" v-else>
+      <v-btn color="primary" :href="route('login')">
+        <v-icon>
+          mdi-discord
+        </v-icon>
+        Discord Login
+      </v-btn>
+    </div>
+
     <router-link
       v-for="item in items"
       :key="item.title"

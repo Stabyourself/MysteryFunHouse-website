@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Activity;
-use App\Models\ActivityType;
+use App\Models\Event;
+use App\Models\Impairment;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -13,16 +13,17 @@ class UserController extends Controller
 {
     public function signUpForm()
     {
-        $user = Auth::user();
+        $user = [];
+        if (Auth::check()) {
+            $user = Auth::user()->load("impairments:id", "events")->only("challonge_username", "pronouns", "timezone", "availability", "impairments", "events");
+        }
 
-        $initialLikelihood = $user->likelihood ?? null;
-        $initialFriends = $user->friends ?? "";
+        $impairments = Impairment::all("id", "name");
 
-        return Inertia::render('User/SignUp', compact("initialLikelihood", "initialFriends"))
+        return Inertia::render('User/SignUp', compact("impairments", "user"))
             ->withViewData([
                 "title" => "Sign Up",
-                "description" => "Sign up for all the Fun and the Fest",
-                "image" => asset("img/signup.jpg"),
+                "description" => "Sign up for Mystery Tournament 17",
             ]);
     }
 
@@ -32,14 +33,47 @@ class UserController extends Controller
             abort(403);
         }
 
-        $validated = $request->validate([]);
+        $event = Event::latest()->first(); // questionable
+
+        $validated = $request->validate([
+            "challonge_username" => "required|string",
+            "pronouns" => "nullable|string",
+            "timezone" => "nullable|string",
+            "availability" => "nullable|string",
+            "impairments" => "array",
+            "impairments.*" => "integer",
+            "flavor" => "nullable|string",
+        ]);
 
         $user = Auth::user();
 
-        if ($user->signed_up) {
+        // update all them fields
+        $user->challonge_username = $validated["challonge_username"];
+        $user->pronouns = $validated["pronouns"] ?? "";
+        $user->timezone = $validated["timezone"] ?? "";
+        $user->availability = $validated["availability"] ?? "";
+
+        // update impairments
+        $user->impairments()->detach();
+        foreach ($validated["impairments"] as $impairmentId) {
+            $impairment = Impairment::find($impairmentId);
+
+            $user->impairments()->attach($impairment);
+        }
+
+        // update signup (or create it)
+        $wasSignedUp = $user->events->contains($event->id);
+
+        $user->events()->detach($event->id);
+        $user->events()->attach($event->id, [
+            "flavor" => $validated["flavor"] ?? "",
+        ]);
+
+
+        if ($wasSignedUp) {
             session()->flash('flash', [
                 'type' => 'success',
-                'text' => "Signup edited!",
+                'text' => "Your profile has been updated.",
             ]);
         } else {
             session()->flash('flash', [
