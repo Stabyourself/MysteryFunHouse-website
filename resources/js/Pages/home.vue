@@ -27,7 +27,7 @@
           <p>
             You stand at the precipice of an unseen world, teeming with
             thrilling challenges and marvelous discoveries. It is also a world
-            fraught with peril - The minions of the shadowy Heff E. Troopa are
+            fraught with peril - The minions of the shadowy Heff E. Trooper are
             capable and decisive.
           </p>
 
