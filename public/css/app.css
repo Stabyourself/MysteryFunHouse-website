@@ -804,10 +804,12 @@ h1 {
   text-align: center;
 }
 h1::first-line {
-  -webkit-text-decoration: underline #b1a460;
-          text-decoration: underline #b1a460;
-  -webkit-text-decoration: underline 2px #b1a460;
-          text-decoration: underline 2px #b1a460;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-text-decoration-color: #b1a460;
+          text-decoration-color: #b1a460;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 26px;
 }
 
 @media (max-width: 768px) {

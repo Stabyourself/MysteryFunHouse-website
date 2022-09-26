@@ -48,8 +48,10 @@ h1 {
   text-align: center;
 
   &::first-line {
-    text-decoration: underline $primary;
-    text-decoration: underline 2px $primary;
+    text-decoration-line: underline;
+    text-decoration-color: $primary;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 26px;
   }
 }
 
