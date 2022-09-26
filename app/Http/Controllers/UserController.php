@@ -15,7 +15,7 @@ class UserController extends Controller
     {
         $user = [];
         if (Auth::check()) {
-            $user = Auth::user()->load("impairments:id")->only("challonge_username", "pronouns", "timezone", "availability", "impairments");
+            $user = Auth::user()->load("impairments:id")->only("challonge_username", "twitch", "pronouns", "timezone", "availability", "impairments");
         }
 
         $impairments = Impairment::all("id", "name");
@@ -37,6 +37,7 @@ class UserController extends Controller
 
         $validated = $request->validate([
             "challonge_username" => "required|string",
+            "twitch" => "required|string",
             "pronouns" => "nullable|string",
             "timezone" => "nullable|string",
             "availability" => "nullable|string",
@@ -49,6 +50,7 @@ class UserController extends Controller
 
         // update all them fields
         $user->challonge_username = $validated["challonge_username"];
+        $user->twitch = $validated["twitch"];
         $user->pronouns = $validated["pronouns"] ?? "";
         $user->timezone = $validated["timezone"] ?? "";
         $user->availability = $validated["availability"] ?? "";

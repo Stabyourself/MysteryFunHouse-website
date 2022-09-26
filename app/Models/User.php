@@ -26,8 +26,10 @@ class User extends Authenticatable
         'locale',
         'mfa_enabled',
         'refresh_token',
+
         "slug",
         "challonge_username",
+        "twitch",
         "pronouns",
         "timezone",
         "availability",

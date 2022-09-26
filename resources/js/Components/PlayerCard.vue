@@ -41,7 +41,10 @@
     </div>
 
     <div class="player-card-flavor">
-      {{ user.flavor }}
+      Notes
+      <div class="flavor">
+        {{ user.flavor }}
+      </div>
     </div>
 
     <canvas ref="canvas"></canvas>
@@ -86,6 +89,7 @@ $primary: #b1a460;
     margin-right: 6px;
     width: 100px;
     height: 100px;
+    background: $primary;
     border: 3px solid $primary;
   }
 
@@ -103,18 +107,29 @@ $primary: #b1a460;
       text-transform: uppercase;
       font-weight: 800;
       word-break: break-all;
+      color: black;
+      opacity: 0.8;
     }
   }
 
   .player-card-flavor {
-    height: 130px;
+    height: 120px;
+    margin-bottom: 10px;
     width: 100%;
+    overflow: hidden;
+
+    .flavor {
+      color: black;
+      opacity: 0.8;
+      word-break: break-all;
+    }
   }
 }
 
 canvas {
   width: 100%;
   height: 50px;
+  opacity: 0.8;
 }
 </style>
 

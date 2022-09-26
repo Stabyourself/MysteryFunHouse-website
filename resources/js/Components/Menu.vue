@@ -41,7 +41,7 @@
     <div class="navigation-login" v-if="$page.props.auth.user">
       <v-btn color="primary" @click="logout">
         <v-icon>mdi-logout</v-icon>
-        Logout
+        Log Out
       </v-btn>
     </div>
 

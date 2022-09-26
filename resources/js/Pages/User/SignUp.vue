@@ -34,6 +34,13 @@
             ></v-text-field>
 
             <v-text-field
+              v-model="form.twitch"
+              :rules="twitchRules"
+              label="Twitch URL"
+              prefix="twitch.tv/"
+            ></v-text-field>
+
+            <v-text-field
               v-model="form.pronouns"
               :rules="pronounRules"
               label="Pronouns"
@@ -58,24 +65,24 @@
               v-model="form.flavor"
               :rules="flavorRules"
               label="Your special skill"
-              hint="A fun special skill for your agent badge"
+              hint="A fun special skill or note for your agent badge"
             ></v-text-field>
+
+            <h2>Special requirements</h2>
+            <v-checkbox
+              class="no-message"
+              v-for="impairment in impairments"
+              :key="impairment.value"
+              v-model="form.impairments"
+              :label="impairment.name"
+              :value="impairment.id"
+            ></v-checkbox>
           </v-col>
 
           <v-col cols="12" md="4">
-            -Agent badge here-
+            <PlayerCard v-tilt :user="formatUser" />
           </v-col>
         </v-row>
-
-        <h2>Special requirements</h2>
-        <v-checkbox
-          class="no-message"
-          v-for="impairment in impairments"
-          :key="impairment.value"
-          v-model="form.impairments"
-          :label="impairment.name"
-          :value="impairment.id"
-        ></v-checkbox>
 
         <v-btn class="mt-2" color="primary" @click="submit" :loading="loading">
           {{ signedUp ? "Update intel" : "Sign up" }}
@@ -96,6 +103,7 @@ export default {
     this.form.timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
     this.form.challonge_username = this.user.challonge_username;
+    this.form.twitch = this.user.twitch;
     this.form.pronouns = this.user.pronouns;
     this.form.timezone = this.user.timezone;
     this.form.availability = this.user.availability;
@@ -126,12 +134,21 @@ export default {
     timezones() {
       return Intl.supportedValuesOf("timeZone");
     },
+
+    formatUser() {
+      return {
+        username: this.$page.props.auth.user.username,
+        avatar: this.$page.props.auth.user.avatar,
+        flavor: this.form.flavor,
+      };
+    },
   },
 
   data() {
     return {
       form: this.$inertia.form({
         challonge_username: "",
+        twitch: "",
         pronouns: "",
         timezone: "",
         availability: "",
@@ -142,6 +159,7 @@ export default {
       loading: false,
 
       challongeUsernameRules: [(v) => !!v || "Challonge username is required"],
+      twitchRules: [(v) => !!v || "Twitch URL"],
       pronounRules: [],
       timezoneRules: [],
       availibilityRules: [],

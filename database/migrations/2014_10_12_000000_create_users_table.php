@@ -28,6 +28,7 @@ class CreateUsersTable extends Migration
 
             $table->string('slug');
             $table->text("challonge_username");
+            $table->text("twitch");
             $table->text("pronouns");
             $table->text("timezone");
             $table->text("availability");

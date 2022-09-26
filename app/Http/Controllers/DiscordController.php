@@ -109,6 +109,7 @@ class DiscordController extends Controller
 
         'slug' => Str::slug($userData->username . "-" . $userData->discriminator),
         'challonge_username' => '',
+        'twitch' => '',
         'pronouns' => '',
         'timezone' => '',
         'availability' => '',
