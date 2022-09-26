@@ -70,6 +70,7 @@ class DiscordController extends Controller
     $avatar = "default";
 
     if (!empty($userData->avatar)) {
+      $avatar = $userData->avatar;
       // see if we need to cache that avatar
       $user = User::find($userData->id);
 
@@ -89,8 +90,6 @@ class DiscordController extends Controller
           $client->request('GET', $avatarUrl, [
             'sink' => $path,
           ]);
-
-          $avatar = $userData->avatar;
         } catch (\GuzzleHttp\Exception\ClientException $error) {
           // if the request fails for whatever reason, avatar is default
           $avatar = "default";
