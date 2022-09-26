@@ -67,29 +67,35 @@ class DiscordController extends Controller
 
     $userData = json_decode($userData);
 
-    // see if we need to cache that avatar
-    $user = User::find($userData->id);
+    $avatar = "default";
 
-    // No avatar or outdated avatar
-    if (!$user || $userData->avatar != $user->avatar) {
-      $avatarUrl = "https://cdn.discordapp.com/avatars/$userData->id/$userData->avatar";
+    if (!empty($userData->avatar)) {
+      // see if we need to cache that avatar
+      $user = User::find($userData->id);
 
-      $folder = Storage::path('public/avatars/');
-      // create the folder if it doesn't exist
-      if (!file_exists($folder)) {
-        mkdir($folder, 0777, true);
+      // No avatar or outdated avatar
+      if (!$user || $userData->avatar != $user->avatar) {
+        $avatarUrl = "https://cdn.discordapp.com/avatars/$userData->id/$userData->avatar";
+
+        $folder = Storage::path('public/avatars/');
+        // create the folder if it doesn't exist
+        if (!file_exists($folder)) {
+          mkdir($folder, 0777, true);
+        }
+
+
+        $path = Storage::path('public/avatars/' . $userData->avatar);
+        try {
+          $client->request('GET', $avatarUrl, [
+            'sink' => $path,
+          ]);
+
+          $avatar = $userData->avatar;
+        } catch (\GuzzleHttp\Exception\ClientException $error) {
+          // if the request fails for whatever reason, avatar is default
+          $avatar = "default";
+        };
       }
-
-
-      $path = Storage::path('public/avatars/' . $userData->avatar);
-      try {
-        $client->request('GET', $avatarUrl, [
-          'sink' => $path,
-        ]);
-      } catch (\GuzzleHttp\Exception\ClientException $error) {
-        // if the request fails for whatever reason, avatar is null
-        $userData->avatar = null;
-      };
     }
 
     // this isn't great but I dunno lmao
@@ -116,7 +122,7 @@ class DiscordController extends Controller
         'username' => $userData->username,
         'discriminator' => $userData->discriminator,
         'email' => $userData->email,
-        'avatar' => $userData->avatar,
+        'avatar' => $avatar,
         'verified' => $userData->verified,
         'locale' => $userData->locale,
         'mfa_enabled' => $userData->mfa_enabled,
