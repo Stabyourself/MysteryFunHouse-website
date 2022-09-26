@@ -28,7 +28,10 @@
       <a href="https://rentry.co/MTSubGuidelines" target="_blank">
         Submission guidelines </a
       ><br />
-      <a href="#" target="_blank">
+      <a
+        href="https://drive.google.com/file/d/18bXH-IoaAKQf3TH3Ak-ebavE_KY7_Q40/view?usp=sharing"
+        target="_blank"
+      >
         Emulator pack
       </a>
     </v-container>

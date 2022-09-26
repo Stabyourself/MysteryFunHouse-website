@@ -109,6 +109,8 @@ $primary: #b1a460;
       word-break: break-all;
       color: black;
       opacity: 0.8;
+      max-height: 69px;
+      overflow: hidden;
     }
   }
 
