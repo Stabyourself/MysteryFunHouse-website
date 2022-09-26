@@ -6,7 +6,7 @@
 
     <v-container>
       <div v-if="!$page.props.auth.user" class="text-center">
-        <p>Login first, agent.</p>
+        <p>Login first, Agent.</p>
 
         <v-btn color="primary" :href="route('login')">
           <v-icon>
@@ -21,7 +21,7 @@
           <v-col cols="12" md="8">
             <div v-if="signedUp">
               <p>
-                Welcome back agent. Did your data change? Let HQ know here.
+                Welcome back Agent. Did your data change? Let HQ know here.
               </p>
             </div>
 

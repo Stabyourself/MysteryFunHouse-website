@@ -27,7 +27,7 @@
 
       <h2>Spy Gadgets to get you Equipped</h2>
       <p>
-        Naturally, agent double-oh, we won't be sending you into the field
+        Naturally, Agent Double Oh, we won't be sending you into the field
         unprepared. We've prepared a download containing the latest in
         state-of-the-art retro gaming emulators that should have you prepared
         for the widest variety of circumstances. I suggest you pick these up
