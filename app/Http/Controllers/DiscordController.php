@@ -8,6 +8,7 @@ use \GuzzleHttp;
 use Illuminate\Support\Facades\Auth;
 
 use App\Models\User;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 
@@ -69,6 +70,7 @@ class DiscordController extends Controller
 
     $avatar = "default";
 
+    Log::info($userData);
     if (!empty($userData->avatar)) {
       $avatar = $userData->avatar;
       // see if we need to cache that avatar
