@@ -21,7 +21,7 @@
           <p>
             Your talents have earned you many accolades. This letter can be
             considered our own recognition of your abilities. They've taken you
-            to great places in the past, and now, they've lead you here.
+            to great places in the past, and now, they've led you here.
           </p>
 
           <p>
