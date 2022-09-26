@@ -101,7 +101,7 @@ class UserController extends Controller
 
     public function index()
     {
-        $users = User::with("events")->get(["id", "username", "avatar"]);
+        $users = User::with("events")->orderBy("username")->get(["id", "username", "avatar"]);
 
 
         $users = $users->filter(function ($user) {
