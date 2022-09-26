@@ -6,13 +6,7 @@
 
     <v-container>
       <div class="player-list">
-        <PlayerCard
-          data-aos="fade"
-          v-tilt
-          v-for="user in users"
-          :key="user.id"
-          :user="user"
-        />
+        <PlayerCard v-tilt v-for="user in users" :key="user.id" :user="user" />
       </div>
     </v-container>
   </div>
