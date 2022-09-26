@@ -173,13 +173,14 @@
           <v-expansion-panel-content>
             <p>
               Our agents work alone, in the utmost of secrecy. For this reason,
-              you must not view your opponents stream or rebroadcast nor receive
-              any type of guidance from your stream chat or any external source.
-              We recommend hiding the chat to keep your focus sniper-like on
-              your own mission. Furthermore, the moderator provided instructions
-              is the only information you are permitted to use. Walkthroughs,
-              instruction manuals, and any other documents are strictly
-              classified as top-secret and forbidden during mission performance.
+              you must not view your opponent's stream or rebroadcast nor
+              receive any type of guidance from your stream chat or any external
+              source. We recommend hiding the chat to keep your focus
+              sniper-like on your own mission. Furthermore, the moderator
+              provided instructions is the only information you are permitted to
+              use. Walkthroughs, instruction manuals, and any other documents
+              are strictly classified as top-secret and forbidden during mission
+              performance.
             </p>
             <p>
               In the event of a bug, crash, error, or any other unexpected
