@@ -804,8 +804,10 @@ h1 {
   text-align: center;
 }
 h1::first-line {
-  text-decoration: underline;
-  color: red;
+  -webkit-text-decoration: underline #b1a460;
+          text-decoration: underline #b1a460;
+  -webkit-text-decoration: underline 2px #b1a460;
+          text-decoration: underline 2px #b1a460;
 }
 
 @media (max-width: 768px) {
