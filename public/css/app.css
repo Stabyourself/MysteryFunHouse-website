@@ -803,7 +803,7 @@ h1 {
   margin-bottom: 4rem;
   text-align: center;
 }
-h1::first-line {
+h1::first-line, h1:first-line {
   -webkit-text-decoration: underline 2px #b1a460;
           text-decoration: underline 2px #b1a460;
   text-underline-offset: 26px;

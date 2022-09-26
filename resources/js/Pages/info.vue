@@ -64,10 +64,16 @@
         your success or failure. First, you'll need a Twitch account, which you
         may already have. Second, you'll need IRC, which is where official race
         communications will occur. HexChat is a good candidate, and you can
-        follow this online guide to configure it for access to SpeedRunsLive.
-        Third, you must go to your VOD settings in Twitch and enable "Store past
-        broadcasts". Failure to do so will result in expulsion, excommunication,
-        execution, and possibly even extemporisation.
+        follow
+        <a
+          href="https://www.speedrunslive.com/rules-faq/faq#gettingstarted"
+          target="_blank"
+          >this online guide</a
+        >
+        to configure it for access to SpeedRunsLive. Third, you must go to your
+        VOD settings in Twitch and enable "Store past broadcasts". Failure to do
+        so will result in expulsion, excommunication, execution, and possibly
+        even extemporisation.
       </p>
 
       <p>
@@ -272,10 +278,38 @@
           </v-expansion-panel-content>
         </v-expansion-panel>
       </v-expansion-panels>
+
+      <div class="dangerous-text" data-aos="fade-down">
+        Sounds good?
+      </div>
+
+      <div style="text-align: center">
+        <v-btn
+          data-aos="fade-up"
+          data-aos-delay="200"
+          data-aos-offset="-50"
+          color="primary"
+          :to="route('signUpForm')"
+          x-large
+        >
+          <div v-if="signedUp">
+            Edit signup data
+          </div>
+          <div v-else>
+            Sign up now!
+          </div>
+        </v-btn>
+      </div>
     </v-container>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  computed: {
+    signedUp() {
+      return this.$page.props.auth.user && this.$page.props.auth.user.events[0];
+    },
+  },
+};
 </script>

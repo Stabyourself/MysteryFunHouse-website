@@ -47,7 +47,8 @@ h1 {
   margin-bottom: 4rem;
   text-align: center;
 
-  &::first-line {
+  &::first-line,
+  &:first-line {
     text-decoration: underline 2px $primary;
     text-underline-offset: 26px;
   }
