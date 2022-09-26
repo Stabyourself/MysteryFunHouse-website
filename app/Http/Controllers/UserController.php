@@ -72,17 +72,17 @@ class UserController extends Controller
         ]);
 
 
-        if ($wasSignedUp) {
-            session()->flash('flash', [
-                'type' => 'success',
-                'text' => "Your profile has been updated.",
-            ]);
-        } else {
-            session()->flash('flash', [
-                'type' => 'success',
-                'text' => "Successfully signed up!",
-            ]);
-        }
+        // if ($wasSignedUp) {
+        //     session()->flash('flash', [
+        //         'type' => 'success',
+        //         'text' => "Your profile has been updated.",
+        //     ]);
+        // } else {
+        //     session()->flash('flash', [
+        //         'type' => 'success',
+        //         'text' => "Successfully signed up!",
+        //     ]);
+        // }
 
         $user->save();
 
