@@ -123,7 +123,7 @@ $primary: #b1a460;
     .flavor {
       color: black;
       opacity: 0.8;
-      word-break: break-all;
+      word-break: break-word;
     }
   }
 }
