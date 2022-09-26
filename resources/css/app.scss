@@ -1,5 +1,13 @@
 @import "~vuetify/src/styles/settings/_variables";
 
+html,
+body {
+  overflow-x: hidden;
+}
+body {
+  position: relative;
+}
+
 $primary: #b1a460;
 $aos-distance: 15px;
 
