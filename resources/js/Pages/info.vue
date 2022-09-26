@@ -283,7 +283,7 @@
         Sounds good?
       </div>
 
-      <div style="text-align: center">
+      <div class="text-center">
         <v-btn
           data-aos="fade-up"
           data-aos-delay="200"

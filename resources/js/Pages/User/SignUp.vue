@@ -5,7 +5,7 @@
     <h1 data-aos="fade-right">Sign<br />Up</h1>
 
     <v-container>
-      <div v-if="!$page.props.auth.user">
+      <div v-if="!$page.props.auth.user" class="text-center">
         <p>Login first, agent.</p>
 
         <v-btn color="primary" :href="route('login')">
