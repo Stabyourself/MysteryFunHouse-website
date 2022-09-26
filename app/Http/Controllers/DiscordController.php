@@ -70,7 +70,7 @@ class DiscordController extends Controller
 
     $avatar = "default";
 
-    Log::info($userData);
+    Log::info($userData->avatar);
     if (!empty($userData->avatar)) {
       $avatar = $userData->avatar;
       // see if we need to cache that avatar
