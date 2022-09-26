@@ -55,7 +55,7 @@
         <a href="https://joytokey.net/en/" target="_blank">Joy2Key</a>, an
         ingenious little program that will allow you to use a controller for
         games designed for a keyboard. This could save your life in a close
-        shave, double-oh!
+        shave, Double Oh!
       </p>
 
       <h2>Communications</h2>
@@ -201,7 +201,7 @@
               restream, it is recommended to not only schedule your matches
               early, but notify restreamers of your desired race time to
               maximize the liklihood of a televised match. You always did have a
-              flair for the dramatic, double-oh.
+              flair for the dramatic, Double Oh.
             </p>
           </v-expansion-panel-content>
         </v-expansion-panel>
@@ -233,7 +233,7 @@
               takes longer by dint of player skill, unexpected game mechanics,
               or an unfortunate mishap involving a crate and a bear trap, there
               will be a hard cutoff at 90 minutes. We just don't have the budget
-              to pay for overtime, double-oh. Whichever agent has made the most
+              to pay for overtime, Double Oh. Whichever agent has made the most
               progress towards completing the mission will be awarded the
               victory. Lost progress will not be counted against you, so there
               will never be a penalty for fighting to the end! In the event of a
