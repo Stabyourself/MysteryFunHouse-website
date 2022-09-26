@@ -4,7 +4,7 @@
 
     <h1 data-aos="fade-right">Mystery<br />Fun House</h1>
 
-    <v-container>
+    <v-container style="overflow: hidden">
       <div
         class="letter-wrapper"
         data-aos="letter-animation"
