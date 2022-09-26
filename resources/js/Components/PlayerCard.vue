@@ -141,7 +141,7 @@ import * as PDF417 from "pdf417-generator";
 export default {
   mounted() {
     const canvas = this.$refs.canvas;
-    let data = `Agent ${this.user.username}`;
+    let data = `CAECUM-ET-IEIUNIUM:${this.user.username}`;
 
     PDF417.draw(data, canvas, 5);
   },
