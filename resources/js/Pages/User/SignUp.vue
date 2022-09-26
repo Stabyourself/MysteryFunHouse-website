@@ -69,14 +69,21 @@
             ></v-text-field>
 
             <h2>Special requirements</h2>
-            <v-checkbox
-              class="no-message"
-              v-for="impairment in impairments"
-              :key="impairment.value"
-              v-model="form.impairments"
-              :label="impairment.name"
-              :value="impairment.id"
-            ></v-checkbox>
+            <v-row>
+              <v-col
+                cols="12"
+                md="4"
+                v-for="impairment in impairments"
+                :key="impairment.value"
+              >
+                <v-checkbox
+                  class="no-message"
+                  v-model="form.impairments"
+                  :label="impairment.name"
+                  :value="impairment.id"
+                ></v-checkbox>
+              </v-col>
+            </v-row>
           </v-col>
 
           <v-col cols="12" md="4">
