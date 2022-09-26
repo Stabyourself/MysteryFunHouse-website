@@ -10,30 +10,28 @@
         field.
       </p>
 
-      <a href="https://discord.gg/AYr59EgzzR" target="_blank">
-        Mystery Discord
-      </a>
+      <a href="https://discord.gg/AYr59EgzzR" target="_blank"
+        >Mystery Discord</a
+      >
       <br />
-      <a href="https://speedrunslive.challonge.com/mt17" target="_blank">
-        MT0017 Challonge
-      </a>
+      <a href="https://speedrunslive.challonge.com/mt17" target="_blank"
+        >MT0017 Challonge</a
+      >
       <br />
       <a
         href="https://docs.google.com/forms/d/e/1FAIpQLSe-dbLbrdwuISSNHtzs1EQ-3ABGpKW61ALicIiTOTmK3WK5BQ/viewform"
         target="_blank"
+        >Game submission form</a
       >
-        Game submission form
-      </a>
       <br />
-      <a href="https://rentry.co/MTSubGuidelines" target="_blank">
-        Submission guidelines </a
+      <a href="https://rentry.co/MTSubGuidelines" target="_blank"
+        >Submission guidelines</a
       ><br />
       <a
         href="https://drive.google.com/file/d/18bXH-IoaAKQf3TH3Ak-ebavE_KY7_Q40/view?usp=sharing"
         target="_blank"
+        >Emulator pack</a
       >
-        Emulator pack
-      </a>
     </v-container>
   </div>
 </template>
