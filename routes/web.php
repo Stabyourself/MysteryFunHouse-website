@@ -34,3 +34,4 @@ Route::post('logout', [DiscordController::class, 'logout'])
 // signups
 Route::get('/signup', [UserController::class, 'signupForm'])->name("signUpForm");
 Route::post('/signup', [UserController::class, 'signup'])->name("signUp");
+Route::get('/signedup', [UserController::class, 'signedUp'])->name("signedUp");

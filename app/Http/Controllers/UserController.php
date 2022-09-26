@@ -87,7 +87,16 @@ class UserController extends Controller
         $user->save();
 
 
-        return redirect()->route("home");
+        return redirect()->route("signedUp");
+    }
+
+    public function signedUp()
+    {
+        return Inertia::render('User/SignedUp')
+            ->withViewData([
+                "title" => "Sign Up",
+                "description" => "Sign up for Mystery Tournament 17",
+            ]);
     }
 
     public function index()
