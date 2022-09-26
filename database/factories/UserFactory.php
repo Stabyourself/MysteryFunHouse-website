@@ -39,6 +39,7 @@ class UserFactory extends Factory
 
             'slug' => Str::slug($username . "-" . $discriminator),
             'challonge_username' => "somenick",
+            'twitch' => "sometwitch",
             'pronouns' => "he/him",
             'timezone' => "America/New_York",
             'availability' => "anytime",
