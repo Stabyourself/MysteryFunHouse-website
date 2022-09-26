@@ -92,6 +92,21 @@ class DiscordController extends Controller
       };
     }
 
+    // this isn't great but I dunno lmao
+    $challongeUsername = "";
+    $twitch = "";
+    $pronouns = "";
+    $timezone = "";
+    $availability = "";
+
+    if ($user) {
+      $challongeUsername = $user->challonge_username;
+      $twitch = $user->twitch;
+      $pronouns = $user->pronouns;
+      $timezone = $user->timezone;
+      $availability = $user->availability;
+    }
+
     $user = User::updateOrCreate(
       [
         'id' => $userData->id,
@@ -108,11 +123,11 @@ class DiscordController extends Controller
         'refresh_token' => $accessTokenData->refresh_token,
 
         'slug' => Str::slug($userData->username . "-" . $userData->discriminator),
-        'challonge_username' => '',
-        'twitch' => '',
-        'pronouns' => '',
-        'timezone' => '',
-        'availability' => '',
+        'challonge_username' => $challongeUsername,
+        'twitch' => $twitch,
+        'pronouns' => $pronouns,
+        'timezone' => $timezone,
+        'availability' => $availability,
       ]
     );
 
