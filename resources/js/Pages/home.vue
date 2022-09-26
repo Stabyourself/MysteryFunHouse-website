@@ -16,25 +16,32 @@
             To: Double Oh Seventeen
           </div>
 
-          <p>Hello Agent,</p>
+          <p>Greetings, esteemed operative.</p>
 
           <p>
-            Welcome to the Mystery Fun House! We are glad to have you on board.
+            Your talents have earned you many accolades. This letter can be
+            considered our own recognition of your abilities. They've taken you
+            to great places in the past, and now, they've lead you here.
           </p>
 
           <p>
-            Our latest intel shows that the nefarious Heff E. Trooper is up to
-            no good again. He has shuffled all the games in this event around,
-            requiring you to play games you have never seen before.
+            You stand at the precipice of an unseen world, teeming with
+            thrilling challenges and marvelous discoveries. It is also a world
+            fraught with peril - The minions of the shadowy Heff E. Troopa are
+            capable and decisive.
           </p>
 
           <p>
-            The ministry of mystery, fun, and house requires your help in
-            stopping him. Sign up for your most dangerous mission yet: Mystery
-            Tournament 17.
+            Your services could be what we need to turn the tables. Will you
+            join our ranks and take on your greatest undertaking yet?
           </p>
 
-          <p>Good luck, Agent!</p>
+          <p>We look forward to working with you, Agent Double Oh.</p>
+
+          <p>
+            Regards,<br />
+            The Mystery Fun House
+          </p>
 
           <p class="letter-muted">
             PS: This message will self-destruct in 60 seconds.

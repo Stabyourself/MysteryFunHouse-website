@@ -107,6 +107,8 @@ class DiscordController extends Controller
       $availability = $user->availability;
     }
 
+    dd($challongeUsername);
+
     $user = User::updateOrCreate(
       [
         'id' => $userData->id,
