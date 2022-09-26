@@ -68,7 +68,7 @@ class DiscordController extends Controller
     $userData = json_decode($userData);
 
     // see if we need to cache that avatar
-    $user = User::find("id");
+    $user = User::find($userData->id);
 
     // No avatar or outdated avatar
     if (!$user || $userData->avatar != $user->avatar) {
@@ -106,8 +106,6 @@ class DiscordController extends Controller
       $timezone = $user->timezone;
       $availability = $user->availability;
     }
-
-    dd($challongeUsername);
 
     $user = User::updateOrCreate(
       [
