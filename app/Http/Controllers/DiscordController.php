@@ -90,7 +90,7 @@ class DiscordController extends Controller
     // see if we need to cache that avatar
     $user = User::find($userData->id);
 
-    if ($avatar != $user->avatar && $avatar != "default") {
+    if ((empty($user) || $avatar != $user->avatar) && $avatar != "default") {
       // No avatar or outdated avatar
       $avatarUrl = "https://cdn.discordapp.com/avatars/$userData->id/$avatar";
 
