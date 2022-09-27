@@ -16,13 +16,14 @@ class DiscordController extends Controller
 {
   protected $tokenURL = "https://discord.com/api/oauth2/token";
   protected $apiURLBase = "https://discord.com/api/users/@me";
+  protected $apiURLBaseGuild = "https://discord.com/api/users/@me/guilds/83038855732658176/member";
   protected $tokenData = [
     "client_id" => NULL,
     "client_secret" => NULL,
     "grant_type" => "authorization_code",
     "code" => NULL,
     "redirect_uri" => NULL,
-    "scope" => "identifiy&email"
+    "scope" => "identifiy&email&guilds.members.read"
   ];
 
   public function tologin()
@@ -35,7 +36,7 @@ class DiscordController extends Controller
       session(['from' => url()->previous()]);
     }
 
-    return redirect("https://discord.com/oauth2/authorize?client_id=" . config("discord.client_id") . "&redirect_uri=" . config("discord.redirect_uri") . "&response_type=code&scope=identify%20email");
+    return redirect("https://discord.com/oauth2/authorize?client_id=" . config("discord.client_id") . "&redirect_uri=" . config("discord.redirect_uri") . "&response_type=code&scope=identify%20email%20guilds.members.read");
   }
 
   public function loginCallback(Request $request)
@@ -61,42 +62,60 @@ class DiscordController extends Controller
       abort(500);
     };
 
+    // get general user data
     $userData = Http::withToken($accessTokenData->access_token)->get($this->apiURLBase);
     if ($userData->clientError() || $userData->serverError()) {
       abort(500);
     };
-
     $userData = json_decode($userData);
 
+    // get MFH specific user data
+    $guildData = Http::withToken($accessTokenData->access_token)->get($this->apiURLBaseGuild);
+    if ($guildData->clientError() || $guildData->serverError()) {
+      abort(500);
+    };
+    $guildData = json_decode($guildData);
+
+    // get the most relevant avatar
     $avatar = "default";
+
+    if (!empty($userData->avatar)) {
+      $avatar = $userData->avatar;
+    }
+
+    if (!empty($guildData->avatar)) {
+      $avatar = $guildData->avatar;
+    }
 
     // see if we need to cache that avatar
     $user = User::find($userData->id);
 
-    if (!empty($userData->avatar)) {
-      $avatar = $userData->avatar;
-
+    if ($avatar != $user->avatar && $avatar != "default") {
       // No avatar or outdated avatar
-      if (!$user || $userData->avatar != $user->avatar) {
-        $avatarUrl = "https://cdn.discordapp.com/avatars/$userData->id/$userData->avatar";
+      $avatarUrl = "https://cdn.discordapp.com/avatars/$userData->id/$avatar";
 
-        $folder = Storage::path('public/avatars/');
-        // create the folder if it doesn't exist
-        if (!file_exists($folder)) {
-          mkdir($folder, 0777, true);
-        }
-
-
-        $path = Storage::path('public/avatars/' . $userData->avatar);
-        try {
-          $client->request('GET', $avatarUrl, [
-            'sink' => $path,
-          ]);
-        } catch (\GuzzleHttp\Exception\ClientException $error) {
-          // if the request fails for whatever reason, avatar is default
-          $avatar = "default";
-        };
+      $folder = Storage::path('public/avatars/');
+      // create the folder if it doesn't exist
+      if (!file_exists($folder)) {
+        mkdir($folder, 0777, true);
       }
+
+      $path = Storage::path('public/avatars/' . $avatar);
+      try {
+        $client->request('GET', $avatarUrl, [
+          'sink' => $path,
+        ]);
+      } catch (\GuzzleHttp\Exception\ClientException $error) {
+        // if the request fails for whatever reason, avatar is default
+        $avatar = "default";
+      };
+    }
+
+    // get the most relevant username
+    $username = $userData->username; // this is always set
+
+    if (!empty($guildData->nick)) {
+      $username = $guildData->nick;
     }
 
     // this isn't great but I dunno lmao
@@ -120,7 +139,7 @@ class DiscordController extends Controller
       ],
       [
         'id' => $userData->id,
-        'username' => $userData->username,
+        'username' => $username,
         'discriminator' => $userData->discriminator,
         'email' => $userData->email,
         'avatar' => $avatar,
