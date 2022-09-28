@@ -76,8 +76,8 @@ class DiscordController extends Controller
     };
     $guildData = json_decode($guildData);
 
-    Log::debug($userData->toArray());
-    Log::debug($guildData->toArray());
+    Log::debug(print_r($userData, true));
+    Log::debug(print_r($guildData, true));
 
     // get the most relevant avatar
     $avatar = "default";
