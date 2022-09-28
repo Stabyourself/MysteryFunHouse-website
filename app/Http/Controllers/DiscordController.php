@@ -76,18 +76,18 @@ class DiscordController extends Controller
     };
     $guildData = json_decode($guildData);
 
-    Log::debug(print_r($userData, true));
-    Log::debug(print_r($guildData, true));
-
     // get the most relevant avatar
     $avatar = "default";
+    $avatarType = null;
 
     if (!empty($userData->avatar)) {
       $avatar = $userData->avatar;
+      $avatarType = "user";
     }
 
     if (!empty($guildData->avatar)) {
       $avatar = $guildData->avatar;
+      $avatarType = "guild";
     }
 
     // see if we need to cache that avatar
@@ -95,7 +95,11 @@ class DiscordController extends Controller
 
     if ((empty($user) || $avatar != $user->avatar) && $avatar != "default") {
       // No avatar or outdated avatar
-      $avatarUrl = "https://cdn.discordapp.com/avatars/$userData->id/$avatar";
+      if ($avatarType == "user") {
+        $avatarUrl = "https://cdn.discordapp.com/avatars/$userData->id/$avatar";
+      } elseif ($avatarType == "guild") {
+        $avatarUrl = "https://cdn.discordapp.com/guilds/83038855732658176/users/$userData->id/avatars/$avatar";
+      }
 
       $folder = Storage::path('public/avatars/');
       // create the folder if it doesn't exist
