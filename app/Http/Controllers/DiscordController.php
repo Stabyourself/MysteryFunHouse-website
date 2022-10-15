@@ -59,23 +59,22 @@ class DiscordController extends Controller
       $accessTokenData = $client->post($this->tokenURL, ["form_params" => $this->tokenData]);
       $accessTokenData = json_decode($accessTokenData->getBody());
     } catch (\GuzzleHttp\Exception\ClientException $error) {
-      abort(500);
       Log::error("Couldn't authenticate: " . $error->getMessage());
+      abort(500);
     };
 
     // get general user data
     $userData = Http::withToken($accessTokenData->access_token)->get($this->apiURLBase);
     if ($userData->clientError() || $userData->serverError()) {
-      abort(500);
       Log::error("Couldn't fetch Discord data: " . $userData->body());
+      abort(500);
     };
     $userData = json_decode($userData);
 
     // get MFH specific user data
     $guildData = Http::withToken($accessTokenData->access_token)->get($this->apiURLBaseGuild);
     if ($guildData->clientError() || $guildData->serverError()) {
-      abort(500);
-      Log::error("Couldn't fetch MFH data: " . $guildData->body());
+      return "We couldn't fetch your data. Are you in the MFH Discord server?";
     };
     $guildData = json_decode($guildData);
 
