@@ -59,7 +59,7 @@ class DiscordController extends Controller
       $accessTokenData = $client->post($this->tokenURL, ["form_params" => $this->tokenData]);
       $accessTokenData = json_decode($accessTokenData->getBody());
     } catch (\GuzzleHttp\Exception\ClientException $error) {
-      abort(500, "Couldn't Discord auth");
+      abort(500, "Couldn't Discord auth: " . $error->getResponse()->getBody());
     };
 
     // get general user data
