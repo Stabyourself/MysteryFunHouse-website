@@ -74,7 +74,7 @@ class DiscordController extends Controller
     // get MFH specific user data
     $guildData = Http::withToken($accessTokenData->access_token)->get($this->apiURLBaseGuild);
     if ($guildData->clientError() || $guildData->serverError()) {
-      return "We couldn't fetch your data. Are you in the MFH Discord server?";
+      return 'We couldn\'t fetch your data. Are you in the <a href="https://discord.gg/AYr59EgzzR">MFH Discord server</a>?';
     };
     $guildData = json_decode($guildData);
 
