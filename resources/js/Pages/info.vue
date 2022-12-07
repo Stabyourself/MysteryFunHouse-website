@@ -38,7 +38,7 @@
       <v-btn
         class="mb-4"
         color="primary"
-        href="https://drive.google.com/file/d/18bXH-IoaAKQf3TH3Ak-ebavE_KY7_Q40/view?usp=sharing"
+        href="https://drive.google.com/file/d/1trCf55AJawyjl3BR35FBo3LVjIjtR7fm/"
         target="_blank"
       >
         Download Spy Gadgets
