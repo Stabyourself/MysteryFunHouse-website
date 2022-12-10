@@ -14,7 +14,7 @@ class ChangeUsersTable extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->text("srl_name")->nullable();
+            $table->text("srl_username")->nullable();
         });
     }
 
@@ -26,7 +26,7 @@ class ChangeUsersTable extends Migration
     public function down()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->dropColumn("srl_name");
+            $table->dropColumn("srl_username");
         });
     }
 }
