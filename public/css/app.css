@@ -810,6 +810,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   padding: 2rem;
   border-radius: 5px;
   width: 1000px;
+  max-width: 100%;
 }
 
 .page-spacer {
