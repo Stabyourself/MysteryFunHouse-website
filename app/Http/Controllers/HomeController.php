@@ -19,7 +19,7 @@ class HomeController extends Controller
     {
         return Inertia::render('info')
             ->withViewData([
-                "title" => "Intel",
+                "title" => "About",
                 "description" => "Read all about it!",
             ]);
     }
@@ -29,7 +29,7 @@ class HomeController extends Controller
         return Inertia::render('archive')
             ->withViewData([
                 "title" => "Archive",
-                "description" => "View previously released classified information.",
+                "description" => "View previous champions and almost champions.",
             ]);
     }
 
@@ -37,8 +37,8 @@ class HomeController extends Controller
     {
         return Inertia::render('links')
             ->withViewData([
-                "title" => "Spy Gadgets",
-                "description" => "Get all the cool stuff like hookshots and lasers.",
+                "title" => "Links",
+                "description" => "Find all the links you need to get started.",
             ]);
     }
 }

@@ -65,7 +65,7 @@
               v-model="form.flavor"
               :rules="flavorRules"
               label="Your special skill"
-              hint="A fun special skill or note for your agent badge"
+              hint="A fun special skill or note for your membership card."
             ></v-text-field>
           </v-col>
 
