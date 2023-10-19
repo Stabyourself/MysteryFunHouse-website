@@ -16,7 +16,7 @@
             confident, and sink your putt easily on the first try. 3 under par,
             you're ready to take on anything. But you've heard stories about the
             18th hole. Even the best of players are often bested by it.
-            Inconsitencies, anomolies, some may even say Mysteries await you as
+            Inconsistencies, anomalies, some may even say Mysteries await you as
             you warily approach the final challenge...
           </p>
 
