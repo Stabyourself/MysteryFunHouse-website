@@ -42,7 +42,7 @@
         </div>
       </div>
 
-      <v-row>
+      <v-row style="margin-top: 1em;">
         <v-col cols="12" md="6">
           <v-btn
             data-aos="fade-up"
