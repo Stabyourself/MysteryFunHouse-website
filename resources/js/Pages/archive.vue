@@ -271,14 +271,15 @@ export default {
           bracket: "https://speedrunslive.challonge.com/mystery16",
         },
         {
-          name: "Mystery Tournament 16",
-          date_start: new Date(2021, 12, 10),
-          date_end: new Date(2022, 3, 13),
-          winners: ["Adam5396", "Someone325", "OkamiofGames"],
-          vod: "https://www.youtube.com/watch?v=h2HZ_4C4OCo",
+          name: "Mystery Tournament 17",
+          date_start: new Date(2022, 12, 9),
+          date_end: new Date(2023, 3, 12),
+          winners: ["Trisscorp", "Pikapals", "Maurice"],
+          vod:
+            "https://www.youtube.com/watch?v=B6w0RIJKYrE&list=PLvokTc7DrMSNDuAabDU6sWGSgwShCT_i3",
           games:
-            "https://docs.google.com/spreadsheets/d/1VPJKgtHDaZDRb0USuGSQckXLQtgluizi8P-EFADl8Ok/edit#gid=0",
-          bracket: "https://speedrunslive.challonge.com/mystery16",
+            "https://docs.google.com/spreadsheets/d/1tYyHOagyimN87z0kB1yCH_9EtfNu5Ni0gObA3IW5h3s/edit#gid=1124956477",
+          bracket: "https://speedrunslive.challonge.com/mt17",
         },
       ],
     };

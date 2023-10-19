@@ -117,19 +117,24 @@ export default {
           route: "home",
         },
         {
-          title: "Players",
-          icon: "mdi-account-multiple",
-          route: "players",
-        },
-        {
           title: "About",
           icon: "mdi-information",
           route: "info",
         },
         {
+          title: "Players",
+          icon: "mdi-account-multiple",
+          route: "players",
+        },
+        {
           title: "Links",
           icon: "mdi-pistol",
           route: "links",
+        },
+        {
+          title: "IRC",
+          icon: "mdi-chat",
+          route: "irc",
         },
         {
           title: "Archive",

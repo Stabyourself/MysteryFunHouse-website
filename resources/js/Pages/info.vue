@@ -6,7 +6,84 @@
 
     <v-container>
       <p>
-        Bla bla bla.
+        Mystery Tournament is one of the oldest speedrunning tournaments we know
+        of. This is a double elimination tournament in which the goal is to race
+        games that neither player in the race has seen before. The games are a
+        Mystery to all who play them, hence Mystery Tournament. You'll race a
+        20-60 minute goal with your opponent to see who can reach the end
+        faster!
+      </p>
+      <p>
+        This year's tournament will run from December 1st to March 17th and is
+        double emlimination. There is no set schedule, and instead you'll be
+        expected to set a race time with whoever your opponent is through our
+        discord by a fixed deadline each round. You'll stream your side of the
+        race on twitch and we'll restream most races at
+        <a href="https://twitch.tv/mysteryfunhouse" target="_blank"
+          >our twitch channel</a
+        >
+        with commentary. Please join our discord and check out the signup steps
+        to get racing!
+      </p>
+
+      <h2>Steps to sign up</h2>
+      <ul>
+        <li>
+          <a href="https://discord.gg/AYr59EgzzR" target="_blank"
+            >Join Our Discord</a
+          >
+        </li>
+        <li>
+          Register on
+          <a
+            href="https://challonge.com/tournaments/signup/71iH6zkKmu#/signup/bn5t17jlpnt"
+            target="_blank"
+          >
+            Challonge</a
+          >
+          and join the tournament
+        </li>
+        <li>
+          <a href="/signup" target="_blank">
+            Sign Up
+          </a>
+          on this site
+        </li>
+        <li>Set up SpeedRunsLive which we use to track races:</li>
+        <div class="signup-box">
+          <li>
+            Click on the
+            <a href="/irc" target="_blank">IRC</a>
+            tab
+          </li>
+          <li>Type in your username with no password</li>
+          <li>
+            Type in the chat
+            <code>/nickserv register <i>password email</i></code> (where you
+            fill in the password and email)
+          </li>
+          <li>
+            Type in the chat
+            <code>.setstream twitch.tv/<i>yourtwitch</i></code>
+            (where you fill in your own twitch channel)
+          </li>
+          <li>
+            You're done! Now next time when you click on the Race Chat tab put
+            in your correct username and password you just set to log in
+          </li>
+        </div>
+      </ul>
+
+      <p>
+        Now you're all signed up! We'd love it if you'd also
+        <a
+          href="
+        https://docs.google.com/forms/d/e/1FAIpQLSe-dbLbrdwuISSNHtzs1EQ-3ABGpKW61ALicIiTOTmK3WK5BQ/viewform"
+          target="_blank"
+          >submit some games</a
+        >
+        for us to race! If you're new make sure to read the sub guidelines at
+        the top of that form.
       </p>
 
       <div class="dangerous-text" data-aos="fade-down">

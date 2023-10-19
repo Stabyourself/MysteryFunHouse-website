@@ -5,7 +5,34 @@
     <h1 data-aos="fade-right">Mystery<br />Fun House</h1>
 
     <v-container>
-      MT is back and so on wow you can sign up bla bla bla
+      <p>
+        It's a beautiful day out on the links. You see the sun begin to peek
+        above the raised green of the 17th hole. You're comfortable, confident,
+        and sink your putt easily on the first try. 3 under par, you're ready to
+        take on anything. But you've heard stories about the 18th hole. Even the
+        best of players are often bested by it. Inconsitencies, anomolies, some
+        may even say Mysteries await you as you warily approach the final
+        challenge...
+      </p>
+
+      <p>
+        Mystery Tournament is one of the oldest video game racing tournaments
+        around. The idea is simple: You don't know what game you're going to
+        play, and your opponent doesn't know either! How can you beat someone in
+        a game that neither player has practiced or even seen before? Well
+        someone's going to win the match, and it just might be you.
+      </p>
+
+      <p>
+        Are you a natural gamer, able inhabit the sprites and models on screen
+        in a matter of seconds? Are you thinking 4 steps ahead of your
+        character's position, effortlessly plotting out the optimal movement
+        path for peak efficiency? Then this tournament may be for you. Even if
+        you don't redefine what it means to be a gamer, this tournament will
+        give you the opportunity to watch matches, make friends, and most
+        important play games you're unlikely to see anywhere else. We hope to
+        see you there.
+      </p>
 
       <v-row>
         <v-col cols="12" md="6">

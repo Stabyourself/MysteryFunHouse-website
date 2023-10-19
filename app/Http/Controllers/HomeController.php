@@ -41,4 +41,13 @@ class HomeController extends Controller
                 "description" => "Find all the links you need to get started.",
             ]);
     }
+
+    public function irc()
+    {
+        return Inertia::render('irc')
+            ->withViewData([
+                "title" => "Race Chat",
+                "description" => "This is where you join a race!",
+            ]);
+    }
 }
