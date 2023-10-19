@@ -5,10 +5,6 @@
     <h1 data-aos="fade-right">Links<br />downloads</h1>
 
     <v-container>
-      <p>
-        Bla bla links
-      </p>
-
       <div class="links">
         <v-btn
           color="primary"
@@ -21,16 +17,16 @@
 
         <v-btn
           color="primary"
-          href="https://speedrunslive.challonge.com/mt17"
+          href="https://speedrunslive.challonge.com/mt18"
           target="_blank"
           block
         >
-          MT0017 Challonge
+          MT18 Challonge Bracket
         </v-btn>
 
         <v-btn
           color="primary"
-          href="https://docs.google.com/forms/d/e/1FAIpQLSe-dbLbrdwuISSNHtzs1EQ-3ABGpKW61ALicIiTOTmK3WK5BQ/viewform"
+          href="https://docs.google.com/forms/d/1PZeA9jGaWh5D0zHwWN2VlSvPOETeFw9ghCwJMKWEgj8"
           target="_blank"
           block
         >

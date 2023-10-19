@@ -263,3 +263,21 @@ code {
   -ms-user-select: all; /* Internet Explorer/Edge */
   user-select: all; /* Chrome and Opera */
 }
+
+.home-container {
+  display: flex;
+  gap: 20px;
+}
+
+.home-text {
+  flex-grow: 1;
+}
+
+.home-image {
+  flex-shrink: 0;
+  width: 30%;
+
+  img {
+    width: 100%;
+  }
+}
