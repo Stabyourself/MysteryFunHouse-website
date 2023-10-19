@@ -15,14 +15,14 @@
       </p>
       <p>
         This year's tournament will run from December 1st to March 17th and is
-        double emlimination. There is no set schedule, and instead you'll be
-        expected to set a race time with whoever your opponent is through our
-        discord by a fixed deadline each round. You'll stream your side of the
-        race on twitch and we'll restream most races at
+        double elimination. There is no set schedule, instead you'll be expected
+        to set a race time with whoever your opponent is through our discord by
+        a fixed deadline each round. You'll stream your side of the race on
+        Twitch and we'll restream most races at
         <a href="https://twitch.tv/mysteryfunhouse" target="_blank"
-          >our twitch channel</a
+          >our Twitch channel</a
         >
-        with commentary. Please join our discord and check out the signup steps
+        with commentary. Please join our Discord and check out the signup steps
         to get racing!
       </p>
 
