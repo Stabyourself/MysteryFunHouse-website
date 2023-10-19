@@ -52,7 +52,7 @@ $aos-distance: 15px;
   background: rgba(0, 0, 0, 0.5);
   padding: 2rem;
   border-radius: 5px;
-  width: 900px;
+  width: 1000px;
 }
 
 .page-spacer {
@@ -231,6 +231,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 15px;
 }
 
 .links {

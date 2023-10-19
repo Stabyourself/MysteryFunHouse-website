@@ -49,7 +49,7 @@
 $primary: #008c6c;
 
 .player-card {
-  margin: 1rem;
+  margin: 0rem;
   padding: 2rem;
   color: $primary;
   background: white;
