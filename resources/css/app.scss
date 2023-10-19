@@ -8,7 +8,7 @@ body {
   position: relative;
 }
 
-$primary: #b1a460;
+$primary: #008c6c;
 $aos-distance: 15px;
 
 @import "~aos/src/sass/aos";
@@ -37,8 +37,22 @@ $aos-distance: 15px;
   font-weight: 200;
 }
 
-.container {
-  max-width: 1200px !important;
+#app {
+  background: url("/img/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.page-container {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.page-background {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 5px;
+  width: 900px;
 }
 
 .page-spacer {
@@ -49,7 +63,7 @@ h1 {
   text-transform: uppercase;
   font-family: "Cormorant Light", Serif;
   font-weight: 300;
-  font-size: 9rem;
+  font-size: 7rem;
   line-height: 1;
   margin-top: 4rem;
   margin-bottom: 4rem;
@@ -78,77 +92,6 @@ h2 {
 
 .v-expansion-panel-header__icon .v-icon {
   color: $primary !important;
-}
-
-.letter-wrapper {
-  position: relative;
-  max-width: 640px;
-  margin: 0 auto;
-}
-
-.letter {
-  padding: 4rem;
-  font-family: "JMH Typewriter", monospace;
-  color: black;
-  background-color: white;
-  background: url("/img/paper.jpg");
-  background-size: cover;
-
-  .letter-head {
-    text-align: right;
-    margin-bottom: 1em;
-  }
-
-  .letter-stamp {
-    max-width: 30%;
-    margin: 0 auto;
-    display: block;
-    margin-top: 3em;
-    user-select: none;
-  }
-
-  .letter-muted {
-    color: rgba(0, 0, 0, 0.5);
-  }
-}
-
-.letter-burned-wrapper {
-  pointer-events: none;
-  transition: opacity 1s ease-out;
-  opacity: 0;
-  width: calc(100% + 2px);
-  height: calc(100% + 2px);
-  position: absolute;
-  top: -1px;
-  left: -1px;
-
-  display: flex;
-  flex-direction: column;
-
-  .color-overlay {
-    flex-grow: 1;
-    background: #121212;
-  }
-
-  .burned-part {
-    position: relative;
-    top: -1px;
-  }
-
-  &.active {
-    opacity: 1;
-  }
-}
-
-[data-aos="letter-animation"] {
-  transform: rotate(-10deg) translateX(100px);
-  transform-origin: center center;
-  opacity: 0;
-  transition-property: transform, opacity;
-  &.aos-animate {
-    transform: rotate(-2deg) translateX(0);
-    opacity: 1;
-  }
 }
 
 .more-info-link {
@@ -190,6 +133,7 @@ h2 {
 
     &.active {
       color: $primary;
+      background: rgb(white, 0.7);
     }
 
     &:hover {
@@ -287,4 +231,10 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }

@@ -794,8 +794,22 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   src: url("/font/Poppins-Extra-Light.woff2");
   font-weight: 200;
 }
-.container {
-  max-width: 1200px !important;
+#app {
+  background: url("/img/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.page-container {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.page-background {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 5px;
+  width: 900px;
 }
 
 .page-spacer {
@@ -806,7 +820,7 @@ h1 {
   text-transform: uppercase;
   font-family: "Cormorant Light", Serif;
   font-weight: 300;
-  font-size: 9rem;
+  font-size: 7rem;
   line-height: 1;
   margin-top: 4rem;
   margin-bottom: 4rem;
@@ -815,8 +829,8 @@ h1 {
 h1::first-line {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
-  -webkit-text-decoration-color: #b1a460;
-          text-decoration-color: #b1a460;
+  -webkit-text-decoration-color: #008c6c;
+          text-decoration-color: #008c6c;
   text-decoration-thickness: 2px;
   text-underline-offset: 26px;
 }
@@ -830,78 +844,11 @@ h1::first-line {
   }
 }
 h2 {
-  color: #b1a460;
+  color: #008c6c;
 }
 
 .v-expansion-panel-header__icon .v-icon {
-  color: #b1a460 !important;
-}
-
-.letter-wrapper {
-  position: relative;
-  max-width: 640px;
-  margin: 0 auto;
-}
-
-.letter {
-  padding: 4rem;
-  font-family: "JMH Typewriter", monospace;
-  color: black;
-  background-color: white;
-  background: url("/img/paper.jpg");
-  background-size: cover;
-}
-.letter .letter-head {
-  text-align: right;
-  margin-bottom: 1em;
-}
-.letter .letter-stamp {
-  max-width: 30%;
-  margin: 0 auto;
-  display: block;
-  margin-top: 3em;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-.letter .letter-muted {
-  color: rgba(0, 0, 0, 0.5);
-}
-
-.letter-burned-wrapper {
-  pointer-events: none;
-  transition: opacity 1s ease-out;
-  opacity: 0;
-  width: calc(100% + 2px);
-  height: calc(100% + 2px);
-  position: absolute;
-  top: -1px;
-  left: -1px;
-  display: flex;
-  flex-direction: column;
-}
-.letter-burned-wrapper .color-overlay {
-  flex-grow: 1;
-  background: #121212;
-}
-.letter-burned-wrapper .burned-part {
-  position: relative;
-  top: -1px;
-}
-.letter-burned-wrapper.active {
-  opacity: 1;
-}
-
-[data-aos=letter-animation] {
-  transform: rotate(-10deg) translateX(100px);
-  transform-origin: center center;
-  opacity: 0;
-  transition-property: transform, opacity;
-}
-[data-aos=letter-animation].aos-animate {
-  transform: rotate(-2deg) translateX(0);
-  opacity: 1;
+  color: #008c6c !important;
 }
 
 .more-info-link {
@@ -917,7 +864,7 @@ h2 {
   text-align: center;
   display: block;
   text-transform: uppercase;
-  color: #b1a460;
+  color: #008c6c;
   margin-top: 4rem;
   opacity: 0.6;
 }
@@ -945,11 +892,12 @@ h2 {
   transition: text-decoration-color 0.3s, color 0.2s, -webkit-text-decoration-color 0.3s;
 }
 .navigation .navigation-link.active {
-  color: #b1a460;
+  color: #008c6c;
+  background: rgba(255, 255, 255, 0.7);
 }
 .navigation .navigation-link:hover {
-  -webkit-text-decoration-color: #b1a460;
-          text-decoration-color: #b1a460;
+  -webkit-text-decoration-color: #008c6c;
+          text-decoration-color: #008c6c;
   cursor: pointer;
 }
 .navigation .navigation-login {
@@ -960,26 +908,26 @@ h2 {
   width: calc(100% - 50px);
   padding: 1rem 2rem;
   color: white;
-  background: #b1a460;
+  background: #008c6c;
   margin-bottom: 1rem;
 }
 .tournament.alt {
   margin-left: auto;
-  color: #b1a460;
+  color: #008c6c;
   background: white;
 }
 .tournament.alt .tournament-header,
 .tournament.alt .tournament-date {
-  color: #b1a460;
+  color: #008c6c;
 }
 .tournament.alt .tournament-button {
-  color: #b1a460;
+  color: #008c6c;
 }
 .tournament.alt .tournament-button:hover {
-  background: rgba(177, 164, 96, 0.2);
+  background: rgba(0, 140, 108, 0.2);
 }
 .tournament.alt i {
-  color: #b1a460;
+  color: #008c6c;
 }
 .tournament .tournament-header,
 .tournament .tournament-date {
@@ -1026,4 +974,10 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }

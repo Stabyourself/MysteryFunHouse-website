@@ -2,13 +2,9 @@
   <div class="player-card">
     <div class="player-card-header">
       <div>
-        <img src="/img/ghost_outline.png" alt="MFH Logo" />
-      </div>
-
-      <div>
-        Mystery<br />
-        Fun<br />
-        House <span class="player-card-header-muted">MFH</span>
+        MFH<br />
+        Club House<br />
+        Membership
       </div>
     </div>
 
@@ -31,10 +27,10 @@
 
         <div class="player-card-data">
           <div class="player-card-data-title">
-            Rank
+            Handicap
           </div>
           <div class="player-card-data-value">
-            Agent
+            ?
           </div>
         </div>
       </div>
@@ -46,13 +42,11 @@
         {{ user.flavor }}
       </div>
     </div>
-
-    <canvas ref="canvas"></canvas>
   </div>
 </template>
 
 <style lang="scss" scoped>
-$primary: #b1a460;
+$primary: #008c6c;
 
 .player-card {
   margin: 1rem;
@@ -136,16 +130,7 @@ canvas {
 </style>
 
 <script>
-import * as PDF417 from "pdf417-generator";
-
 export default {
-  mounted() {
-    const canvas = this.$refs.canvas;
-    let data = `CAECUM-ET-IEIUNIUM:${this.user.username}`;
-
-    PDF417.draw(data, canvas, 5);
-  },
-
   props: {
     user: Object,
   },

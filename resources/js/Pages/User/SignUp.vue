@@ -6,7 +6,7 @@
 
     <v-container>
       <div v-if="!$page.props.auth.user" class="text-center">
-        <p>Login first, Agent.</p>
+        <p>Login first.</p>
 
         <v-btn color="primary" :href="route('login')">
           <v-icon>
@@ -18,10 +18,10 @@
 
       <v-form ref="form" @click.prevent="submit" v-else>
         <v-row>
-          <v-col cols="12" md="8">
+          <v-col cols="12" md="7">
             <div v-if="signedUp">
               <p>
-                Welcome back Agent. Did your data change? Let HQ know here.
+                Welcome back! You can edit your signup data here.
               </p>
             </div>
 
@@ -67,32 +67,32 @@
               label="Your special skill"
               hint="A fun special skill or note for your agent badge"
             ></v-text-field>
-
-            <h2>Special requirements</h2>
-            <v-row>
-              <v-col
-                cols="12"
-                md="4"
-                v-for="impairment in impairments"
-                :key="impairment.value"
-              >
-                <v-checkbox
-                  class="no-message"
-                  v-model="form.impairments"
-                  :label="impairment.name"
-                  :value="impairment.id"
-                ></v-checkbox>
-              </v-col>
-            </v-row>
           </v-col>
 
-          <v-col cols="12" md="4">
+          <v-col cols="12" md="5">
             <PlayerCard v-tilt :user="formatUser" />
           </v-col>
         </v-row>
 
+        <h2>Special requirements</h2>
+        <v-row>
+          <v-col
+            cols="12"
+            md="4"
+            v-for="impairment in impairments"
+            :key="impairment.value"
+          >
+            <v-checkbox
+              class="no-message"
+              v-model="form.impairments"
+              :label="impairment.name"
+              :value="impairment.id"
+            ></v-checkbox>
+          </v-col>
+        </v-row>
+
         <v-btn class="mt-2" color="primary" @click="submit" :loading="loading">
-          {{ signedUp ? "Update intel" : "Sign up" }}
+          {{ signedUp ? "Update Data" : "Sign up" }}
         </v-btn>
       </v-form>
     </v-container>

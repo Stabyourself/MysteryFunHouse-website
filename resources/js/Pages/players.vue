@@ -1,8 +1,8 @@
 <template>
   <div>
-    <Head title="Secret Agents" />
+    <Head title="Players" />
 
-    <h1 data-aos="fade-right">Secret<br />Agents</h1>
+    <h1 data-aos="fade-right">Pro<br />Players</h1>
 
     <v-container>
       <div class="player-list">

@@ -38,7 +38,7 @@
     </v-sheet> -->
 
   <div class="d-flex navigation justify-center flex-wrap">
-    <div class="navigation-login" v-if="$page.props.auth.user">
+    <!-- <div class="navigation-login" v-if="$page.props.auth.user">
       <v-btn color="primary" @click="logout">
         <v-icon>mdi-logout</v-icon>
         Log Out
@@ -52,7 +52,7 @@
         </v-icon>
         Discord Login
       </v-btn>
-    </div>
+    </div> -->
 
     <router-link
       v-for="item in items"
@@ -122,12 +122,12 @@ export default {
           route: "players",
         },
         {
-          title: "Intel",
+          title: "About",
           icon: "mdi-information",
           route: "info",
         },
         {
-          title: "Gadgets",
+          title: "Links",
           icon: "mdi-pistol",
           route: "links",
         },
