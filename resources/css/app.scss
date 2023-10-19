@@ -1,10 +1,11 @@
 @import "~vuetify/src/styles/settings/_variables";
 
+html {
+  overflow-y: scroll;
+}
 html,
 body {
   overflow-x: hidden;
-}
-body {
   position: relative;
 }
 

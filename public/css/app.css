@@ -1,9 +1,10 @@
+html {
+  overflow-y: scroll;
+}
+
 html,
 body {
   overflow-x: hidden;
-}
-
-body {
   position: relative;
 }
 
