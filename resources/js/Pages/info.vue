@@ -43,12 +43,6 @@
           >
           and join the tournament
         </li>
-        <li>
-          <a href="/signup" target="_blank">
-            Sign Up
-          </a>
-          on this site
-        </li>
         <li>Set up SpeedRunsLive which we use to track races:</li>
         <div class="signup-box">
           <li>
@@ -72,6 +66,12 @@
             in your correct username and password you just set to log in
           </li>
         </div>
+        <li>
+          <a href="/signup" target="_blank">
+            Sign Up
+          </a>
+          on this site
+        </li>
       </ul>
 
       <p>
@@ -115,7 +115,14 @@
 export default {
   computed: {
     signedUp() {
-      return this.$page.props.auth.user && this.$page.props.auth.user.events[0];
+      if (!this.$page.props.auth.user) {
+        return false;
+      }
+
+      return (
+        this.$page.props.auth.user.events.find((event) => event.id === 2) !==
+        undefined
+      );
     },
   },
 };

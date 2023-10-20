@@ -13,9 +13,9 @@ class UserController extends Controller
 {
     public function signUpForm()
     {
-        $user = [];
+        $user = new User();
         if (Auth::check()) {
-            $user = Auth::user()->load("impairments:id")->only("challonge_username", "twitch", "pronouns", "timezone", "availability", "impairments");
+            $user = Auth::user()->load("impairments:id")->only("challonge_username", "twitch", "pronouns", "timezone", "availability", "impairments", "flavor", "flag", "srl_username");
         }
 
         $impairments = Impairment::all("id", "name");
@@ -33,7 +33,7 @@ class UserController extends Controller
             abort(403);
         }
 
-        $event = Event::latest()->first(); // questionable
+        $event = Event::find(2); // questionable
 
         $validated = $request->validate([
             "challonge_username" => "required|string",
@@ -44,6 +44,8 @@ class UserController extends Controller
             "impairments" => "array",
             "impairments.*" => "integer",
             "flavor" => "nullable|string",
+            "flag" => "string",
+            "srl_username" => "string",
         ]);
 
         $user = Auth::user();
@@ -54,6 +56,8 @@ class UserController extends Controller
         $user->pronouns = $validated["pronouns"] ?? "";
         $user->timezone = $validated["timezone"] ?? "";
         $user->availability = $validated["availability"] ?? "";
+        $user->flag = $validated["flag"];
+        $user->srl_username = $validated["srl_username"];
 
         // update impairments
         $user->impairments()->detach();

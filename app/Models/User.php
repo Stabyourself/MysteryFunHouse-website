@@ -33,6 +33,8 @@ class User extends Authenticatable
         "pronouns",
         "timezone",
         "availability",
+        "flag",
+        "srl_username"
     ];
 
     public function getRouteKeyName()

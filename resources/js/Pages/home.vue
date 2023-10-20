@@ -30,7 +30,7 @@
           </p>
 
           <p>
-            Are you a natural gamer, able to inhabit the sprites and models on
+            Are you a natural gamer, able to intuit the sprites and models on
             screen in a matter of seconds? Are you thinking 4 steps ahead of
             your character's position, effortlessly plotting out the optimal
             movement path for peak efficiency? Then this tournament may be for
@@ -89,7 +89,14 @@ export default {
 
   computed: {
     signedUp() {
-      return this.$page.props.auth.user && this.$page.props.auth.user.events[0];
+      if (!this.$page.props.auth.user) {
+        return false;
+      }
+
+      return (
+        this.$page.props.auth.user.events.find((event) => event.id === 2) !==
+        undefined
+      );
     },
   },
 
