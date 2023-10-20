@@ -113,12 +113,12 @@ class UserController extends Controller
             return $user->events->where("id", 2)->count() > 0;
         });
 
-        $users = $users->toArray();
-
         foreach ($users as &$user) {
-            $user["flavor"] = $user["events"][0]["pivot"]["flavor"];
-            unset($user["events"]);
+            $event = $user->events->where("id", 2)->first();
+            $user->flavor = $event->pivot->flavor;
         }
+
+        $users = $users->toArray();
 
         return Inertia::render('players', compact("users"))
             ->withViewData([
