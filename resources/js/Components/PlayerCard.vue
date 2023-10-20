@@ -16,21 +16,13 @@
       />
 
       <div>
+        <Flag :code="user.flag" />
         <div class="player-card-data">
           <div class="player-card-data-title">
             Name
           </div>
           <div class="player-card-data-value">
             {{ user.username }}
-          </div>
-        </div>
-
-        <div class="player-card-data">
-          <div class="player-card-data-title">
-            Handicap
-          </div>
-          <div class="player-card-data-value">
-            ?
           </div>
         </div>
       </div>

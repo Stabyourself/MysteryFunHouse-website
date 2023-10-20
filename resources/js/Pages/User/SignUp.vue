@@ -175,6 +175,7 @@ export default {
         username: this.$page.props.auth.user.username,
         avatar: this.$page.props.auth.user.avatar,
         flavor: this.form.flavor,
+        flag: this.form.flag,
       };
     },
   },
