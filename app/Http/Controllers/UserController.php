@@ -109,7 +109,8 @@ class UserController extends Controller
 
 
         $users = $users->filter(function ($user) {
-            return $user->events->count() > 0; // this won't work in the future
+            // where user is signed up for event
+            return $user->events->where("id", 2)->count() > 0;
         });
 
         $users = $users->toArray();
