@@ -272,6 +272,10 @@ code {
 
   @media (max-width: 560px) {
     flex-direction: column;
+
+    .home-image {
+      width: 100%;
+    }
   }
 }
 
