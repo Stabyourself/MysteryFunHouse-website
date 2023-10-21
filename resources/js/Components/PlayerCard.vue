@@ -29,7 +29,7 @@
     </div>
 
     <div class="player-card-flavor">
-      Notes
+      Notes/Special Skill
       <div class="flavor">
         {{ user.flavor }}
       </div>
