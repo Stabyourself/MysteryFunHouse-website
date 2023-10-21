@@ -2,8 +2,8 @@
   <div class="player-card">
     <div class="player-card-header">
       <div>
-        MFH<br />
-        Club House<br />
+        Mystery<br />
+        Clubhouse<br />
         Membership
       </div>
     </div>
@@ -14,17 +14,17 @@
         :src="'/storage/avatars/' + user.avatar"
         alt="Avatar"
       />
+    </div>
 
+    <div class="player-card-data">
       <div>
-        <Flag :code="user.flag" />
-        <div class="player-card-data">
-          <div class="player-card-data-title">
-            Name
-          </div>
-          <div class="player-card-data-value">
-            {{ user.username }}
-          </div>
+        <div class="player-card-data-title">
+          Name
         </div>
+        <div class="player-card-data-value">
+          {{ user.username }}
+        </div>
+        <Flag :code="user.flag" />
       </div>
     </div>
 
@@ -46,13 +46,15 @@ $primary: #008c6c;
   color: $primary;
   background: white;
   width: 300px;
-  height: 475.7317525009262689885142645424px;
+  height: 475px;
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 
   .player-card-header {
     display: flex;
 
-    margin-bottom: 0.8rem;
     text-transform: uppercase;
     line-height: 1;
     font-family: "Poppins", Arial, sans-serif;
@@ -80,14 +82,13 @@ $primary: #008c6c;
   }
 
   .player-card-middle {
-    margin-bottom: 0.8rem;
-    height: 133px;
   }
 
   .player-card-data {
     font-size: 1.3rem;
     line-height: 1.1;
-    margin-bottom: 0.2rem;
+    display: flex;
+    gap: 10px;
 
     .player-card-data-value {
       text-transform: uppercase;
@@ -102,7 +103,6 @@ $primary: #008c6c;
 
   .player-card-flavor {
     height: 120px;
-    margin-bottom: 10px;
     width: 100%;
     overflow: hidden;
 

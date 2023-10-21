@@ -71,6 +71,7 @@ class DiscordController extends Controller
     };
     $userData = json_decode($userData);
 
+
     // get MFH specific user data
     $guildData = Http::withToken($accessTokenData->access_token)->get($this->apiURLBaseGuild);
     if ($guildData->clientError() || $guildData->serverError()) {
@@ -121,7 +122,7 @@ class DiscordController extends Controller
     }
 
     // get the most relevant username
-    $username = $userData->username; // this is always set
+    $username = $userData->global_name; // this is always set
 
     if (!empty($guildData->nick)) {
       $username = $guildData->nick;
