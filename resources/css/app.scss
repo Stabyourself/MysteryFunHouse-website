@@ -269,6 +269,10 @@ code {
 .home-container {
   display: flex;
   gap: 20px;
+
+  @media (max-width: 560px) {
+    flex-direction: column;
+  }
 }
 
 .home-text {
