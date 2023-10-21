@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Head title="Info" />
+    <Head title="Links" />
 
     <h1 data-aos="fade-right">Links<br />downloads</h1>
 

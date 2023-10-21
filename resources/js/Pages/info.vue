@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Head title="Intel" />
+    <Head title="About" />
 
     <h1 data-aos="fade-right">Mystery<br />Tournament</h1>
 
@@ -62,8 +62,8 @@
             (where you fill in your own twitch channel)
           </li>
           <li>
-            You're done! Now next time when you click on the Race Chat tab put
-            in your correct username and password you just set to log in
+            You're done! Now next time when you click on the IRC tab put in your
+            correct username and password you just set to log in
           </li>
         </div>
         <li>
