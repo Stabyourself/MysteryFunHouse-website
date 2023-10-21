@@ -130,6 +130,8 @@ class DiscordController extends Controller
 
     // this isn't great but I dunno lmao
     $challongeUsername = "";
+    $srlUsername = "";
+    $flag = "";
     $twitch = "";
     $pronouns = "";
     $timezone = "";
@@ -137,6 +139,8 @@ class DiscordController extends Controller
 
     if ($user) {
       $challongeUsername = $user->challonge_username;
+      $srlUsername = $user->srl_username;
+      $flag = $user->flag;
       $twitch = $user->twitch;
       $pronouns = $user->pronouns;
       $timezone = $user->timezone;
@@ -160,6 +164,8 @@ class DiscordController extends Controller
 
         'slug' => Str::slug($userData->username . "-" . $userData->discriminator),
         'challonge_username' => $challongeUsername,
+        'srl_username' => $srlUsername,
+        'flag' => $flag,
         'twitch' => $twitch,
         'pronouns' => $pronouns,
         'timezone' => $timezone,
