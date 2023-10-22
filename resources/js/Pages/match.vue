@@ -40,7 +40,7 @@
           </div>
         </div>
 
-        <div v-else>
+        <div v-if="opponent">
           <div class="match-container">
             <PlayerCard v-tilt :user="opponent" />
             <div>
@@ -111,7 +111,7 @@ export default {
 
   data() {
     return {
-      opponentLoading: false,
+      opponentLoading: true,
       opponentError: null,
       opponent: null,
       opponentTime: null,
