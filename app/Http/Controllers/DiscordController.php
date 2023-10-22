@@ -122,7 +122,7 @@ class DiscordController extends Controller
     }
 
     // get the most relevant username
-    $username = $userData->global_name; // this is always set
+    $username = $userData->global_name ?? $userData->username; // this is always set
 
     if (!empty($guildData->nick)) {
       $username = $guildData->nick;
