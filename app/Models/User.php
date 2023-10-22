@@ -80,7 +80,8 @@ class User extends Authenticatable
 
     public function opponent()
     {
-        $event = Event::latest()->first();
+        // TODO: $event = Event::latest()->first();
+        $event = Event::first();
 
         $challongeService = resolve(ChallongeService::class);
 
@@ -92,7 +93,7 @@ class User extends Authenticatable
 
         $matches = collect($challongeService->getParticipantMatches($event->challonge_id, $challongeId));
 
-        // open
+        // TODO: open
         $match = $matches->where("match.state", "complete")->last();
 
         if (!$match) {
