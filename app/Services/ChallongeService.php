@@ -26,7 +26,7 @@ class ChallongeService
 
     $participants = $response->json();
     foreach ($participants as $participant) {
-      if ($participant["participant"]["name"] == $challongeName) {
+      if (strtolower($participant["participant"]["name"]) == strtolower($challongeName)) {
         return $participant["participant"]["id"];
       }
     }

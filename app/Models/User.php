@@ -152,7 +152,9 @@ class User extends Authenticatable
 
             $challongeName = $challongeService->getParticipantName($event->challonge_id, $challongeId);
 
-            $signup = $event->users->where("challonge_username", $challongeName)->first();
+            $signup = $event->users->filter(function ($user) use ($challongeName) {
+                return strtolower($user->challonge_username) == strtolower($challongeName);
+            })->first();
 
             if ($signup) {
                 $signup->pivot->challonge_id = $challongeId;
