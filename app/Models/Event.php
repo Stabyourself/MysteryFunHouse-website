@@ -9,10 +9,8 @@ class Event extends Model
 {
     use HasFactory;
 
-
-
     public function users()
     {
-        return $this->belongsToMany(User::class, "signups")->withTimestamps();
+        return $this->belongsToMany(User::class, "signups")->withTimestamps()->withPivot("flavor", "challonge_id");
     }
 }

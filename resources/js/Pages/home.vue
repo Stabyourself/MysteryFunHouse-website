@@ -81,12 +81,6 @@
 
 <script>
 export default {
-  mounted() {
-    setTimeout(() => {
-      this.burned = true;
-    }, 60000);
-  },
-
   computed: {
     signedUp() {
       if (!this.$page.props.auth.user) {
@@ -101,9 +95,7 @@ export default {
   },
 
   data() {
-    return {
-      burned: false,
-    };
+    return {};
   },
 };
 </script>

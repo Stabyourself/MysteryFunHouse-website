@@ -15,3 +15,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/user/{challongeName}', [App\Http\Controllers\ApiController::class, 'user']);
+Route::get('/opponent', [App\Http\Controllers\ApiController::class, 'opponent']);

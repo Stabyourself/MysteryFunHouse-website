@@ -50,4 +50,13 @@ class HomeController extends Controller
                 "description" => "This is where you join a race!",
             ]);
     }
+
+    public function match()
+    {
+        return Inertia::render('match')
+            ->withViewData([
+                "title" => "Match",
+                "description" => "Your current matchup.",
+            ]);
+    }
 }

@@ -107,14 +107,15 @@ class UserController extends Controller
     {
         $users = User::with("events")->orderBy("username")->get(["id", "username", "avatar", "flag"]);
 
+        $event = Event::latest()->first();
 
-        $users = $users->filter(function ($user) {
+        $users = $users->filter(function ($user) use ($event) {
             // where user is signed up for event
-            return $user->events->where("id", 2)->count() > 0;
+            return $user->events->where("id", $event->id)->count() > 0;
         });
 
         foreach ($users as &$user) {
-            $event = $user->events->where("id", 2)->first();
+            $event = $user->events->where("id", $event->id)->first();
             $user->flavor = $event->pivot->flavor;
         }
 

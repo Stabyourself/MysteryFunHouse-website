@@ -23,6 +23,7 @@ Route::get('/archive', [HomeController::class, 'archive'])->name("archive");
 Route::get('/players', [UserController::class, 'index'])->name("players");
 Route::get('/links', [HomeController::class, 'links'])->name("links");
 Route::get('/irc', [HomeController::class, 'irc'])->name("irc");
+Route::get('/match', [HomeController::class, 'match'])->name("match");
 
 // auth bs
 Route::get('tologin', [DiscordController::class, 'tologin'])
