@@ -1051,6 +1051,10 @@ extraFlags = [
     img: "ghost.png",
     name: "Mystery Ghost",
   },
+  {
+    img: "scotland-pride.png",
+    name: "Scotland",
+  },
 ];
 
 // add our own flags
