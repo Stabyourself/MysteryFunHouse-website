@@ -1052,7 +1052,7 @@ extraFlags = [
     name: "Mystery Ghost",
   },
   {
-    img: "scotland-pride.png",
+    img: "scotland-pride.svg",
     name: "Scotland",
   },
 ];

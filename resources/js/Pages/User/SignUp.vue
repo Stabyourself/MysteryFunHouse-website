@@ -414,7 +414,7 @@ export default {
         { img: "sm.svg", name: "San Marino" },
         { img: "st.svg", name: "Sao Tome And Principe" },
         { img: "sa.svg", name: "Saudi Arabia" },
-        { img: "scotland-pride.png", name: "Scotland" },
+        { img: "scotland-pride.svg", name: "Scotland" },
         { img: "sn.svg", name: "Senegal" },
         { img: "rs.svg", name: "Serbia" },
         { img: "a-sexuality.svg", name: "Sexuality" },
