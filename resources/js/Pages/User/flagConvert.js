@@ -985,11 +985,11 @@ flags = [
 extraFlags = [
   {
     img: "a-gender.svg",
-    name: "Gender",
+    name: "Agender",
   },
   {
     img: "a-romantic.svg",
-    name: "Romantic",
+    name: "Aromantic",
   },
   {
     img: "a-sexuality.svg",

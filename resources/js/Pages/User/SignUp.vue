@@ -207,6 +207,7 @@ export default {
 
       flags: [
         { img: "af.svg", name: "Afghanistan" },
+        { img: "a-gender.svg", name: "Agender" },
         { img: "ax.svg", name: "Aland Islands" },
         { img: "al.svg", name: "Albania" },
         { img: "dz.svg", name: "Algeria" },
@@ -218,6 +219,7 @@ export default {
         { img: "ag.svg", name: "Antigua And Barbuda" },
         { img: "ar.svg", name: "Argentina" },
         { img: "am.svg", name: "Armenia" },
+        { img: "a-romantic.svg", name: "Aromantic" },
         { img: "aw.svg", name: "Aruba" },
         { img: "au.svg", name: "Australia" },
         { img: "at.svg", name: "Austria" },
@@ -288,7 +290,6 @@ export default {
         { img: "ga.svg", name: "Gabon" },
         { img: "gm.svg", name: "Gambia" },
         { img: "gay.svg", name: "Gay" },
-        { img: "a-gender.svg", name: "Gender" },
         { img: "genderfluid.svg", name: "Genderqueer" },
         { img: "ge.svg", name: "Georgia" },
         { img: "de.svg", name: "Germany" },
@@ -400,7 +401,6 @@ export default {
         { img: "rainbow-progress.svg", name: "Rainbow Progress" },
         { img: "re.svg", name: "Reunion" },
         { img: "ro.svg", name: "Romania" },
-        { img: "a-romantic.svg", name: "Romantic" },
         { img: "ru.svg", name: "Russian Federation" },
         { img: "rw.svg", name: "Rwanda" },
         { img: "bl.svg", name: "Saint Barthelemy" },
