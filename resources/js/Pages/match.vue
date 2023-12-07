@@ -65,7 +65,7 @@
   gap: 20px;
 }
 
-@media (min-width: 800px) {
+@media (max-width: 800px) {
   .match-container {
     flex-direction: column;
   }
