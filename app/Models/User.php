@@ -80,8 +80,7 @@ class User extends Authenticatable
 
     public function opponent()
     {
-        // TODO: $event = Event::latest()->first();
-        $event = Event::first();
+        $event = Event::latest()->first();
 
         $challongeService = resolve(ChallongeService::class);
 
