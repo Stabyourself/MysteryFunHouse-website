@@ -94,6 +94,12 @@ class User extends Authenticatable
 
         $match = $matches->where("match.state", "open")->last();
 
+        if (!$match) { // try to find a pending match with both players instead
+            $match = $matches->where("match.state", "pending")->filter(function ($match) {
+                return !is_null($match["match"]["player1_id"]) && !is_null($match["match"]["player2_id"]);
+            })->last();
+        }
+
         if (!$match) {
             return "no_match";
         }
