@@ -60,10 +60,14 @@
 </template>
 
 <style scoped lang="scss">
+.match-container {
+  display: flex;
+  gap: 20px;
+}
+
 @media (min-width: 800px) {
   .match-container {
-    display: flex;
-    gap: 20px;
+    flex-direction: column;
   }
 }
 </style>
