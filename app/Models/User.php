@@ -92,8 +92,7 @@ class User extends Authenticatable
 
         $matches = collect($challongeService->getParticipantMatches($event->challonge_id, $challongeId));
 
-        // TODO: open
-        $match = $matches->where("match.state", "complete")->last();
+        $match = $matches->where("match.state", "open")->last();
 
         if (!$match) {
             return "no_match";
