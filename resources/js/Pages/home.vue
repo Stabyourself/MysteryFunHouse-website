@@ -11,13 +11,7 @@
         </div>
         <div class="home-text">
           <p>
-            It's a beautiful day out on the links. You see the sun begin to peek
-            above the raised green of the 17th hole. You're comfortable,
-            confident, and sink your putt easily on the first try. 3 under par,
-            you're ready to take on anything. But you've heard stories about the
-            18th hole. Even the best of players are often bested by it.
-            Inconsistencies, anomalies, some may even say Mysteries await you as
-            you warily approach the final challenge...
+            You wake up. Where are you? As you regain composure, you find yourself staring at an impossibly tall stone castle looming over you. The sky glows a pale red reminding you of dusk but with no clear source of any celestial glow. You crick your neck higher and higher and despite significant effort and strain you cannot see where the towers end and the sky begins. You know you have a quest, a purpose, a destiny to be in this place and time... but what is it? You look down at yourself, struggling to decipher what you're seeing. You can't quite put your finger on it but you're... blurry? No not blurry just.. maybe inconsistent is the right word. It seems you have a powerful magic wand, able to best any foe with any number of impressive spells. But you also have a large green tail and layered scales. No wait you've always had this tail... or do you even have it now? Despite this strange feeling, this incomprehensible Mystery of just who and what you are, you know it's more important to press on than to ponder. Just how tall is this castle anyway...
           </p>
 
           <p>
@@ -88,7 +82,7 @@ export default {
       }
 
       return (
-        this.$page.props.auth.user.events.find((event) => event.id === 2) !==
+        this.$page.props.auth.user.events.find((event) => event.id === 3) !==
         undefined
       );
     },

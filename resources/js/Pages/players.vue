@@ -1,8 +1,8 @@
 <template>
   <div>
-    <Head title="Players" />
+    <Head title="Adventurers" />
 
-    <h1 data-aos="fade-right">Pro<br />Players</h1>
+    <h1 data-aos="fade-right">Adventurers</h1>
 
     <div class="player-list">
       <PlayerCard v-tilt v-for="user in users" :key="user.id" :user="user" />

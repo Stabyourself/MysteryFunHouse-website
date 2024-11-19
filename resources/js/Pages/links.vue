@@ -2,7 +2,7 @@
   <div>
     <Head title="Links" />
 
-    <h1 data-aos="fade-right">Links<br />downloads</h1>
+    <h1 data-aos="fade-right">Links<br />Downloads</h1>
 
     <v-container>
       <div class="links">
@@ -17,11 +17,11 @@
 
         <v-btn
           color="primary"
-          href="https://speedrunslive.challonge.com/mt18"
+          href="https://speedrunslive.challonge.com/mysterytournament19"
           target="_blank"
           block
         >
-          MT18 Challonge Bracket
+          MT19 Challonge Bracket
         </v-btn>
 
         <v-btn

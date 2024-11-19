@@ -14,7 +14,7 @@
         faster!
       </p>
       <p>
-        This year's tournament will run from December 1st to March 17th and is
+        This year's tournament will run starting from December 13th and is
         double elimination. There is no set schedule, instead you'll be expected
         to set a race time with whoever your opponent is through our discord by
         a fixed deadline each round. You'll stream your side of the race on
@@ -36,7 +36,7 @@
         <li>
           Register on
           <a
-            href="https://challonge.com/tournaments/signup/71iH6zkKmu#/signup/bn5t17jlpnt"
+            href="https://challonge.com/tournaments/signup/ERnFFjd5KP#/signup/evb906ycdsl"
             target="_blank"
           >
             Challonge</a

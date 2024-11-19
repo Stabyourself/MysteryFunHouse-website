@@ -33,7 +33,7 @@ class UserController extends Controller
             abort(403);
         }
 
-        $event = Event::find(2); // questionable
+        $event = Event::latest()->first();
 
         $validated = $request->validate([
             "challonge_username" => "required|string",
@@ -76,17 +76,17 @@ class UserController extends Controller
         ]);
 
 
-        // if ($wasSignedUp) {
-        //     session()->flash('flash', [
-        //         'type' => 'success',
-        //         'text' => "Your profile has been updated.",
-        //     ]);
-        // } else {
-        //     session()->flash('flash', [
-        //         'type' => 'success',
-        //         'text' => "Successfully signed up!",
-        //     ]);
-        // }
+        if ($wasSignedUp) {
+            session()->flash('flash', [
+                'type' => 'success',
+                'text' => "Your profile has been updated.",
+            ]);
+        } else {
+            session()->flash('flash', [
+                'type' => 'success',
+                'text' => "Successfully signed up!",
+            ]);
+        }
 
         $user->save();
 
