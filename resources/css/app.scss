@@ -406,6 +406,23 @@ code {
   background-repeat: repeat;
 
   color: rgba(0, 0, 0, 0.9);
+  transition: color 2s !important;
+
+  .secret {
+    transition: color 2s;
+  }
+
+  .trigger {
+    color: $primary;
+  }
+
+  &.on {
+    color: rgba(0, 0, 0, 0);
+
+    .secret {
+      color: $primary;
+    }
+  }
 }
 
 .player-card .flag {

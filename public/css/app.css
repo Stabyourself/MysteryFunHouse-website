@@ -1042,6 +1042,19 @@ code {
   background-image: url("/img/parchment.jpg");
   background-repeat: repeat;
   color: rgba(0, 0, 0, 0.9);
+  transition: color 2s !important;
+}
+.ye-olde-mt .secret {
+  transition: color 2s;
+}
+.ye-olde-mt .trigger {
+  color: #ff010a;
+}
+.ye-olde-mt.on {
+  color: rgba(0, 0, 0, 0);
+}
+.ye-olde-mt.on .secret {
+  color: #ff010a;
 }
 
 .player-card .flag {

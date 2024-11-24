@@ -3,8 +3,7 @@
     <div class="player-card-header">
       <div>
         Mystery<br />
-        Guild<br />
-        Membership
+        Guild Card
       </div>
     </div>
 
