@@ -281,6 +281,17 @@ export default {
             "https://docs.google.com/spreadsheets/d/1tYyHOagyimN87z0kB1yCH_9EtfNu5Ni0gObA3IW5h3s/edit#gid=1124956477",
           bracket: "https://speedrunslive.challonge.com/mt17",
         },
+        {
+          name: "Mystery Tournament 18",
+          date_start: new Date(2023, 12, 9),
+          date_end: new Date(2024, 3, 17),
+          winners: ["Faris_V5", "Maurice", "Someone325"],
+          vod:
+            "https://www.youtube.com/watch?v=kpRofYsvBUI&list=PLvokTc7DrMSM4uk6p2AE-X3o3RieIHOgB",
+          games:
+            "https://docs.google.com/spreadsheets/d/18-5xv-5OTaayEFq42ARcaTziehTwudW_43hlJt7pOgk/edit?usp=sharing",
+          bracket: "https://speedrunslive.challonge.com/mt18",
+        },
       ],
     };
   },
