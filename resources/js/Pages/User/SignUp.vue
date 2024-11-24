@@ -33,7 +33,7 @@
               prepend-inner-icon="mdi-magnify"
               item-text="name"
               item-value="img"
-              label="Flag"
+              label="Flag*"
             >
               <template v-slot:item="{ props, item }">
                 <Flag style="height: 50px" :code="item.img" /> {{ item.name }}
@@ -43,20 +43,20 @@
             <v-text-field
               v-model="form.challonge_username"
               :rules="challongeUsernameRules"
-              label="Challonge Username"
+              label="Challonge Username*"
+            ></v-text-field>
+
+            <v-text-field
+              v-model="form.twitch"
+              :rules="twitchRules"
+              label="Twitch URL*"
+              prefix="twitch.tv/"
             ></v-text-field>
 
             <v-text-field
               v-model="form.srl_username"
               :rules="srlUsernameRules"
               label="SpeedRunsLive Username"
-            ></v-text-field>
-
-            <v-text-field
-              v-model="form.twitch"
-              :rules="twitchRules"
-              label="Twitch URL"
-              prefix="twitch.tv/"
             ></v-text-field>
 
             <v-text-field
@@ -197,7 +197,7 @@ export default {
       loading: false,
 
       challongeUsernameRules: [(v) => !!v || "Challonge username is required"],
-      srlUsernameRules: [(v) => !!v || "SRL username is required"],
+      srlUsernameRules: [],
       flagRules: [(v) => !!v || "Flag is required"],
       twitchRules: [(v) => !!v || "Twitch URL is required"],
       pronounRules: [],

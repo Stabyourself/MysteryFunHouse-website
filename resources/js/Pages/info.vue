@@ -43,7 +43,7 @@
           >
           and join the tournament
         </li>
-        <li>Set up SpeedRunsLive which we use to track races:</li>
+        <!--<li>Set up SpeedRunsLive which we use to track races:</li>
         <div class="signup-box">
           <li>
             Click on the
@@ -65,7 +65,7 @@
             You're done! Now next time when you click on the IRC tab put in your
             correct username and password you just set to log in
           </li>
-        </div>
+        </div>-->
         <li>
           <a href="/signup" target="_blank">
             Sign Up

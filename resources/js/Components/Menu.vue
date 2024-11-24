@@ -131,11 +131,11 @@ export default {
           icon: "mdi-pistol",
           route: "links",
         },
-        // {
-        //   title: "IRC",
-        //   icon: "mdi-chat",
-        //   route: "irc",
-        // },
+        {
+          title: "IRC",
+          icon: "mdi-chat",
+          route: "irc",
+        },
         {
           title: "Archive",
           icon: "mdi-archive",

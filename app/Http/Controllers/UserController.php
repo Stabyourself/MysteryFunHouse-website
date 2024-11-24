@@ -45,7 +45,7 @@ class UserController extends Controller
             "impairments.*" => "integer",
             "flavor" => "nullable|string",
             "flag" => "string",
-            "srl_username" => "string",
+            "srl_username" => "nullable|string",
         ]);
 
         $user = Auth::user();
@@ -57,7 +57,7 @@ class UserController extends Controller
         $user->timezone = $validated["timezone"] ?? "";
         $user->availability = $validated["availability"] ?? "";
         $user->flag = $validated["flag"];
-        $user->srl_username = $validated["srl_username"];
+        $user->srl_username = $validated["srl_username"] ?? "";
 
         // update impairments
         $user->impairments()->detach();
