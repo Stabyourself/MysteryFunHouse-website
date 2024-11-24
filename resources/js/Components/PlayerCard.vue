@@ -38,7 +38,7 @@
 </template>
 
 <style lang="scss" scoped>
-$primary: #DAA520;
+$primary: #ff010a;
 
 .player-card {
   margin: 0rem;

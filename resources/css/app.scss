@@ -9,7 +9,7 @@ body {
   position: relative;
 }
 
-$primary: #da9920;
+$primary: #ff010a;
 $aos-distance: 15px;
 
 @import "~aos/src/sass/aos";
@@ -400,7 +400,7 @@ code {
   font-family: "MedievalSharp", Serif;
   font-weight: 300;
   font-size: 1.3rem;
-  padding: 3rem;
+  padding: 4rem;
   background-color: #dad2af;
   background-image: url("/img/parchment.jpg");
   background-repeat: repeat;

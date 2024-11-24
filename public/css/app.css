@@ -835,8 +835,8 @@ h1 {
 h1::first-line {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
-  -webkit-text-decoration-color: #da9920;
-          text-decoration-color: #da9920;
+  -webkit-text-decoration-color: #ff010a;
+          text-decoration-color: #ff010a;
   text-decoration-thickness: 2px;
   text-underline-offset: 12px;
 }
@@ -850,11 +850,11 @@ h1::first-line {
   }
 }
 h2 {
-  color: #da9920;
+  color: #ff010a;
 }
 
 .v-expansion-panel-header__icon .v-icon {
-  color: #da9920 !important;
+  color: #ff010a !important;
 }
 
 .more-info-link {
@@ -870,7 +870,7 @@ h2 {
   text-align: center;
   display: block;
   text-transform: uppercase;
-  color: #da9920;
+  color: #ff010a;
   margin-top: 4rem;
   opacity: 0.6;
 }
@@ -898,12 +898,12 @@ h2 {
   transition: text-decoration-color 0.3s, color 0.2s, -webkit-text-decoration-color 0.3s;
 }
 .navigation .navigation-link.active {
-  color: #da9920;
+  color: #ff010a;
   background: rgba(255, 255, 255, 0.7);
 }
 .navigation .navigation-link:hover {
-  -webkit-text-decoration-color: #da9920;
-          text-decoration-color: #da9920;
+  -webkit-text-decoration-color: #ff010a;
+          text-decoration-color: #ff010a;
   cursor: pointer;
 }
 .navigation .navigation-login {
@@ -914,26 +914,26 @@ h2 {
   width: calc(100% - 50px);
   padding: 1rem 2rem;
   color: white;
-  background: #da9920;
+  background: #ff010a;
   margin-bottom: 1rem;
 }
 .tournament.alt {
   margin-left: auto;
-  color: #da9920;
+  color: #ff010a;
   background: white;
 }
 .tournament.alt .tournament-header,
 .tournament.alt .tournament-date {
-  color: #da9920;
+  color: #ff010a;
 }
 .tournament.alt .tournament-button {
-  color: #da9920;
+  color: #ff010a;
 }
 .tournament.alt .tournament-button:hover {
-  background: rgba(218, 153, 32, 0.2);
+  background: rgba(255, 1, 10, 0.2);
 }
 .tournament.alt i {
-  color: #da9920;
+  color: #ff010a;
 }
 .tournament .tournament-header,
 .tournament .tournament-date {
@@ -1037,7 +1037,7 @@ code {
   font-family: "MedievalSharp", Serif;
   font-weight: 300;
   font-size: 1.3rem;
-  padding: 3rem;
+  padding: 4rem;
   background-color: #dad2af;
   background-image: url("/img/parchment.jpg");
   background-repeat: repeat;
