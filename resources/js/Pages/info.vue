@@ -120,7 +120,7 @@ export default {
       }
 
       return (
-        this.$page.props.auth.user.events.find((event) => event.id === 2) !==
+        this.$page.props.auth.user.events.find((event) => event.id === 3) !==
         undefined
       );
     },
