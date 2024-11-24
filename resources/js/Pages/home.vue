@@ -6,33 +6,48 @@
 
     <v-container>
       <div class="home-container">
-        <div class="home-image">
-          <img src="/img/MT18mkVIII.png" />
-        </div>
-        <div class="home-text">
-          <p>
-            You wake up. Where are you? As you regain composure, you find yourself staring at an impossibly tall stone castle looming over you. The sky glows a pale red reminding you of dusk but with no clear source of any celestial glow. You crick your neck higher and higher and despite significant effort and strain you cannot see where the towers end and the sky begins. You know you have a quest, a purpose, a destiny to be in this place and time... but what is it? You look down at yourself, struggling to decipher what you're seeing. You can't quite put your finger on it but you're... blurry? No not blurry just.. maybe inconsistent is the right word. It seems you have a powerful magic wand, able to best any foe with any number of impressive spells. But you also have a large green tail and layered scales. No wait you've always had this tail... or do you even have it now? Despite this strange feeling, this incomprehensible Mystery of just who and what you are, you know it's more important to press on than to ponder. Just how tall is this castle anyway...
-          </p>
+        <p>
+          <strong>Mystery Tournament</strong> is one of the oldest video game
+          racing tournaments around. The idea is simple: You don't know what
+          game you're going to play, and your opponent doesn't know either! The
+          winner will be decided by intution, smart decisions, and just raw
+          skill.
+        </p>
 
-          <p>
-            Mystery Tournament is one of the oldest video game racing
-            tournaments around. The idea is simple: You don't know what game
-            you're going to play, and your opponent doesn't know either! How can
-            you beat someone in a game that neither player has practiced or even
-            seen before? Well someone's going to win the match, and it just
-            might be you.
-          </p>
+        <img
+          src="/img/mt19.png"
+          alt="Mystery Tournament 19"
+          class="home-image"
+        />
 
+        <div class="ye-olde-mt">
           <p>
-            Are you a natural gamer, able to intuit the sprites and models on
-            screen in a matter of seconds? Are you thinking 4 steps ahead of
-            your character's position, effortlessly plotting out the optimal
-            movement path for peak efficiency? Then this tournament may be for
-            you. Even if you don't redefine what it means to be a gamer, this
-            tournament will give you the opportunity to watch matches, make
-            friends, and most important play games you're unlikely to see
-            anywhere else. We hope to see you there.
+            You wake up.
           </p>
+          <p>
+            Where are you? As you regain composure, you find yourself staring at
+            an impossibly tall stone castle looming over you. The sky glows a
+            pale red reminding you of dusk but with no clear source of any
+            celestial glow. You crick your neck higher and higher and despite
+            significant effort and strain you cannot see where the towers end
+            and the sky begins.
+          </p>
+          <p>
+            You know you have a quest, a purpose, a destiny to be in this place
+            and time... but what is it? You look down at yourself, struggling to
+            decipher what you're seeing. You can't quite put your finger on it
+            but you're... blurry? No, not blurry just... maybe inconsistent is
+            the right word. It seems you have a powerful magic wand, able to
+            best any foe with any number of impressive spells. But you also have
+            a large green tail and layered scales. No wait, you've always had
+            this tail, or do you even have it now?
+          </p>
+          <p>
+            Despite this strange feeling, this incomprehensible Mystery of just
+            who and what you are, you know it's more important to press on than
+            to ponder.
+          </p>
+          <p>Just how tall is this castle anyway...</p>
         </div>
       </div>
 

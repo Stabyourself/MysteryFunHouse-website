@@ -3,7 +3,7 @@
     <div class="player-card-header">
       <div>
         Mystery<br />
-        Clubhouse<br />
+        Guild<br />
         Membership
       </div>
     </div>
