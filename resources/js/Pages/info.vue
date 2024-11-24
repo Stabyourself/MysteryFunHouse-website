@@ -14,7 +14,7 @@
         faster!
       </p>
       <p>
-        This year's tournament will run starting from December 13th and is
+        This year's tournament will run starting from December 27th and is
         double elimination. There is no set schedule, instead you'll be expected
         to set a race time with whoever your opponent is through our discord by
         a fixed deadline each round. You'll stream your side of the race on
