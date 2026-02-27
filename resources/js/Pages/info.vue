@@ -6,19 +6,25 @@
 
     <v-container>
       <p>
-        Mystery Tournament is one of the oldest speedrunning tournaments we know
-        of. This is a double elimination tournament in which the goal is to race
-        games that neither player in the race has seen before. The games are a
-        Mystery to all who play them, hence Mystery Tournament. You'll race a
-        20-60 minute goal with your opponent to see who can reach the end
-        faster!
+        Mystery Tournament sets before its players the fascinating and
+        challenging task of speedrunning a game they have never played before.
+        When you and your opponent show up for your match, you'll be randomly
+        given a game from a pool of curated submissions from players past and
+        present. Once you're both set up, the race begins! The first player to
+        complete the assigned 20-60 minute goal is the winner. The tournament
+        format is double elimination, so you'll always have at least two
+        matches.
       </p>
       <p>
-        This year's tournament will run starting from December 27th and is
-        double elimination. There is no set schedule, instead you'll be expected
-        to set a race time with whoever your opponent is through our discord by
-        a fixed deadline each round. You'll stream your side of the race on
-        Twitch and we'll restream most races at
+        Mystery Tournament has been going strong since 2012, making it one of
+        speedrunning's oldest tournaments, and over these years it has built up
+        a diverse community of people who simply love playing games.
+      </p>
+      <p>
+        Mystery Tournament has a flexible schedule. Players will be expected to
+        schedule a race time with their opponents through our Discord server
+        within a fixed deadline each round, typically 1-2 weeks. You'll stream
+        your side of the race on Twitch and we'll restream most races at
         <a href="https://twitch.tv/mysteryfunhouse" target="_blank"
           >our Twitch channel</a
         >
@@ -120,7 +126,7 @@ export default {
       }
 
       return (
-        this.$page.props.auth.user.events.find((event) => event.id === 3) !==
+        this.$page.props.auth.user.events.find((event) => event.id === 4) !==
         undefined
       );
     },

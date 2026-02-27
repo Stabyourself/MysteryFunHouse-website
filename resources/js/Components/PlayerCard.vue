@@ -2,8 +2,7 @@
   <div class="player-card">
     <div class="player-card-header">
       <div>
-        Mystery<br />
-        Guild Card
+        No. XX
       </div>
     </div>
 
@@ -37,7 +36,7 @@
 </template>
 
 <style lang="scss" scoped>
-$primary: #ff010a;
+$primary: #0171ee;
 
 .player-card {
   margin: 0rem;

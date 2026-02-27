@@ -2,79 +2,52 @@
   <div>
     <Head title="Home" />
 
-    <h1 data-aos="fade-right">Mystery<br />Fun House</h1>
-
     <v-container>
       <div class="home-container">
-        <p>
-          <strong>Mystery Tournament</strong> is one of the oldest video game
-          racing tournaments around, and anyone can join! The idea is simple:
-          You don't know what game you're going to play, and your opponent
-          doesn't know either! The winner will be decided by intuition, smart
-          decisions, and raw skill.
-        </p>
+        <div class="logo-info-box">
+          <img
+            src="/img/mt20.png"
+            alt="Mystery Tournament 20XX Logo"
+            class="home-image image-nearest"
+            data-aos="fade-down"
+          />
 
-        <p>
-          Without further ado, the Mystery Fun House is proud to present to
-          you...
-        </p>
-
-        <img
-          src="/img/mt19.png"
-          alt="Mystery Tournament 19"
-          class="home-image"
-          data-aos="fade-down"
-        />
-        <div data-aos="fade-up">
-          <div class="ye-olde-mt" :class="{ on: secret }">
-            <p>
-              You wake up.
-            </p>
-            <p>
-              Where are you? As you regain composure, you
-              <span class="secret">find</span> yourself staring at an impossibly
-              tall stone castle looming over you. The sky glows a pale red,
-              reminding you of dusk, but with no clear source of any celestial
-              glow. You crane <span class="secret">your</span> neck higher and
-              higher, and despite significant effort and strain, you cannot see
-              where the towers end and the sky begins.
-            </p>
-            <p>
-              You know you have a <span class="secret">quest</span>, a purpose,
-              a destiny to be in this place and time... but what is it? You look
-              down at yourself, struggling to decipher what you're see<span
-                class="secret"
-                >in</span
-              >g. You can't quite put your finger on it, but you're... blurry?
-              No, not blurry—just... maybe inconsistent is
-              <span class="secret">the</span> right word. It seems you have a
-              powerful magic wand, capable of defeating any foe with any number
-              of impressive spells. But you also have a large green tail and
-              layered scales. No, wait, you've always had this tail—or do you
-              even have it now?
-            </p>
-            <p>
-              Despite this strange feeling, this incomprehensible
-              <span class="secret trigger" @click="secret = true">Mystery</span>
-              of just who and what you are, you know it's more important to
-              press on than to ponder.
-            </p>
-            <p>
-              Just how tall is this <span class="secret">castle</span>,
-              anyway...
-            </p>
+          <div class="mt20-border mt20-info" data-aos="fade-up">
+            <ul>
+              <li>1v1 Bracket</li>
+              <li>Double Elim</li>
+              <li>Surprise Games</li>
+              <li>PC & Console</li>
+              <li>~45 Minutes</li>
+            </ul>
           </div>
+        </div>
+
+        <div class="main-text">
+          <p>
+            <strong>Mystery Tournament</strong> is a long-running,
+            community-driven racing event built around surprise and skill.
+            Players race to complete goals from one of a wide variety of games —
+            platformers, puzzle games, racing games, arcade games, and more.
+          </p>
+
+          <p>
+            We're excited to bring you our 20th anniversary,
+            <strong>Mystery Tournament 20XX</strong>. Sign up to test your
+            instincts or check below to learn more about how it works.
+          </p>
         </div>
       </div>
 
-      <v-row style="margin-top: 1em;">
-        <v-col cols="12" md="6">
+      <div class="d-flex">
+        <div class="flex-grow-1">
           <v-btn
             data-aos="fade-up"
             data-aos-delay="200"
             data-aos-offset="-50"
             color="primary"
             :to="route('signUpForm')"
+            class="eightbitfont"
             x-large
             block
           >
@@ -82,27 +55,202 @@
               Edit signup data
             </div>
             <div v-else>
-              Sign up now!
+              {{ signUpText }}
             </div>
           </v-btn>
-        </v-col>
-        <v-col cols="12" md="6">
+        </div>
+      </div>
+
+      <h2>How it works</h2>
+
+      <div class="steps">
+        <div class="step">
+          <div class="top">
+            <div class="number">1</div>
+            <div class="title">Sign Up</div>
+          </div>
+          <div class="content">
+            Sign up for the tournament using the button above.
+          </div>
+        </div>
+
+        <div class="arrow"><div class="arrow-inner"></div></div>
+
+        <div class="step">
+          <div class="top">
+            <div class="number">2</div>
+            <div class="title">Get Matched</div>
+          </div>
+          <div class="content">
+            Once the tournament starts, you'll be matched with an opponent.
+          </div>
+        </div>
+
+        <div class="arrow"><div class="arrow-inner"></div></div>
+
+        <div class="step">
+          <div class="top">
+            <div class="number">3</div>
+            <div class="title">Schedule</div>
+          </div>
+          <div class="content">
+            Agree on a time with your opponent and let us know.
+          </div>
+        </div>
+
+        <div class="arrow"><div class="arrow-inner"></div></div>
+
+        <div class="step">
+          <div class="top">
+            <div class="number">4</div>
+            <div class="title">Play</div>
+          </div>
+          <div class="content">
+            On racing day, you'll get a random game that neither of you have
+            played. Win to advance!
+          </div>
+        </div>
+      </div>
+
+      <h2>Watch it in action</h2>
+
+      <div class="video-container">
+        <iframe
+          src="https://www.youtube.com/embed/o4Q3mt3WdIY?si=W-sCp_qQz8POXVRt"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <div class="d-flex">
+        <div class="flex-grow-1">
           <v-btn
             data-aos="fade-up"
-            data-aos-delay="400"
+            data-aos-delay="200"
             data-aos-offset="-50"
-            color="grey"
-            :to="route('info')"
+            color="primary"
+            :to="route('signUpForm')"
+            class="eightbitfont"
             x-large
             block
           >
-            What is Mystery Tournament?
+            <div v-if="signedUp">
+              Edit signup data
+            </div>
+            <div v-else>
+              {{ signUpText }}
+            </div>
           </v-btn>
-        </v-col>
-      </v-row>
+        </div>
+      </div>
     </v-container>
   </div>
 </template>
+
+<style lang="scss" scoped>
+$primary: #1976d2;
+
+.video-container {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin: 2rem 0;
+
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.main-text {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.steps {
+  display: flex;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  align-items: stretch;
+
+  .step {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    border: 5px solid $primary;
+    flex: 1;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+
+    .top {
+      display: flex;
+      font-size: 1.2rem;
+      line-height: 1.5;
+      font-weight: 700;
+      width: 100%;
+      gap: 1rem;
+      align-items: center;
+      background: $primary;
+      padding: 0.5rem 1rem;
+    }
+
+    .number {
+      background-color: white;
+      color: $primary;
+      font-weight: bold;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      flex-shrink: 0;
+    }
+
+    .title {
+      flex-grow: 1;
+    }
+
+    .content {
+      padding: 1rem;
+      font-size: 1rem;
+      line-height: 1.5;
+      font-weight: 400;
+    }
+  }
+
+  .arrow {
+    display: flex;
+    align-items: center;
+    width: 25px;
+    flex-basis: auto;
+
+    .arrow-inner {
+      height: 5px;
+      background: $primary;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .steps {
+    .step {
+      flex: 100%;
+    }
+
+    .arrow {
+      display: none;
+    }
+  }
+}
+</style>
 
 <script>
 export default {
@@ -113,7 +261,7 @@ export default {
       }
 
       return (
-        this.$page.props.auth.user.events.find((event) => event.id === 3) !==
+        this.$page.props.auth.user.events.find((event) => event.id === 4) !==
         undefined
       );
     },
@@ -121,8 +269,18 @@ export default {
 
   data() {
     return {
-      secret: false,
+      signUpText: "Sign up now!",
+      _signUpBlinkState: false,
     };
+  },
+
+  mounted() {
+    setInterval(() => {
+      this._signUpBlinkState = !this._signUpBlinkState;
+      this.signUpText = this._signUpBlinkState
+        ? `> Sign Up Now! <`
+        : "Sign up now!";
+    }, 700);
   },
 };
 </script>

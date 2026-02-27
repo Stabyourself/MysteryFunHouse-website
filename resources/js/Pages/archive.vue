@@ -114,7 +114,7 @@ export default {
       tournaments: [
         {
           name: "Mystery Tournament 1",
-          date_start: new Date(2012, 12, 22),
+          date_start: new Date(2012, 11, 22),
           date_end: new Date(2012, 12, 22),
           winners: ["Blechy", "Harukakuma", "LiteYear"],
           vod: null,
@@ -123,7 +123,7 @@ export default {
         },
         {
           name: "Mystery Tournament 2",
-          date_start: new Date(2013, 6, 7),
+          date_start: new Date(2013, 5, 7),
           date_end: new Date(2013, 6, 22),
           winners: ["Zecks", "Blechy", "LiteYear"],
           vod: "https://www.twitch.tv/speedrunslive/v/50310469",
@@ -132,7 +132,7 @@ export default {
         },
         {
           name: "Mystery Tournament 3",
-          date_start: new Date(2013, 10, 18),
+          date_start: new Date(2013, 9, 18),
           date_end: new Date(2013, 11, 16),
           winners: ["Blechy", "Jorf", "PrinceKaro"],
           vod: "https://www.twitch.tv/speedrunslive/v/45543630",
@@ -142,7 +142,7 @@ export default {
         },
         {
           name: "Mystery Tournament 4",
-          date_start: new Date(2014, 2, 14),
+          date_start: new Date(2014, 1, 14),
           date_end: new Date(2014, 3, 22),
           winners: ["Capndrake", "Blechy", "iongravirei"],
           vod: "https://www.twitch.tv/speedrunslive/v/43020957",
@@ -152,7 +152,7 @@ export default {
         },
         {
           name: "Mystery Tournament 5",
-          date_start: new Date(2014, 8, 8),
+          date_start: new Date(2014, 7, 8),
           date_end: new Date(2014, 9, 13),
           winners: ["usedpizza", "FullaLizards", "AND4H"],
           vod: "https://www.youtube.com/watch?v=SpzdfumNXd4",
@@ -162,7 +162,7 @@ export default {
         },
         {
           name: "Mystery Tournament 6",
-          date_start: new Date(2015, 3, 5),
+          date_start: new Date(2015, 2, 5),
           date_end: new Date(2015, 4, 11),
           winners: ["Capndrake", "AND4H", "Krankdud"],
           vod: "http://www.twitch.tv/speedrunslive/v/4023041",
@@ -172,7 +172,7 @@ export default {
         },
         {
           name: "Mystery Tournament 7",
-          date_start: new Date(2015, 5, 9),
+          date_start: new Date(2015, 4, 9),
           date_end: new Date(2015, 10, 10),
           winners: ["AND4H", "Ramsus88", "Mr_Weables"],
           vod: "http://www.twitch.tv/speedrunslive/v/20147793",
@@ -182,7 +182,7 @@ export default {
         },
         {
           name: "Mystery Tournament 8",
-          date_start: new Date(2016, 2, 19),
+          date_start: new Date(2016, 1, 19),
           date_end: new Date(2016, 3, 26),
           winners: ["AND4H", "Capndrake", "Ramsus88"],
           vod: "http://www.twitch.tv/speedrunslive/v/56983301",
@@ -192,7 +192,7 @@ export default {
         },
         {
           name: "Mystery Tournament 9",
-          date_start: new Date(2016, 8, 19),
+          date_start: new Date(2016, 7, 19),
           date_end: new Date(2016, 9, 24),
           winners: ["AND4H", "Trisscorp", "Capndrake"],
           vod: "https://www.twitch.tv/speedrunslive/v/91271824",
@@ -202,7 +202,7 @@ export default {
         },
         {
           name: "Mystery Tournament X",
-          date_start: new Date(2017, 2, 17),
+          date_start: new Date(2017, 1, 17),
           date_end: new Date(2017, 4, 8),
           winners: ["AND4H", "Zecks", "Capndrake"],
           vod: "https://www.twitch.tv/videos/134456850",
@@ -212,7 +212,7 @@ export default {
         },
         {
           name: "Mystery Tournament 11",
-          date_start: new Date(2017, 8, 25),
+          date_start: new Date(2017, 7, 25),
           date_end: new Date(2017, 10, 1),
           winners: ["Zecks", "Fullalizards", "Mundungu"],
           vod: "https://www.youtube.com/watch?v=hD5J9lNd8RU",
@@ -222,7 +222,7 @@ export default {
         },
         {
           name: "Mystery Tournament 12",
-          date_start: new Date(2018, 2, 9),
+          date_start: new Date(2018, 1, 9),
           date_end: new Date(2018, 3, 18),
           winners: ["AND4H", "Capndrake", "adam5396"],
           vod: "https://www.youtube.com/watch?v=GB6t1AV21SA",
@@ -232,7 +232,7 @@ export default {
         },
         {
           name: "Mystery Tournament 13",
-          date_start: new Date(2018, 9, 14),
+          date_start: new Date(2018, 8, 14),
           date_end: new Date(2018, 11, 18),
           winners: ["AND4H", "Maurice", "Zecks"],
           vod: "https://www.youtube.com/watch?v=iehV8WuLfN4",
@@ -242,7 +242,7 @@ export default {
         },
         {
           name: "Mystery Tournament 14",
-          date_start: new Date(2019, 8, 30),
+          date_start: new Date(2019, 7, 30),
           date_end: new Date(2018, 10, 27),
           winners: ["Maurice", "Capndrake", "SirNiko"],
           vod: "https://www.youtube.com/watch?v=wfoi91ytCmM",
@@ -252,7 +252,7 @@ export default {
         },
         {
           name: "Mystery Tournament 15",
-          date_start: new Date(2020, 10, 1),
+          date_start: new Date(2020, 9, 1),
           date_end: new Date(2020, 12, 13),
           winners: ["AND4H", "Maurice", "Zecks"],
           vod: "https://www.youtube.com/watch?v=mwXR1JysvAM",
@@ -262,7 +262,7 @@ export default {
         },
         {
           name: "Mystery Tournament 16",
-          date_start: new Date(2021, 12, 10),
+          date_start: new Date(2021, 11, 10),
           date_end: new Date(2022, 3, 13),
           winners: ["Adam5396", "Someone325", "OkamiofGames"],
           vod: "https://www.youtube.com/watch?v=h2HZ_4C4OCo",
@@ -272,7 +272,7 @@ export default {
         },
         {
           name: "Mystery Tournament 17",
-          date_start: new Date(2022, 12, 9),
+          date_start: new Date(2022, 11, 9),
           date_end: new Date(2023, 3, 12),
           winners: ["Trisscorp", "Pikapals", "Maurice"],
           vod:
@@ -283,7 +283,7 @@ export default {
         },
         {
           name: "Mystery Tournament 18",
-          date_start: new Date(2023, 12, 9),
+          date_start: new Date(2023, 11, 9),
           date_end: new Date(2024, 3, 17),
           winners: ["Faris_V5", "Maurice", "Someone325"],
           vod:
@@ -291,6 +291,16 @@ export default {
           games:
             "https://docs.google.com/spreadsheets/d/18-5xv-5OTaayEFq42ARcaTziehTwudW_43hlJt7pOgk/edit?usp=sharing",
           bracket: "https://speedrunslive.challonge.com/mt18",
+        },
+        {
+          name: "Mystery Tournament 19",
+          date_start: new Date(2024, 11, 9),
+          date_end: new Date(2025, 3, 17),
+          winners: ["Midboss", "Faris_V5", "pikapals"],
+          vod: "https://www.youtube.com/watch?v=o4Q3mt3WdIY",
+          games:
+            "https://docs.google.com/spreadsheets/d/1OaxGA7aoDoBvdqK0WWQQs2yUOsMZ9gMCpNMaSfnz6J4/edit?gid=0#gid=0",
+          bracket: "https://speedrunslive.challonge.com/mysterytournament19",
         },
       ],
     };

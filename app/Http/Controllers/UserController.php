@@ -23,7 +23,7 @@ class UserController extends Controller
         return Inertia::render('User/SignUp', compact("impairments", "user"))
             ->withViewData([
                 "title" => "Sign Up",
-                "description" => "Sign up for Mystery Tournament 18",
+                "description" => "Sign up for Mystery Tournament XX",
             ]);
     }
 
@@ -99,7 +99,7 @@ class UserController extends Controller
         return Inertia::render('User/SignedUp')
             ->withViewData([
                 "title" => "Sign Up",
-                "description" => "Sign up for Mystery Tournament 18",
+                "description" => "Sign up for Mystery Tournament XX",
             ]);
     }
 
@@ -124,7 +124,7 @@ class UserController extends Controller
         return Inertia::render('players', compact("users"))
             ->withViewData([
                 "title" => "Players",
-                "description" => "View all the players signed up for Mystery Tournament 18",
+                "description" => "View all the players signed up for Mystery Tournament XX",
             ]);
     }
 }

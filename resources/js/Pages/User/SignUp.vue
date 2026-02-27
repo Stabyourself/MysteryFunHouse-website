@@ -161,7 +161,7 @@ export default {
       }
 
       return (
-        this.$page.props.auth.user.events.find((event) => event.id === 3) !==
+        this.$page.props.auth.user.events.find((event) => event.id === 4) !==
         undefined
       );
     },

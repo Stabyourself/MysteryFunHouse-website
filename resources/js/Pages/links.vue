@@ -17,11 +17,11 @@
 
         <v-btn
           color="primary"
-          href="https://speedrunslive.challonge.com/mysterytournament19"
+          href="https://speedrunslive.challonge.com/mysterytournamentxx"
           target="_blank"
           block
         >
-          MT19 Challonge Bracket
+          MTXX Challonge Bracket
         </v-btn>
 
         <v-btn
