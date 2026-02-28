@@ -5,13 +5,13 @@
     <v-container>
       <div class="home-container">
         <div class="logo-info-box">
-          <div id="ghost-scene-container"></div>
-          <!-- <img
+          <!-- <div id="ghost-scene-container"></div> -->
+          <img
             src="/img/mt20.png"
             alt="Mystery Tournament 20XX Logo"
             class="home-image image-nearest"
             data-aos="fade-down"
-          /> -->
+          />
 
           <div class="mt20-border mt20-info" data-aos="fade-up">
             <ul>
@@ -149,7 +149,7 @@
       </div>
     </v-container>
 
-    <script type="module" src="/js/ghost_scene.js"></script>
+    <!-- <script type="module" src="/js/ghost_scene.js"></script> -->
   </div>
 </template>
 
