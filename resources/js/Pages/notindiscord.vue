@@ -16,6 +16,7 @@
         data-aos-offset="-50"
         color="primary"
         :href="'https://discord.gg/AYr59EgzzR'"
+        target="_blank"
         class="eightbitfont"
         x-large
         block

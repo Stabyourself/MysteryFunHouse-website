@@ -8,7 +8,12 @@
       <div v-if="!$page.props.auth.user" class="text-center">
         <p>First, make sure you're in our discord server.</p>
 
-        <v-btn color="primary" :href="'https://discord.gg/AYr59EgzzR'" x-large>
+        <v-btn
+          color="primary"
+          :href="'https://discord.gg/AYr59EgzzR'"
+          x-large
+          target="_blank"
+        >
           Join the Discord
         </v-btn>
 
