@@ -4,11 +4,11 @@
 
     <h1 data-aos="fade-right">Discord Server</h1>
     <p>
-      <v-alert
-        text="Seems like you aren't in the Mystery Tournament discord server. All organization of Mystery Fun House events happens there, and you need to join to participate."
-        type="warning"
-        variant="tonal"
-      ></v-alert>
+      <v-alert type="warning" outlined text
+        >Seems like you aren't in the Mystery Tournament discord server. All
+        organization of Mystery Fun House events happens there, and you need to
+        join to participate.</v-alert
+      >
 
       <v-btn
         data-aos="fade-up"
