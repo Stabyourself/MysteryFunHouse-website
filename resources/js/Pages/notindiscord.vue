@@ -2,7 +2,7 @@
   <div>
     <Head title="Adventurers" />
 
-    <h1 data-aos="fade-right">Discord Server</h1>
+    <h1 data-aos="fade-right">Sign<br />Up</h1>
     <p>
       <v-alert type="warning" outlined text
         >Seems like you aren't in the Mystery Tournament discord server. All
