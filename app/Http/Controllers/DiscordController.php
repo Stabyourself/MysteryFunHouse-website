@@ -61,14 +61,14 @@ class DiscordController extends Controller
       $accessTokenData = json_decode($accessTokenData->getBody());
     } catch (\GuzzleHttp\Exception\ClientException $error) {
       Log::error("Couldn't authenticate: " . $error->getMessage());
-      abort(500);
+      return redirect()->route("signUp")->withErrors(["login" => "Couldn't authenticate with Discord. Please try again."]);
     };
 
     // get general user data
     $userData = Http::withToken($accessTokenData->access_token)->get($this->apiURLBase);
     if ($userData->clientError() || $userData->serverError()) {
       Log::error("Couldn't fetch Discord data: " . $userData->body());
-      abort(500);
+      return redirect()->route("signUp")->withErrors(["login" => "Couldn't authenticate with Discord. Please try again."]);
     };
     $userData = json_decode($userData);
 
