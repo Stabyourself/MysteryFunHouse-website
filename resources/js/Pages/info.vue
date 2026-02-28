@@ -42,7 +42,7 @@
         <li>
           Register on
           <a
-            href="https://challonge.com/tournaments/signup/ERnFFjd5KP#/signup/evb906ycdsl"
+            href="https://speedrunslive.challonge.com/mysterytournamentxx"
             target="_blank"
           >
             Challonge</a
@@ -73,9 +73,7 @@
           </li>
         </div>-->
         <li>
-          <a href="/signup" target="_blank">
-            Sign Up
-          </a>
+          <a href="/signup" target="_blank"> Sign Up </a>
           on this site
         </li>
       </ul>
@@ -92,9 +90,7 @@
         the top of that form.
       </p>
 
-      <div class="dangerous-text" data-aos="fade-down">
-        Sounds fun?
-      </div>
+      <div class="dangerous-text" data-aos="fade-down">Sounds fun?</div>
 
       <div class="text-center">
         <v-btn
@@ -105,12 +101,8 @@
           :to="route('signUpForm')"
           x-large
         >
-          <div v-if="signedUp">
-            Edit signup data
-          </div>
-          <div v-else>
-            Sign up now!
-          </div>
+          <div v-if="signedUp">Edit signup data</div>
+          <div v-else>Sign up now!</div>
         </v-btn>
       </div>
     </v-container>
