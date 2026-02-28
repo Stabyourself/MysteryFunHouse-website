@@ -4,8 +4,24 @@
 
     <h1 data-aos="fade-right">Discord Server</h1>
     <p>
-      We couldn't fetch your data. Are you in the
-      <a href="https://discord.gg/AYr59EgzzR">MFH Discord server</a>?
+      <v-alert
+        text="Seems like you aren't in the Mystery Tournament discord server. All organization of Mystery Fun House events happens there, and you need to join to participate."
+        type="warning"
+        variant="tonal"
+      ></v-alert>
+
+      <v-btn
+        data-aos="fade-up"
+        data-aos-delay="200"
+        data-aos-offset="-50"
+        color="primary"
+        :to="'https://discord.gg/AYr59EgzzR'"
+        class="eightbitfont"
+        x-large
+        block
+      >
+        Join the Discord
+      </v-btn>
     </p>
   </div>
 </template>
