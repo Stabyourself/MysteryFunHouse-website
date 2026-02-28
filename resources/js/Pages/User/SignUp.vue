@@ -21,7 +21,7 @@
           Join the Discord
         </v-btn>
 
-        <p>Then, login through discord to sign up!</p>
+        <p style="margin-top: 50px">Then, login through discord to sign up!</p>
 
         <v-btn color="primary" :href="route('login')">
           <v-icon>
