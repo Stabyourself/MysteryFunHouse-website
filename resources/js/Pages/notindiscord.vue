@@ -23,6 +23,15 @@
       >
         Join the Discord
       </v-btn>
+
+      <p>And then try again!</p>
+
+        <v-btn color="primary" :href="route('login')" x-large>
+          <v-icon>
+            mdi-discord
+          </v-icon>
+          Discord Login
+        </v-btn>
     </p>
   </div>
 </template>
