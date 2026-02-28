@@ -15,6 +15,7 @@ const path = require("path");
 
 mix
   .js("resources/js/app.js", "public/js")
+  .js("resources/js/ghost_scene.js", "public/js")
   .vue()
   .vuetify("vuetify-loader")
   .alias({ "@": path.join(__dirname, "resources/js") })

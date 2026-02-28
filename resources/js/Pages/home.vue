@@ -5,12 +5,13 @@
     <v-container>
       <div class="home-container">
         <div class="logo-info-box">
-          <img
+          <div id="ghost-scene-container"></div>
+          <!-- <img
             src="/img/mt20.png"
             alt="Mystery Tournament 20XX Logo"
             class="home-image image-nearest"
             data-aos="fade-down"
-          />
+          /> -->
 
           <div class="mt20-border mt20-info" data-aos="fade-up">
             <ul>
@@ -116,7 +117,7 @@
 
       <div class="video-container">
         <iframe
-          src="https://www.youtube.com/embed/o4Q3mt3WdIY?si=W-sCp_qQz8POXVRt"
+          src="https://www.youtube.com/embed/Z346jwjD_vU?si=wP_V-n91CRCzD1Nl"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -247,6 +248,71 @@ $primary: #1976d2;
 
     .arrow {
       display: none;
+    }
+  }
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-info-box {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+
+  .home-image {
+    width: 505px;
+    max-width: 100%;
+    position: relative;
+    z-index: 2;
+  }
+
+  #ghost-scene-container {
+    width: 505px;
+    height: 312px;
+    max-width: 100%;
+    position: relative;
+    z-index: 2;
+  }
+
+  .mt20-info {
+    font-family: "Press Start 2P", Arial, sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-left: -50px;
+    text-shadow: 4px 4px 0px #015008;
+
+    ul {
+      padding: 0;
+      list-style: square;
+      list-style-position: inside;
+      li {
+        &:not(:last-child) {
+          border-bottom: 2px solid $primary;
+        }
+
+        &::marker {
+          color: $primary;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .logo-info-box {
+    flex-direction: column;
+
+    .mt20-info {
+      margin-left: 0;
+      margin-top: -20px;
+      font-size: 1rem;
     }
   }
 }

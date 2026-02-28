@@ -84,7 +84,7 @@
               v-model="form.flavor"
               :rules="flavorRules"
               label="Your special skill"
-              hint="A fun special skill or note for your guild card."
+              hint="A fun special skill or note on your player card."
             ></v-text-field>
           </v-col>
 

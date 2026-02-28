@@ -11,6 +11,7 @@ use App\Models\User;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
+use Inertia\Inertia;
 
 class DiscordController extends Controller
 {
@@ -75,7 +76,8 @@ class DiscordController extends Controller
     // get MFH specific user data
     $guildData = Http::withToken($accessTokenData->access_token)->get($this->apiURLBaseGuild);
     if ($guildData->clientError() || $guildData->serverError()) {
-      return 'We couldn\'t fetch your data. Are you in the <a href="https://discord.gg/AYr59EgzzR">MFH Discord server</a>?';
+
+      return Inertia::render('notindiscord');
     };
     $guildData = json_decode($guildData);
 
