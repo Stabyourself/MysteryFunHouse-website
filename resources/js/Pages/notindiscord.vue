@@ -10,6 +10,7 @@
         join to participate.</v-alert
       >
 
+      <div class="text-center">
       <v-btn
         data-aos="fade-up"
         data-aos-delay="200"
@@ -25,14 +26,14 @@
       </v-btn>
 
       <p style="margin-top: 50px">And then try again!</p>
-
         <v-btn color="primary" :href="route('login')" x-large>
           <v-icon>
             mdi-discord
           </v-icon>
           Discord Login
         </v-btn>
-    </p>
+      </p>
+    </div>
   </div>
 </template>
 

@@ -148,6 +148,8 @@
         </div>
       </div>
     </v-container>
+
+    <script type="module" src="/js/ghost_scene.js"></script>
   </div>
 </template>
 

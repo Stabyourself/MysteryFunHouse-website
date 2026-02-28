@@ -22,7 +22,6 @@
         <!-- Scripts -->
         @routes
         <script src="{{ mix('js/app.js') }}" defer></script>
-        {{-- <script type="module" src="{{ mix('js/ghost_scene.js') }}"></script> --}}
     </head>
     <body>
         @inertia
