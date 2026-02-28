@@ -15,7 +15,7 @@
         data-aos-delay="200"
         data-aos-offset="-50"
         color="primary"
-        :to="'https://discord.gg/AYr59EgzzR'"
+        :href="'https://discord.gg/AYr59EgzzR'"
         class="eightbitfont"
         x-large
         block

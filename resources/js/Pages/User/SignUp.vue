@@ -8,22 +8,13 @@
       <div v-if="!$page.props.auth.user" class="text-center">
         <p>First, make sure you're in our discord server.</p>
 
-        <v-btn
-          data-aos="fade-up"
-          data-aos-delay="200"
-          data-aos-offset="-50"
-          color="primary"
-          :to="'https://discord.gg/AYr59EgzzR'"
-          class="eightbitfont"
-          x-large
-          block
-        >
+        <v-btn color="primary" :href="'https://discord.gg/AYr59EgzzR'" x-large>
           Join the Discord
         </v-btn>
 
         <p style="margin-top: 50px">Then, login through discord to sign up!</p>
 
-        <v-btn color="primary" :href="route('login')">
+        <v-btn color="primary" :href="route('login')" x-large>
           <v-icon>
             mdi-discord
           </v-icon>
