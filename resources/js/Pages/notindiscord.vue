@@ -24,7 +24,7 @@
         Join the Discord
       </v-btn>
 
-      <p>And then try again!</p>
+      <p style="margin-top: 50px">And then try again!</p>
 
         <v-btn color="primary" :href="route('login')" x-large>
           <v-icon>
