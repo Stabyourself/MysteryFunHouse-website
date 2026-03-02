@@ -5,16 +5,7 @@
     <v-container>
       <div class="home-container">
         <div class="logo-info-box">
-          <div id="main-image-box">
-            <div id="ghost-scene-container"></div>
-            <!-- <img
-              v-if="!ghostLoaded"
-              src="/img/mt20.png"
-              alt="Mystery Tournament 20XX Logo"
-              class="home-image image-nearest"
-              data-aos="fade-down"
-            /> -->
-          </div>
+          <div id="ghost-scene-container"></div>
 
           <div class="mt20-border mt20-info" data-aos="fade-up">
             <ul>
@@ -153,18 +144,6 @@
 <style lang="scss" scoped>
 $primary: #1976d2;
 
-#main-image-box {
-  position: relative;
-  width: 505px;
-  max-width: 100%;
-
-  > * {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-}
-
 .video-container {
   width: 100%;
   aspect-ratio: 16 / 9;
@@ -276,6 +255,7 @@ $primary: #1976d2;
   display: flex;
   align-items: end;
   justify-content: center;
+  max-width: 100%;
 
   .home-image {
     width: 505px;
@@ -335,15 +315,7 @@ import createGhostScene from "../ghost_scene";
 export default {
   created() {
     this.$nextTick(() => {
-      // let ghostLoad = () => {
-      //   console.log("loaded");
-      //   this.ghostLoaded = true;
-      // };
-
-      createGhostScene(
-        document.getElementById("ghost-scene-container"),
-        // ghostLoad,
-      );
+      createGhostScene(document.getElementById("ghost-scene-container"));
     });
   },
 
@@ -362,7 +334,6 @@ export default {
 
   data() {
     return {
-      ghostLoaded: false,
       signUpText: "Sign up now!",
       _signUpBlinkState: false,
     };
