@@ -267,7 +267,6 @@ $primary: #1976d2;
   #ghost-scene-container {
     width: 505px;
     height: 312px;
-    max-width: 100%;
     position: relative;
     z-index: 2;
   }
@@ -299,6 +298,7 @@ $primary: #1976d2;
 @media (max-width: 900px) {
   .logo-info-box {
     flex-direction: column;
+    align-items: center;
 
     .mt20-info {
       margin-left: 0;
