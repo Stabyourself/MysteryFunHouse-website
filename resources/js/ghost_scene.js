@@ -94,20 +94,6 @@ function createGhostScene(el, onLoad) {
     tilt((event.clientX / window.innerWidth) * 2 - 1, -(event.clientY / window.innerHeight) * 2 + 1)
   })
 
-  if (window.DeviceOrientationEvent) {
-    window.addEventListener("deviceorientation", function (event) {
-      tilt([event.beta, event.gamma]);
-    }, true);
-  } else if (window.DeviceMotionEvent) {
-    window.addEventListener('devicemotion', function (event) {
-      tilt([event.acceleration.x * 2, event.acceleration.y * 2]);
-    }, true);
-  } else {
-    window.addEventListener("MozOrientation", function (event) {
-      tilt([orientation.x * 50, orientation.y * 50]);
-    }, true);
-  }
-
   function animate(time) {
     tiltXlerped += (tiltX - tiltXlerped) * 0.1
     tiltYlerped += (tiltY - tiltYlerped) * 0.1
