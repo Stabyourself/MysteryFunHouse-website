@@ -7,8 +7,12 @@
     <v-container class="text-center">
       <p>Thanks for signing up!</p>
       <p>
-        Keep an eye on the Discord, we'll let you know when things start.
+        Make sure to also sign up on
+        <a href="https://speedrunslive.challonge.com/mysterytournamentxx"
+          >the Challonge bracket!</a
+        >
       </p>
+      <p>Keep an eye on the Discord, we'll let you know when things start.</p>
     </v-container>
   </div>
 </template>
