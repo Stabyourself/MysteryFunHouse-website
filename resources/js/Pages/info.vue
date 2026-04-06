@@ -89,7 +89,7 @@
         for us to race! If you're new make sure to read the sub guidelines at
         the top of that form.
       </p>
-
+      <!--
       <div class="dangerous-text" data-aos="fade-down">Sounds fun?</div>
 
       <div class="text-center">
@@ -105,6 +105,7 @@
           <div v-else>Sign up now!</div>
         </v-btn>
       </div>
+      -->
     </v-container>
   </div>
 </template>
