@@ -72,10 +72,10 @@
             correct username and password you just set to log in
           </li>
         </div>-->
-        <li>
+        <!--<li>
           <a href="/signup" target="_blank"> Sign Up </a>
           on this site
-        </li>
+        </li>-->
       </ul>
 
       <p>

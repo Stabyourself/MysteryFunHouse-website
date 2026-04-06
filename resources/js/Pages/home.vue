@@ -34,7 +34,7 @@
         </div>
       </div>
 
-      <div class="d-flex">
+      <!--<div class="d-flex">
         <div class="flex-grow-1">
           <v-btn
             data-aos="fade-up"
@@ -52,7 +52,7 @@
             </div>
           </v-btn>
         </div>
-      </div>
+      </div>-->
 
       <h2>How it works</h2>
 
@@ -118,7 +118,7 @@
         ></iframe>
       </div>
 
-      <div class="d-flex">
+      <!--<div class="d-flex">
         <div class="flex-grow-1">
           <v-btn
             data-aos="fade-up"
@@ -136,7 +136,7 @@
             </div>
           </v-btn>
         </div>
-      </div>
+      </div>-->
     </v-container>
   </div>
 </template>
